@@ -42,9 +42,10 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
 |Juliana Brancis    | Realizar a marcação de pacientes | Facilitar a marcacão dos pacientes  |
-|Juliana Brancis    | Gerenciar a marcação de pacientes | Facilidade em gerenciar editar e excluir pacientes |
+|Juliana Brancis    | Gerenciar a marcação de pacientes | Facilidade em editar e excluir pacientes |
+|Juliana Brancis    | Gerenciar os dados dos  pacientes | Facilidade em visualizar e gerenciar dados dos pacientes |
 |Mario Dantas        | Realizar a marcação de consultas/exames | Marcar consultas com rapidez |
-|Mario Dantas        | Realizar alteração de consultas/exames | Facilidade em alterar datas da marcação |
+|Mario Dantas        | Realizar alteração de consultas/exames | Facilidade em gerenciar datas da marcação |
 |Mario Dantas        | Visualizar a marcação de consultas e exames | Evitar esquecimento de datas |
 |Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
 
