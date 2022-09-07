@@ -48,7 +48,6 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
 |RF-001| A plataforma precisa ter uma lading page com um botão de login | ALTA |
 |RF-002| Irão existir dois tipos de usuários. Clínica e Paciente. | ALTA | 
 |RF-003| Os dados necessários para uma clínica se cadastrar são: CNPJ, NOME , E-MAIL, TELEFONE, SENHA. | ALTA |
@@ -93,8 +92,9 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
-|01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
+|01| O projeto deverá ser entregue até o final do segundo semestre de 2022 |
+|02| O projeto não possue orçamento |
+|03| O projeto deve possuir apenas 6 integrantes |
 
 
 Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
