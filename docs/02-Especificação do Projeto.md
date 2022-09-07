@@ -66,8 +66,11 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | Alta | 
+|RNF-002| O sistema deverá usar o SEO do google para aparecer nas pesquisas do buscador|  Media |
+|RNF-002| O back-end devera ser densevolvido em C#|  Alta |
+|RNF-002| O sistema deverá seguir as normas da LGPD|  Alta |
+|RNF-002| O sistema deve ser publicado em um ambiente acessível publicamente na internet (GitHub Pages, Hostinguer);|  Alta |
 
 Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
 
