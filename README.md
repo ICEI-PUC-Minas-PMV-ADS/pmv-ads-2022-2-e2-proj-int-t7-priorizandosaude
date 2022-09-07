@@ -1,23 +1,23 @@
-# TÍTULO DO PROJETO
+# Priorizando a Saúde
 
-`CURSO`
+`Tecnologia em Análise e Desenvolvimento de Sistemas`
 
-`DISCIPLINA`
+`Projeto: Desenvolvimento de uma Aplicação Interativa `
 
-`SEMESTRE`
+`2º semestre`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+Priorizando a Saúde é uma aplicação que pretende facilitar o processo de marcação de consultas. As pessoas perdem bastante tempo ligando para uma clinica para agendar uma consulta/exame, o que o leva muitas vezes a procrastinação, podendo até ocasionar em um agravamento na saúde. Com o site priorizando saúde os pacientes podem agendar sua consulta online, melhorando o sistema de marcação e o tornando mais rápido e eficaz para o paciente além de auxiliar na organização da agenda do médico.
 
 ## Integrantes
 
-* Nome completo do aluno 1
+* Giselle Nepomuceno Rosa
 * Nome completo do aluno 2
 * Nome completo do aluno 3
 * Nome completo do aluno 4
 
 ## Orientador
 
-* Nome completo do professor 1
+* Luciana De Nardin
 
 ## Instruções de utilização
 
