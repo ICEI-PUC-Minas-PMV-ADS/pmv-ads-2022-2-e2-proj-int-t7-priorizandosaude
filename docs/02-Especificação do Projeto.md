@@ -49,7 +49,18 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
 |RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+|RF-001| A plataforma precisa ter uma lading page com um botão de login | ALTA |
+|RF-002| Irão existir dois tipos de usuários. Clínica e Paciente. | ALTA | 
+|RF-003| Os dados necessários para uma clínica se cadastrar são: CNPJ, NOME , E-MAIL, TELEFONE, SENHA. | ALTA |
+|RF-004| Os dados necessários para um paciente se cadastrar são: CPF, NOME , E-MAIL, TELEFONE, SENHA. | ALTA |
+|RF-005| A clínica deverá cadastrar as suas especialidades. | Media |
+|RF-006| Após logado o sistema sera diferente de acordo com o perfil Clínica e Paciente | Media | 
+|RF-007| Permitir que o perfil Clínica veja os horários marcados pelos seus usuários | ALTA | 
+|RF-008| Permitir que a Clínica faça edição e exclusão dos cadastros de horários   | MÉDIA |
+|RF-009| Permitir que a Clínica tenha informações dos seus pacientes. | Baixa | 
+|RF-010| Permitir que o Paciente consiga Cadastrar, Excluir, Editar e Atualizar uma consulta de acordo com a disponibilidade da clinica. | Alta |
+|RF-011| Permitir que o usuario tenha as infomações de contato da clinica escolhida. | ALTA | 
+|RF-012| Usuario e Clinica podem editar suas informações| Baixa |
 
 ### Requisitos não Funcionais
 
