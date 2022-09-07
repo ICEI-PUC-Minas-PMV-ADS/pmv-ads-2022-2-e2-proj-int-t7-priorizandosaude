@@ -22,8 +22,6 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 | <br> Jogar Games  <br><br> Ouvir música livre<br><br> Conhecer tecnologias novas <br> <br>        | Mario José é um desenvolvedor focado<br> durante sue horario de trabalho, Mario se preocupa com a saúde <br>mas acaba indo pouco ao médico por falta de organização    <br>        | Desorganizado <br><br> Introvertido <br><br> Metodico  <br>    |
 
 
-Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
-
 Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
 
 > **Links Úteis**:
@@ -39,13 +37,15 @@ Lembre-se que você deve ser enumerar e descrever precisamente e personalizada t
 ## Histórias de Usuários
 
 
-
 Com base na análise das personas forma identificadas as seguintes histórias de usuários:
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Adm de Clínica      | Gerenciar a marcação de pacientes | Facilidade nas marcações e confirmaçoes dos Pacientes |
-|Adm de Clínica      | Gerenciar a marcação de pacientes | Facilidade nas marcações e confirmaçoes dos Pacientes |
+|Juliana Brancis    | Realizar a marcação de pacientes | Facilitar a marcacão dos pacientes  |
+|Juliana Brancis    | Gerenciar a marcação de pacientes | Facilidade em gerenciar editar e excluir pacientes |
+|Mario Dantas        | Realizar a marcação de consultas/exames | Marcar consultas com rapidez |
+|Mario Dantas        | Realizar alteração de consultas/exames | Facilidade em alterar datas da marcação |
+|Mario Dantas        | Visualizar a marcação de consultas e exames | Evitar esquecimento de datas |
 |Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
 
 Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
