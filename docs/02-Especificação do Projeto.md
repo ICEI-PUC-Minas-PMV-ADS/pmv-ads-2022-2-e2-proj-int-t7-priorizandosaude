@@ -10,13 +10,14 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 |    `Nome`: Juliana Silveira Brancis  | `Profissão`: Adm. Clinica Médica         |     `Idade`: 38 Anos    |
 |--------------------|------------------------------------|----------------------------------------|
-| <img width="200" alt="image" src="https://user-images.githubusercontent.com/55036173/188963711-7db4ab2c-ea9d-4674-83e6-b1c8f8f4fb90.png">| `Motivações`: <br>  Organização no agendamento de pacientes <br> <br>   Diminuir carga de trabalho da secretária <br> <br> Facilidade na marcação de pacientes   |  `Frustrações`: <br>  Tempo da atendente gasto com telefones de marcação <br> <br> Falta de facilidade na confirmação dos agendamentos <br><br> Facilidade na marcação de pacientes                    
+| <img width="250" alt="image" src="https://user-images.githubusercontent.com/55036173/188963711-7db4ab2c-ea9d-4674-83e6-b1c8f8f4fb90.png">| `Motivações`: <br>  Organização no agendamento de pacientes <br> <br>   Diminuir carga de trabalho da secretária <br> <br> Facilidade na marcação de pacientes   |  `Frustrações`: <br>  Tempo da atendente gasto com telefones de marcação <br> <br> Falta de facilidade na confirmação dos agendamentos <br><br> Facilidade na marcação de pacientes                    
 |  `Hobbies`: |   `História`:  | `Personalidade`:  |
 | <br> Adora assistir filmes <br><br> Gosta de passear ao Ar livre<br><br> Conhecer tecnologias novas <br>      | Juliana é  médica cardiologista,  recentemente <br>ela administra uma clinica médica com diversas especialidades.              | Organizada <br><br> Animada <br><br> Esfoçada   |
 
-|    `Nome`: Mario Rosse Dantas  | `Profissão`: Desenvolvedor         |     `Idade`: 35 Anos    |
+
+|    `Nome`: Mario José Dantas  | `Profissão`: Desenvolvedor         |     `Idade`: 35 Anos    |
 |--------------------|------------------------------------|----------------------------------------|
-| <img width="200" alt="image" src="https://user-images.githubusercontent.com/55036173/188963711-7db4ab2c-ea9d-4674-83e6-b1c8f8f4fb90.png">| `Motivações`: <br>  Otimizar tempo, evitar perder tempo com marcação <br> <br>    <br> <br> Facilidade na marcação de pacientes   |  `Frustrações`: <br>  Tempo pra agendar consultas<br> <br> Falta de facilidade na confirmação dos agendamentos <br><br> Facilidade na marcação de pacientes                    
+| <img width="250" alt="image" src="https://user-images.githubusercontent.com/55036173/188989388-76071b6b-c8b8-41e2-9f92-fa8ddb89d5c3.png">| `Motivações`: <br>  Otimizar tempo, evitar perder tempo com marcação <br> <br>    <br> <br> Facilidade na marcação de pacientes   |  `Frustrações`: <br>  Tempo pra agendar consultas<br> <br> Falta de facilidade na confirmação dos agendamentos <br><br> Facilidade na marcação de pacientes                    
 |  `Hobbies`: |   `História`:  | `Personalidade`:  |
 | <br> Adora assistir filmes <br><br> Gosta de passear ao Ar livre<br><br> Conhecer tecnologias novas <br>      | Juliana é  médica cardiologista,  recentemente <br>ela administra uma clinica médica com diversas especialidades.              | Organizada <br><br> Animada <br><br> Esfoçada   |
 
