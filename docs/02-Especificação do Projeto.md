@@ -12,14 +12,14 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 |--------------------|------------------------------------|----------------------------------------|
 | <img width="250" alt="image" src="https://user-images.githubusercontent.com/55036173/188963711-7db4ab2c-ea9d-4674-83e6-b1c8f8f4fb90.png">| `Motivações`: <br>  Organização no agendamento de pacientes <br> <br>   Diminuir carga de trabalho da secretária <br> <br> Facilidade na marcação de pacientes   |  `Frustrações`: <br>  Tempo da atendente gasto com telefones de marcação <br> <br> Falta de facilidade na confirmação dos agendamentos <br><br>                    
 |  `Hobbies`: |   `História`:  | `Personalidade`:  |
-| <br> Adora assistir filmes <br><br> Gosta de passear ao Ar livre<br><br> Conhecer tecnologias novas <br>      | Juliana é  médica cardiologista,  recentemente <br>ela administra uma clinica médica com diversas especialidades.              | Organizada <br><br> Animada <br><br> Esfoçada   |
+| <br> Adora assistir filmes <br><br> Gosta de passear ao Ar livre<br><br> Conhecer lugares novos <br> <br>     | Juliana é  médica cardiologista,  recentemente <br>ela administra uma clinica médica com diversas especialidades.  <br>            | Organizada <br><br> Extrovertida <br><br> Esfoçada<br>   |
 
 
-|    `Nome`: Mario José Dantas  | `Profissão`: Desenvolvedor         |     `Idade`: 35 Anos    |
+|    `Nome`: Mario José Dantas  | `Profissão`: Desenvolvedor         |     `Idade`: 32 Anos    |
 |--------------------|------------------------------------|----------------------------------------|
-| <img width="250" alt="image" src="https://user-images.githubusercontent.com/55036173/188989388-76071b6b-c8b8-41e2-9f92-fa8ddb89d5c3.png">| `Motivações`: <br>  Otimizar tempo <br> <br>    <br> <br> Facilidade na marcação de pacientes   |  `Frustrações`: <br>   Perder tempo telefonando para clinicas <br> <br> Dificuldade na confirmação do agendamento <br><br> Esquecimento da data de marcação            
+| <img width="250" alt="image" src="https://user-images.githubusercontent.com/55036173/188989388-76071b6b-c8b8-41e2-9f92-fa8ddb89d5c3.png">| `Motivações`: <br>  Otimizar tempo <br> <br> Ter um site para conferir marcações  <br> <br> Facilidade na marcação de consultas |  `Frustrações`: <br>   Perder tempo telefonando para clinicas <br> <br> Dificuldade na confirmação do agendamento <br><br> Esquecimento da data de marcação            
 |  `Hobbies`: |   `História`:  | `Personalidade`:  |
-| <br> Adora assistir filmes <br><br> Gosta de passear ao Ar livre<br><br> Conhecer tecnologias novas <br>      | Mario José é um desenvolvedor que foca durante sue horario de trabalho, Mario se preocupa com a saúde mas acaba indo pouco ao médico por falta de organização         | Desorganizado <br><br> I <br><br> Esfoçada   |
+| <br> Jogar Games  <br><br> Ouvir música livre<br><br> Conhecer tecnologias novas <br> <br>        | Mario José é um desenvolvedor focado<br> durante sue horario de trabalho, Mario se preocupa com a saúde <br>mas acaba indo pouco ao médico por falta de organização    <br>        | Desorganizado <br><br> Introvertido <br><br> Metodico  <br>    |
 
 
 Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
