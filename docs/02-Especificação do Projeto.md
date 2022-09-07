@@ -8,6 +8,19 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 ## Personas
 
+|    `Nome`: Juliana Silveira Brancis  | `Profissão`: Adm. Clinica Médica         |     `Idade`: 38 Anos    |
+|--------------------|------------------------------------|----------------------------------------|
+| <img width="200" alt="image" src="https://user-images.githubusercontent.com/55036173/188963711-7db4ab2c-ea9d-4674-83e6-b1c8f8f4fb90.png">| `Motivações`: <br>  Organização no agendamento de pacientes <br> <br>   Diminuir carga de trabalho da secretária <br> <br> Facilidade na marcação de pacientes   |  `Frustrações`: <br>  Tempo da atendente gasto com telefones de marcação <br> <br> Falta de facilidade na confirmação dos agendamentos <br><br> Facilidade na marcação de pacientes                    
+|  `Hobbies`: |   `História`:  | `Personalidade`:  |
+| <br> Adora assistir filmes <br><br> Gosta de passear ao Ar livre<br><br> Conhecer tecnologias novas <br>      | Juliana é  médica cardiologista,  recentemente <br>ela administra uma clinica médica com diversas especialidades.              | Organizada <br><br> Animada <br><br> Esfoçada   |
+
+|    `Nome`: Mario Rosse Dantas  | `Profissão`: Desenvolvedor         |     `Idade`: 35 Anos    |
+|--------------------|------------------------------------|----------------------------------------|
+| <img width="200" alt="image" src="https://user-images.githubusercontent.com/55036173/188963711-7db4ab2c-ea9d-4674-83e6-b1c8f8f4fb90.png">| `Motivações`: <br>  Otimizar tempo, evitar perder tempo com marcação <br> <br>    <br> <br> Facilidade na marcação de pacientes   |  `Frustrações`: <br>  Tempo pra agendar consultas<br> <br> Falta de facilidade na confirmação dos agendamentos <br><br> Facilidade na marcação de pacientes                    
+|  `Hobbies`: |   `História`:  | `Personalidade`:  |
+| <br> Adora assistir filmes <br><br> Gosta de passear ao Ar livre<br><br> Conhecer tecnologias novas <br>      | Juliana é  médica cardiologista,  recentemente <br>ela administra uma clinica médica com diversas especialidades.              | Organizada <br><br> Animada <br><br> Esfoçada   |
+
+
 Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
 
 Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
@@ -24,12 +37,15 @@ Lembre-se que você deve ser enumerar e descrever precisamente e personalizada t
 
 ## Histórias de Usuários
 
+
+
 Com base na análise das personas forma identificadas as seguintes histórias de usuários:
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
+|Adm de Clínica      | Gerenciar a marcação de pacientes | Facilidade nas marcações e confirmaçoes dos Pacientes |
+|Adm de Clínica      | Gerenciar a marcação de pacientes | Facilidade nas marcações e confirmaçoes dos Pacientes |
 |Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
 
 Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
 
