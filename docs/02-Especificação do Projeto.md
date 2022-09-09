@@ -4,11 +4,11 @@ A definição exata do problema e os pontos mais relevantes a serem tratados nes
 
 ## Personas
 
-|    `Nome`: Juliana Silveira Brancis  | `Profissão`: Adm. Clinica Médica         |     `Idade`: 38 Anos    |
+|    `Nome`: Juliana Silveira Brancis  | `Profissão`: Médica Cardiologista        |     `Idade`: 38 Anos    |
 |--------------------|------------------------------------|----------------------------------------|
-| <img width="250" alt="image" src="https://user-images.githubusercontent.com/55036173/188963711-7db4ab2c-ea9d-4674-83e6-b1c8f8f4fb90.png">| `Motivações`: <br>  Organização no agendamento de pacientes <br> <br>   Diminuir carga de trabalho da secretária <br> <br> Facilidade na marcação de pacientes   |  `Frustrações`: <br>  Tempo da atendente gasto com telefones de marcação <br> <br> Falta de facilidade na confirmação dos agendamentos <br><br>                    
+| <img width="250" alt="image" src="https://user-images.githubusercontent.com/55036173/188963711-7db4ab2c-ea9d-4674-83e6-b1c8f8f4fb90.png">| `Motivações`: <br>  Organização no agendamento de pacientes <br> <br>  Facilidade para consultar agendamentos do dia  <br> <br> Facilidade na marcação de pacientes   |  `Frustrações`: <br>  Desorganização de agenda  <br> <br> Falta de facilidade na confirmação dos agendamentos <br><br>                    
 |  `Hobbies`: |   `História`:  | `Personalidade`:  |
-| <br> Adora assistir filmes <br><br> Gosta de passear ao Ar livre<br><br> Conhecer lugares novos <br> <br>     | Juliana é  médica cardiologista,  recentemente <br>ela administra uma clinica médica com diversas especialidades.  <br>            | Organizada <br><br> Extrovertida <br><br> Esfoçada<br>   |
+| <br> Adora assistir filmes <br><br> Gosta de passear ao Ar livre<br><br> Conhecer lugares novos <br> <br>     | Juliana é  médica cardiologista,   que preza pela boa <br> organizaçãoela é uma especialista que visa economizar tempo em suas marcações de pacientes  <br>            | Organizada <br><br> Extrovertida <br><br> Esfoçada<br>   |
 
 
 |    `Nome`: Mario José Dantas  | `Profissão`: Desenvolvedor         |     `Idade`: 32 Anos    |
@@ -33,9 +33,9 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Juliana Brancis    | Realizar a marcação de pacientes | Facilitar a marcacão dos pacientes  |
-|Juliana Brancis    | Gerenciar a marcação de pacientes | Facilidade em editar e excluir pacientes |
-|Juliana Brancis    | Gerenciar os dados dos  pacientes | Facilidade em visualizar e gerenciar dados dos pacientes |
+|Juliana Brancis    | Eficiencia e agilidade na marcação| Facilitar e agilizar a marcacão dos pacientes  |
+|Juliana Brancis    | Visualizar as marcações | organizar melhor a agenda |
+|Juliana Brancis    | Gerenciar os dados dos  pacientes | Facilidade na organização dos dados dos pacientes |
 |Mario Dantas        | Realizar a marcação de consultas/exames | Marcar consultas com rapidez |
 |Mario Dantas        | Realizar alteração de consultas/exames | Facilidade em gerenciar datas da marcação |
 |Mario Dantas        | Visualizar a marcação de consultas e exames | Evitar esquecimento de datas |
