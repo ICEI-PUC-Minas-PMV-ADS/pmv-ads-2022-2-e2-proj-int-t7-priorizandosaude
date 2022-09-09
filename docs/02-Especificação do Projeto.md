@@ -20,9 +20,9 @@ A definição exata do problema e os pontos mais relevantes a serem tratados nes
 
 |    `Nome`: Marcelo Belchior  | `Profissão`: Aposentado         |     `Idade`: 70 Anos    |
 |--------------------|------------------------------------|----------------------------------------|
-| <img width="250" alt="image" src="https://user-images.githubusercontent.com/100283917/189008834-552789bd-d695-44eb-80f3-22b56fe5610e.jpg">| `Motivações`: <br>  Se cuidar mais <br> <br> Atendimento ágil  <br> <br> Facilidade de comunicação com hospital |  `Frustrações`: <br>   Ter de ir ao hospital muitas vezes <br> <br> Dificuldade na locomoção <br><br> Longa espera para o atendimento            
+| <img width="250" alt="image" src="https://user-images.githubusercontent.com/100283917/189008834-552789bd-d695-44eb-80f3-22b56fe5610e.jpg">| `Motivações`: <br>  Se cuidar mais <br> <br> Atendimento ágil  <br> <br> Facilidade de comunicação com hospital |  `Frustrações`: <br>   Ter de ir a hospitais muitas vezes <br> <br> Dificuldade na locomoção <br><br> Longa espera para o atendimento            
 |  `Hobbies`: |   `História`:  | `Personalidade`:  |
-| <br> Ler  <br><br> Jogos de mesa<br><br> Conversar com as pessoas <br> <br>        | Marcelo é aposentado e sofre com osteoporose<br> Devido a doença têm mobilidade reduzida e precisa de <br>cuidados no dia a dia, tornando difícel ir ao hospital   <br>        | Esforçado <br><br> Sério <br><br> Sábio  <br>    |
+| <br> Ler  <br><br> Jogos de mesa<br><br> Conversar com as pessoas <br> <br>        | Marcelo é aposentado e sofre com osteoporose<br> Devido a doença têm mobilidade reduzida e precisa de <br>cuidados no dia a dia, tornando difícel ir a hospitais   <br>        | Esforçado <br><br> Sério <br><br> Sábio  <br>    |
 
 
 
