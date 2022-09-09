@@ -11,7 +11,7 @@ Priorizando a Saúde é uma aplicação que pretende facilitar o processo de mar
 ## Integrantes
 
 * Giselle Nepomuceno Rosa
-* Nome completo do aluno 2
+* Lucas de Oliveira Borges
 * Nome completo do aluno 3
 * Nome completo do aluno 4
 
