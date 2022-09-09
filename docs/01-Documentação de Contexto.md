@@ -4,6 +4,8 @@ A tecnologia está constantemente presente no dia a dia hospitalar. Seja no uso 
 
 O uso da tecnologia como facilitadora na relação médico-paciente não é uma inovação, começou a ser utilizado no Brasil em meados dos anos 1990. No entanto, foi apenas em 2002 que o Conselho Federal de Medicina regulamentou a prática. Como a demanda por médicos aumentou e a ida ao hospital passou a ser não recomendada, foi preciso adaptar as consultas para o ambiente virtual. Por meio do telefone ou chamadas de vídeo, os pacientes recebem respaldo profissional, tiram dúvidas, expõem sintomas e conversam com profissionais da saúde que, então, indicam o procedimento mais adequado. Nos hospitais, esse contato remoto pode ser ainda mais eficiente com as centrais de diversos tipos de atendimento. Nelas, operadores conseguem, por telefone, chat ou até mesmo e-mail realizar o atendimento e triar os casos, encaminhando para os profissionais casos específicos. Essa gestão faz toda a diferença na agilidade do atendimento, uma vez que os hospitais não ficam sobrecarregados com a procura. 
 
+Referência: https://g1.globo.com/mg/sul-de-minas/especial-publicitario/inatel/tecnologia-e-voce/noticia/2021/11/23/de-que-maneira-a-pandemia-mostrou-a-importancia-do-uso-da-tecnologia-na-saude.ghtml
+
 ## Problema
 Conforme exposto, o problema que se busca resolver com este projeto é alcançar mais eficiência nos canais de atendimento hospitalar tradicionais, com agilidade e também segurança, já que recebe muitos doentes, que torna o ambiente hospitalar impróprio para a circulação de pessoas.
 
