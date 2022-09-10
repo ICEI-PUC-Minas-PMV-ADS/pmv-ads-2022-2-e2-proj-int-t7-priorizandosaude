@@ -58,18 +58,14 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| A plataforma precisa ter uma lading page com um botão de login | ALTA |
-|RF-002| Irão existir dois tipos de usuários. Clínica e Paciente. | ALTA | 
-|RF-003| Os dados necessários para uma clínica se cadastrar são: CNPJ, NOME , E-MAIL, TELEFONE, SENHA. | ALTA |
-|RF-004| Os dados necessários para um paciente se cadastrar são: CPF, NOME , E-MAIL, TELEFONE, SENHA. | ALTA |
-|RF-005| A clínica deverá cadastrar as suas especialidades. | Media |
-|RF-006| Após logado o sistema sera diferente de acordo com o perfil Clínica e Paciente | Media | 
-|RF-007| Permitir que o perfil Clínica veja os horários marcados pelos seus usuários | ALTA | 
-|RF-008| Permitir que a Clínica faça edição e exclusão dos cadastros de horários   | MÉDIA |
-|RF-009| Permitir que a Clínica tenha informações dos seus pacientes. | Baixa | 
-|RF-010| Permitir que o Paciente consiga Cadastrar, Excluir, Editar e Atualizar uma consulta de acordo com a disponibilidade da clinica. | Alta |
-|RF-011| Permitir que o usuario tenha as infomações de contato da clinica escolhida. | ALTA | 
-|RF-012| Usuario e Clinica podem editar suas informações| Baixa |
+|RF-001| A aplicação devera possuir uma lading page explicando detralhes sobre o serviço fornecido. | ALTA |
+|RF-002| A aplicação deve gerenciar médicos. Para um médico se cadastrar é necessário: CNPJ, NOME , E-MAIL, TELEFONE, SENHA e ESPECIALIDADE | ALTA | 
+|RF-004| A aplicação deve gerenciar pacientes. Para um paciente se cadastrar é necessário: CPF, NOME , E-MAIL, TELEFONE e SENHA. | ALTA |
+|RF-003| A aplicação deverá mostrar uma agenda por médico.| ALTA | 
+|RF-004| A aplicação deverá permitir que o médico gerencie sua agenda.  | MÉDIA |
+|RF-005| A aplicação deverá permitir que o médico tenha informações dos seus pacientes. | Baixa | 
+|RF-006| A aplicação deverá permitir que o paciente gerencie suas consultas de acordo com a disponibilidade do médico. | Alta |
+|RF-007| A aplicação deverá permitir que o usuario tenha as infomações de contato do médico. | ALTA | 
 
 ### Requisitos não Funcionais
 
