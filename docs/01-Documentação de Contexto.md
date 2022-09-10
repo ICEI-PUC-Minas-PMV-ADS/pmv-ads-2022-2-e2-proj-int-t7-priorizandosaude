@@ -6,7 +6,7 @@ O uso da tecnologia como  uma facilitadora na relação  entre médico e pacient
 
 
 ## Problema
-Conforme exposto, o problema que se busca resolver com este projeto é alcançar mais eficiência nos canais de atendimento hospitalar tradicionais, com agilidade e também segurança, já que recebe muitos doentes, que torna o ambiente hospitalar impróprio para a circulação de pessoas.
+Conforme exposto, o problema que se busca resolver com este projeto é alcançar mais eficiência nos canais de atendimento de hospitais/clínicas tradicionais, com agilidade e também segurança, já que recebe muitos doentes, que torna o ambiente desses lugares impróprio para a circulação de pessoas.
 
 ## Objetivos
 
@@ -18,13 +18,13 @@ Como objetivos específicos, podemos ressaltar:
 
 ## Justificativa
 
-É impossível não perceber o impacto do coronavírus na gestão de Hospitais. Situações, antes corriqueiras, como a procura por um médico, passaram a ser contraindicadas, como forma de prevenir o contágio. Por receber doentes com sintomas da infecção, o ambiente hospitalar se tornou impróprio para a circulação de pessoas não envolvidas nos atendimentos. Administrar canais de atendimento atua na prevenção de problemas sérios para qualquer instituição: evita que ela seja um foco de contaminação aos pacientes sem sintomas como Covid-19,  evita que o hospital precise lidar com a sobrecarga do sistema e, traz agilidade na triagem de serviços como marcação de consulta.
+É impossível não perceber o impacto do coronavírus na gestão de hospitais, postos e clínicas. Situações, antes corriqueiras, como a procura por um médico, passaram a ser contraindicadas, como forma de prevenir o contágio. Por receber doentes com sintomas da infecção, o ambiente hospitalar se tornou impróprio para a circulação de pessoas não envolvidas nos atendimentos. Administrar canais de atendimento atua na prevenção de problemas sérios para qualquer instituição: evita que ela seja um foco de contaminação aos pacientes sem sintomas como Covid-19,  evita que o hospital/clínica precise lidar com a sobrecarga do sistema trazendo agilidade nos serviços como marcação de consulta, etc.
 
 ## Público-Alvo
 
-Embora os avanços tecnológicos na área da saúde contribuem tanto para que os processos hospitalares, quanto para os serviços médicos que passam a integrar a dispositivos acessíveis e de fácil uso, facilitando a rotina de trabalho de médicos, enfermeiros e os demais profissionais que fazem parte do ciclo de atendimento médico, o foco deste trabalho está nos pacientes e familiares.
+Os avanços tecnológicos na área da saúde contribuem tanto para que os processos hospitalares/clínicos, quanto para os serviços médicos que passam a integrar a dispositivos acessíveis e de fácil uso, facilitando a rotina de trabalho de médicos, enfermeiros e os demais profissionais que fazem parte do ciclo de atendimento médico.
 
-Desta forma, estabeleceu-se como público-alvo desta solução homens ou mulheres de qualquer idade que se encontram na condição de usufruir do serviço por meio de computadores ou dispositivos móveis.
+Desta forma, estabeleceu-se como público-alvo desta solução homens ou mulheres de qualquer idade, estando na condição do proficional (médico) ou paciente, que se encontram na condição de usufruir do serviço por meio de computadores ou dispositivos móveis.
 
 ## Referencias
 
