@@ -14,7 +14,7 @@ O objetivo geral deste trabalho é a criação de uma aplicação que apresente 
 
 Como objetivos específicos, podemos ressaltar:
 - Fornecer um canal fácil e rápido em agendamento de consultas/exames;
-- Permitir através dos canais uma melhor triagem dos atendimentos.
+- Diminuir cargar de trabalho de funcionários.
 
 ## Justificativa
 
