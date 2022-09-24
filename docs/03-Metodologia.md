@@ -6,8 +6,20 @@ A metodologia contempla as definições de ferramental utilizado pela equipe tan
 ## Relação de Ambientes de Trabalho
 Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a relação dos ambientes com seu respectivo propósito é apresentada na tabela que se segue. 
 
+|     Ambiente  |    Plataforma      |     Link    |
+|--------------------|------------------------------------|----------------------------------------|
+| Repositório de código fonte | GitHub |  https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e2-proj-int-t7-priorizandosaude  
+|  Gerenciamento do Projeto |   GitHub  | https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/128 |  
+|  Projeto de Interface e  Wireframes  | Figma  |     |
+|  Reuniões  |  Microsoft Teams  |
 
 ## Controle de Versão
+
+Para a gestão do código fonte será utilizado o modelo de processo baseado no Git Flow, como mostrado na figura a seguir:
+
+![git](https://user-images.githubusercontent.com/100283917/192118295-077f7020-72df-4af2-83d4-b46af1599a44.png)
+
+Figura 1 - Fluxo de controle do código fonte
 
 A ferramenta de controle de versão adotada no projeto foi o
 [Git](https://git-scm.com/), sendo que o [Github](https://github.com)
