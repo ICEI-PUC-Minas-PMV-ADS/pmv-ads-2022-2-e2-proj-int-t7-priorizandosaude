@@ -10,8 +10,8 @@ Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a 
 |--------------------|------------------------------------|----------------------------------------|
 | Repositório de código fonte | GitHub |  https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e2-proj-int-t7-priorizandosaude  
 |  Gerenciamento do Projeto |   GitHub  | https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/128 |  
-|  Projeto de Interface e  Wireframes  | Figma  |     |
-|  Reuniões  |  Microsoft Teams  |
+|  Projeto de Interface e  Wireframes  | Figma  |  https://www.figma.com/proto/CFbD21Vbo7e358Ovj5ffw7/OnMedical?node-id=1%3A9&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A9   |
+|  Reuniões  |  Microsoft Teams  | https://teams.microsoft.com/l/meetup-join/19%3as9u89mCD7106I54Zenb-KBgHHBPo6BLslHoEizhkPY01%40thread.tacv2/1660863675682?context=%7b%22Tid%22%3a%2214cbd5a7-ec94-46ba-b314-cc0fc972a161%22%2c%22Oid%22%3a%22c184ba70-fed5-481a-bf2b-dff8d694865f%22%7d |
 
 ## Controle de Versão
 
