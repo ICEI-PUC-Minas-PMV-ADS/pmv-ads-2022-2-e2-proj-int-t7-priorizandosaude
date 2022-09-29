@@ -15,7 +15,7 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de
 > - [O que é um diagrama de classe UML? | Lucidchart](https://www.lucidchart.com/pages/pt/o-que-e-diagrama-de-classe-uml)
 
 ## Modelo ER (Projeto Conceitual)
-![image](https://user-images.githubusercontent.com/80110034/192903973-73520a53-d3ab-40ca-bb65-18112ade0180.png)
+![image](https://user-images.githubusercontent.com/80110034/192912227-22a333ce-77dc-4f62-a7dd-f0a7101353b9.png)
 
 O Modelo ER representa através de um diagrama como as entidades (coisas, objetos) se relacionam entre si na aplicação interativa.
 
