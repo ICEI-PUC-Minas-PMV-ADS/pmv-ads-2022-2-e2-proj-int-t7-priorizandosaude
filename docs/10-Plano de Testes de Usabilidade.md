@@ -12,10 +12,3 @@ Segue tabela com cada caso de teste:
 |Objetivo do teste  |	Verificar se o usuário efetua a abertura de comanda corretamente
 |Ações esperadas    |	1) Acessar a aplicação. 2) Clicar em abrir médicos disponíveis. 3) Selecionar especialidade do médico. 4) Marcar um horário para consulta
 |Critérios de êxito | Uma nova consulta será aberta pelo usuário.
-
-
-Caso de teste 06	CT 06 - A aplicação deverá notificar o pedido ao garçom
-Objetivo do teste	Verificar se o usuário do tipo cliente consegue fazer seu pedido
-Ações esperadas	1) Acessar a aplicação. 2) Adicionar itens ao pedido. 3) Confirmar pedido.
-Critérios de êxito	A notificação deve ser mostrada com sucesso ao garçom.
-
