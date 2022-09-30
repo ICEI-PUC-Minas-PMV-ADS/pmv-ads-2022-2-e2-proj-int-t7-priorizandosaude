@@ -69,11 +69,17 @@ Figura 2 - Tela da distribuição e organização de tarefas no GitHub
 
 As ferramentas empregadas no projeto são:
 
-- GitHub
-- Git
-- VS Code
-- Visual Studio
-- Figma
-- Microsoft Teams
+#### Editores de código: 
 
-O Visual Studio/VS Code foi escolhido porque ele possui uma integração com o GitHub. O Figma permite a edição de diagramas e wireframes por múltlipas pessoas ao mesmo tempo. Por fim, para reuniões foi escolhido o Microsoft Teams por ser o software padrão para tal.
+- Visual Studio: Ferramenta utilizada para o desenvolvimento do código, se utilizando do modelo ASP.NET Core MVC. Esta possui integração com GitHub
+- GitHub:  Plataforma de hospedagem de código-fonte e arquivos com controle de versão usando o Git.
+
+#### Comunicação e organização:
+
+- Microsoft Teams: Ferramenta utilizada para reuniões.
+- GitHub Projects: Ferramenta utilizada para a organização e distribuição de tarefas do projeto.
+
+#### Ferramentas de Design (wireframing):
+
+- Figma: Ferramenta para criação e edição de wirefremes, esta permite a edição de múltiplas pessoas ao mesmo tempo.
+
