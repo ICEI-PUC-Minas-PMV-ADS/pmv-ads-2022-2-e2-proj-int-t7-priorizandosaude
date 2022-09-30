@@ -24,7 +24,7 @@ Como objetivos específicos, podemos ressaltar:
 
 Os avanços tecnológicos na área da saúde contribuem tanto para que os processos hospitalares/clínicos, quanto para os serviços médicos que passam a integrar a dispositivos acessíveis e de fácil uso, facilitando a rotina de trabalho de médicos e demais profissionais que fazem parte do ciclo de atendimento.
 
-Desta forma, estabeleceu-se como público-alvo desta solução homens ou mulheres de qualquer idade, estando na condição do proficional (médico), que se encontram na condição de usufruir do serviço por meio de computadores ou dispositivos móveis.
+Desta forma, estabeleceu-se como público-alvo desta solução homens ou mulheres de qualquer idade, estando na condição do profissional ou paciente(cliente), que se encontram na condição de usufruir do serviço por meio de computadores ou dispositivos móveis.
 
 ## Referencias
 
