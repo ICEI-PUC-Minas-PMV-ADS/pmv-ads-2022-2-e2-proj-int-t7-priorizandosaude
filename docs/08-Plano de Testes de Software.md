@@ -35,25 +35,36 @@ Por exemplo:
 | Passos 	| - Acessar o navegador <br> - Informar o endereço do site  https://priorizandosaude.github.com<br> - Clicar no botão "Paciente" <br> - Preencher o campo de e-mail  <br> - Preencher o campo da senha <br> - Clicar em "Login" <br> - preencher a data escolhida para consulta <br> - preencher a especilidade do médico | 
 |Critério de Êxito | - Medicos disponiveis aparecem na tela. |
 | Caso de Teste 	| CT-06 – Renderizar agenda do médico.		|
-|Requisito Associado | RF-005	- A aplicação deve ser capaz de mostrar as proximas consultas do médico. |
+|Requisito Associado | RF-005 e RF-007	- A aplicação deve ser capaz de mostrar as proximas consultas do médico e as informações dos pacientes. |
 | Objetivo do Teste 	| Verificar se o usuário médico é capaz de visualizar as proximas consultas agendadas. |
-| Passos 	| - Acessar o navegador <br> - Informar o endereço do site  https://priorizandosaude.github.com<br> - Clicar no botão "Entrar" <br> - Preencher o campo de e-mail <br> - Preencher o campo da senha <br> - Clicar em "Login" <br> - Clicar em minhas consultas no canto superior direito da tela  |
-|Critério de Êxito | - Renderização de consultas |
-| Caso de Teste 	| CT-07 – Gerenciar consultas do paciente.		|
+| Passos 	| - Acessar o navegador <br> - Informar o endereço do site  https://priorizandosaude.github.com<br> - Clicar no botão "Médico" <br> - Preencher o campo de e-mail <br> - Preencher o campo da senha <br> - Clicar em "Login" <br> - Clicar em minhas consultas no canto superior direito da tela  |
+|Critério de Êxito | - Renderização de consultas com sucesso |
+| Caso de Teste 	| CT-07 – Confirmar consultas do paciente.		|
 |Requisito Associado | RF-008	-A aplicação deverá permitir que o paciente gerencie suas consultas. |
 | Objetivo do Teste 	| Verificar se o usuário médico é capaz de visualizar as proximas consultas agendadas. |
-| Passos 	| - Acessar o navegador <br> - Informar o endereço do site  https://priorizandosaude.github.com<br> - Clicar no botão "Entrar" <br> - Preencher o campo de e-mail <br> - Preencher o campo da senha <br> - Clicar em "Login" <br> - Clicar em minhas consultas no canto superior direito da tela <br> Clicar em confirmar |
+| Passos 	| - Acessar o navegador <br> - Informar o endereço do site  https://priorizandosaude.github.com<br> - Clicar no botão "Paciente" <br> - Preencher o campo de e-mail <br> - Preencher o campo da senha <br> - Clicar em "Login" <br> - Clicar em minhas consultas no canto superior direito da tela <br> Clicar em confirmar |
 |Critério de Êxito | - Consulta confirmada com sucesso |
-| Caso de Teste 	| CT-08 – Gerenciar consultas do paciente.		|
+| Caso de Teste 	| CT-08 – Cancelar consultas do paciente.		|
 |Requisito Associado | RF-008	-A aplicação deverá permitir que o paciente gerencie suas consultas. |
 | Objetivo do Teste 	| Verificar se o usuário médico é capaz de visualizar as proximas consultas agendadas. |
-| Passos 	| - Acessar o navegador <br> - Informar o endereço do site  https://priorizandosaude.github.com<br> - Clicar no botão "Entrar" <br> - Preencher o campo de e-mail <br> - Preencher o campo da senha <br> - Clicar em "Login" <br> - Clicar em minhas consultas no canto superior direito da tela <br> Clicar em cancelar |
+| Passos 	| - Acessar o navegador <br> - Informar o endereço do site  https://priorizandosaude.github.com<br> - Clicar no botão "Paciente" <br> - Preencher o campo de e-mail <br> - Preencher o campo da senha <br> - Clicar em "Login" <br> - Clicar em minhas consultas no canto superior direito da tela <br> Clicar em cancelar |
 |Critério de Êxito | - Consulta cancelada com sucesso|
-| Caso de Teste 	| CT-08 – Efetuar login	|
-|Requisito Associado | RF-00Y	- A aplicação deve possuir opção de fazer login, sendo o login o endereço de e-mail. |
-| Objetivo do Teste 	| Verificar se o usuário consegue realizar login. |
-| Passos 	| - Acessar o navegador <br> - Informar o endereço do site  https://priorizandosaude.github.com<br> - Clicar no botão "Entrar" <br> - Preencher o campo de e-mail <br> - Preencher o campo da senha <br> - Clicar em "Login" |
-|Critério de Êxito | - O login foi realizado com sucesso. |
+| Caso de Teste 	| CT-09 – Confirmar consultas médico.		|
+|Requisito Associado | RF-006	-A aplicação deverá permitir que o médico gerencie suas consultas. |
+| Objetivo do Teste 	| Verificar se o usuário médico é capaz de visualizar as proximas consultas agendadas. |
+| Passos 	| - Acessar o navegador <br> - Informar o endereço do site  https://priorizandosaude.github.com<br> - Clicar no botão "Medico" <br> - Preencher o campo de e-mail <br> - Preencher o campo da senha <br> - Clicar em "Login" <br> - Clicar em minhas consultas no canto superior direito da tela <br> Clicar em cancelar |
+|Critério de Êxito | - Consulta Confimada com sucesso|
+| Caso de Teste 	| CT-10 – Cancelar consultas do médico.		|
+|Requisito Associado | RF-006	-A aplicação deverá permitir que o médico gerencie suas consultas. |
+| Objetivo do Teste 	| Verificar se o usuário médico é capaz de visualizar as proximas consultas agendadas. |
+| Passos 	| - Acessar o navegador <br> - Informar o endereço do site  https://priorizandosaude.github.com<br> - Clicar no botão "Médico" <br> - Preencher o campo de e-mail <br> - Preencher o campo da senha <br> - Clicar em "Login" <br> - Clicar em minhas consultas no canto superior direito da tela <br> Clicar em cancelar |
+|Critério de Êxito | - Consulta cancelada com sucesso|
+| Caso de Teste 	| CT-11 – Renderizar consultas com dados do médico agendado.		|
+|Requisito Associado | RF-009	- A aplicação deverá permitir que o usuario tenha as infomações de contato do médico. |
+| Objetivo do Teste 	| Verificar se o usuário médico é capaz de visualizar as proximas consultas agendadas. |
+| Passos 	| - Acessar o navegador <br> - Informar o endereço do site  https://priorizandosaude.github.com<br> - Clicar no botão "Paciente" <br> - Preencher o campo de e-mail <br> - Preencher o campo da senha <br> - Clicar em "Login" <br> - Clicar em minhas consultas no canto superior direito da tela |
+|Critério de Êxito | - Renderizar consulta com dados do médico agendado |
+
  
 > **Links Úteis**:
 > - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
