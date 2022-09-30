@@ -35,6 +35,5 @@ O site terá duas telas de cadastro uma voltada ao médico e outra ao paciente c
 
 A partir da tela home o medico ou paciente pode visualizar suas próximas consultas a partir do botão minha consulta. Nesta tela irá conter as consultas ja agendadas tanto do paciente quanto do médico, contendo as informações cabiveis
 
-![image](https://user-images.githubusercontent.com/55036173/193159371-d3d49d37-366f-47bd-a359-de8cf786f35b.png)
-
-![image](https://user-images.githubusercontent.com/55036173/193158538-ba58acd5-3f09-40a0-844e-45877023a7a4.png)
+![image](https://user-images.githubusercontent.com/55036173/193164545-61f6ee21-3e54-41df-94be-d710861d3eef.png)
+![image](https://user-images.githubusercontent.com/55036173/193164566-1a95d1da-6f5a-4716-a3f0-45fc50539aa9.png)
