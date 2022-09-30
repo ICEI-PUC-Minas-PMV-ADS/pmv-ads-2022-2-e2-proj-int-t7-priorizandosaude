@@ -14,28 +14,28 @@ Por exemplo:
 | Objetivo do Teste 	| Verificar se o usuário Paciente consegue se cadastrar na aplicação. |
 | Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://priorizandosaude.github.com <br> - Clicar em "Paciente" no canto direito superior da tela <br> - Clicar em "Não tem cadastro clique aqui" - <br> preencher os campos obrigatórios (e-mail, nome, data de nascimento, genero, celular, CPF, senha, confirmação de senha) <br> - Aceitar os termos de uso <br> - Clicar em "Cadastrar" |
 |Critério de Êxito | - O cadastro foi realizado com sucesso - Redirecionar para tela home do paciente |
-| Caso de Teste 	| CT-02 – Efetuar login	|
+| Caso de Teste 	| CT-02 – Cadastrar Médico	|
 |Requisito Associado | RF-002	- A aplicação deve possuir opção de fazer login, sendo o login o endereço de e-mail. |
 | Objetivo do Teste 	| Verificar se o usuário Médico consegue realizar login. |
 | Passos 	|  - Informar o endereço do site https://priorizandosaude.github.com <br> - Clicar em "Médico" no canto direito superior da tela <br> - Clicar em "Não tem cadastro clique aqui" - <br> preencher os campos obrigatórios (e-mail, nome, especialidade, endereço, celular, CRM, senha, confirmação de senha) <br> - Aceitar os termos de uso <br> - Clicar em "Cadastrar" |
 |Critério de Êxito | - O cadastro foi realizado com sucesso - Redirecionar para tela home do médico |
-| Caso de Teste 	| CT-03 – Efetuar login	|
+| Caso de Teste 	| CT-03 – Efetuar login Paciente	|
 |Requisito Associado | RF-010	- A aplicação deve possuir opção de fazer login, sendo o login o endereço de e-mail. |
 | Objetivo do Teste 	| Verificar se o usuário Paciente consegue realizar login. |
 | Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://priorizandosaude.github.com <br> - Clicar no botão "Paciente" <br> - Preencher o campo de e-mail <br> - Preencher o campo da senha <br> - Clicar em "Login" |
 |Critério de Êxito | - O login foi realizado com sucesso. |
-| Caso de Teste 	| CT-04 – Efetuar login	|
+| Caso de Teste 	| CT-04 – Efetuar login Médico	|
 |Requisito Associado | RF-010	- A aplicação deve possuir opção de fazer login, sendo o login o endereço de e-mail. |
 | Objetivo do Teste 	| Verificar se o usuário médico consegue realizar login. |
 | Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://priorizandosaude.github.com <br> - Clicar no botão "Medico" <br> - Preencher o campo de e-mail <br> - Preencher o campo da senha <br> - Clicar em "Login" |
 |Critério de Êxito | - O login foi realizado com sucesso. |
 | Caso de Teste 	| CT-05 – Mostrar médicos cadastrados	|
-|Requisito Associado | RF-004	- A aplicação deve possuir opção de fazer login, sendo o login o endereço de e-mail. |
-| Objetivo do Teste 	| Verificar se o usuário consegue realizar login. |
-| Passos 	| - Acessar o navegador <br> - Informar o endereço do site  https://priorizandosaude.github.com<br> - Clicar no botão "Paciente" <br> - Preencher o campo de e-mail <br> - Preencher o campo da senha <br> - Clicar em "Login" | - Digitar a especilidade do médico e data escolhida | 
+|Requisito Associado | RF-004	- A aplicação deve mostrar na tela home do paciente os medicos cadastrados quando preenchidos os campos de data e e especialidade  |
+| Objetivo do Teste 	| Verificar se o usuário paciente visualiza os medicos cadastrados. |
+| Passos 	| - Acessar o navegador <br> - Informar o endereço do site  https://priorizandosaude.github.com<br> - Clicar no botão "Paciente" <br> - Preencher o campo de e-mail  <br> - Preencher o campo da senha <br> - Clicar em "Login" | - preencher a data escolhida para consulta| - preencher a especilidade do médico | 
 |Critério de Êxito | - Medicos disponiveis aparecem na tela. |
-| Caso de Teste 	| CT-06 – Efetuar login	|
-|Requisito Associado | RF-00Y	- A aplicação deve possuir opção de fazer login, sendo o login o endereço de e-mail. |
+| Caso de Teste 	| CT-06 – Renderizar agenda do médico.		|
+|Requisito Associado | RF-005	- A aplicação deve possuir opção de fazer login, sendo o login o endereço de e-mail. |
 | Objetivo do Teste 	| Verificar se o usuário consegue realizar login. |
 | Passos 	| - Acessar o navegador <br> - Informar o endereço do site  https://priorizandosaude.github.com<br> - Clicar no botão "Entrar" <br> - Preencher o campo de e-mail <br> - Preencher o campo da senha <br> - Clicar em "Login" |
 |Critério de Êxito | - O login foi realizado com sucesso. |
