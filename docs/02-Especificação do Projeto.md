@@ -67,6 +67,8 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-007| A aplicação deverá permitir que o médico tenha informações dos seus pacientes. | Baixa | 
 |RF-008| A aplicação deverá permitir que o paciente gerencie suas consultas de acordo com a disponibilidade do médico. | Alta |
 |RF-009| A aplicação deverá permitir que o usuario tenha as infomações de contato do médico. | ALTA | 
+|RF-010| A aplicação deverá permitir que o usuario faça login. | ALTA | 
+
 
 ### Requisitos não Funcionais
 
