@@ -5,7 +5,7 @@
 Definição de como o software é estruturado em termos dos componentes que fazem parte da solução e do ambiente de hospedagem da aplicação.
 
 ## Diagrama de Classes
-![image](https://user-images.githubusercontent.com/80110034/193172987-3457dcad-e907-4a52-9cef-cc664fa6138b.png)
+![image](https://user-images.githubusercontent.com/80110034/193174207-2145b2fc-a8ab-4c18-b173-a95c69ab8c98.png)
 
 
 O diagrama de classes ilustra graficamente como será a estrutura do software, e como cada uma das classes da sua estrutura estarão interligadas. Essas classes servem de modelo para materializar os objetos que executarão na memória.
@@ -16,7 +16,7 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de
 > - [O que é um diagrama de classe UML? | Lucidchart](https://www.lucidchart.com/pages/pt/o-que-e-diagrama-de-classe-uml)
 
 ## Modelo ER (Projeto Conceitual)
-![image](https://user-images.githubusercontent.com/80110034/192912227-22a333ce-77dc-4f62-a7dd-f0a7101353b9.png)
+![image](https://user-images.githubusercontent.com/80110034/193174221-b00b22a8-ef59-4122-afdb-52312d63d84a.png)
 
 O Modelo ER representa através de um diagrama como as entidades (coisas, objetos) se relacionam entre si na aplicação interativa.
 
