@@ -22,7 +22,7 @@ O projeto ira conter duas telas de login, uma destinada ao médico e outra ao pa
 
 O site terá duas telas de cadastro uma voltada ao médico e outra ao paciente com as informações cabiveis a cada um
 
-![image](https://user-images.githubusercontent.com/55036173/193158135-b915743f-a75e-4fc4-8664-18289a683f24.png)
+![image](https://user-images.githubusercontent.com/55036173/193164648-eb9bff2b-3075-49fb-8559-be4ac281875b.png)
 ![image](https://user-images.githubusercontent.com/55036173/193158162-0ee6fb2d-72e2-4da0-ade1-b472b07c4d4d.png)
 
 ## Tela Home
