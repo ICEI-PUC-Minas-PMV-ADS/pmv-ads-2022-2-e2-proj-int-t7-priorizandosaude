@@ -32,7 +32,7 @@ Por exemplo:
 | Caso de Teste 	| CT-05 – Mostrar médicos cadastrados	|
 |Requisito Associado | RF-004	- A aplicação deve mostrar na tela home do paciente os medicos cadastrados quando preenchidos os campos de data e e especialidade  |
 | Objetivo do Teste 	| Verificar se o usuário paciente visualiza os medicos cadastrados. |
-| Passos 	| - Acessar o navegador <br> - Informar o endereço do site  https://priorizandosaude.github.com<br> - Clicar no botão "Paciente" <br> - Preencher o campo de e-mail  <br> - Preencher o campo da senha <br> - Clicar em "Login" | - preencher a data escolhida para consulta| - preencher a especilidade do médico | 
+| Passos 	| - Acessar o navegador <br> - Informar o endereço do site  https://priorizandosaude.github.com<br> - Clicar no botão "Paciente" <br> - Preencher o campo de e-mail  <br> - Preencher o campo da senha <br> - Clicar em "Login" <br> - preencher a data escolhida para consulta <br> - preencher a especilidade do médico | 
 |Critério de Êxito | - Medicos disponiveis aparecem na tela. |
 | Caso de Teste 	| CT-06 – Renderizar agenda do médico.		|
 |Requisito Associado | RF-005	- A aplicação deve possuir opção de fazer login, sendo o login o endereço de e-mail. |
