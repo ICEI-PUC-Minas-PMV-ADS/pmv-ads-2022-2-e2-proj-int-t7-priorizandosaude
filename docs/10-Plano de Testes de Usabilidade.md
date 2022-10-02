@@ -6,10 +6,10 @@ Serão selecionados usuários com variáveis características e diferentes papei
 
 O teste será feito individual e por um avaliador, que anotará os resultados das ações dos usuários afim de observar possíveis falhas e ineficiências no sistema. Será possível medir o tempo para fazer cada teste, os erros e acertos cometidos e a concretização da tarefa.
 
-Testes Remotos Moderados de Usabilidade
+# Testes Remotos Moderados de Usabilidade
 Esse é o tipo de teste de usabilidade que costuma ser realizado online. Por conta disso, o investimento também é menor. Nele os participantes realizam os estudos diretamente em seus próprios dispositivos, como tablets, smartphones e notebooks.
 
-Vantagens em fazer testes de usabilidade à distância
+# Vantagens em fazer testes de usabilidade à distância
 A velocidade do desenvolvimento não é prejudicado, principalmente quando o time trabalha com ciclos contínuos de entrega, a flexibilidade do teste remoto facilita a cadência de entregas:
 
 Conseguir fazer testes de usabilidade mesmo de home office.
@@ -23,7 +23,7 @@ Histórico das alterações
 Teste de aprendizado
 O modelo adotado será o de teste de experimentação, por meio do qual, para realizar uma tarefa específica, uma pessoa que lida com a ferramenta pela primeira vez terá que começar do zero.
 
-Perguntas que a avaliação visa responder:
+# Perguntas que a avaliação visa responder:
 Os usuários conseguem transitar entre os principais módulos do sistema?
 O tempo de resposta causa erros ou frustração?
 As telas refletem o modelo conceitual do usuário?
@@ -31,7 +31,7 @@ Que obstáculos impedem que as tarefas sejam concluídas?
 Perfil do usuário:
 Serão selecionados os usuários de acordo com as personas definidas na metodologia do trabalho, sendo elas, pessoas que poosuem gostos por leitura e possuem algumas das características citadas nas personas e história de usuários como, pessoa aposentada, pessoa com deficiência visual, idosa, escritora e estudante.
 
-Procedimento de teste
+# Procedimento de teste
 Recepção do participante e explicações sobre o termo de consentimento livre e esclarecido (TCLE);
 Orientação sobre o teste: objetivo; garantia de anonimato; forma de observação (registro de áudio/vídeo/anotações);
 Teste: cenários de tarefas, o que será medido;
@@ -39,7 +39,7 @@ Debriefing do participante: entrevista pós-test, ecomentários gerais sobre o p
 Requisitos do ambinete/equipamento de teste
 Os requisitos para realização dos testes são:
 
-Conectividade de internet por dados móveis ou por banda larga;
+# Conectividade de internet por dados móveis ou por banda larga;
 Navegador da internet - Chrome, Firefox, Safari ou Edge;
 Disponibilidade do usuário em acessar ferramentas de videoconferência com compartilhamento de tela - Zoom, Google Meet, Teams, Webcam.
 Método utilizado: Observação direta, medição e Avaliação
@@ -47,7 +47,7 @@ O teste terá cinco participantes que irão avaliar o desempenho e a interação
 
 Os participantes terão como responsabilidade, analisar da forma mais eficiente um conjunto de tarefas, a eles desempenhados e fornecer feedback sobre a usabilidade da aplicação.
 
-Para cada tarefa do participante é possível medir:
+# Para cada tarefa do participante é possível medir:
 
 Eficácia
 Conclusão de tarefas sem erro
