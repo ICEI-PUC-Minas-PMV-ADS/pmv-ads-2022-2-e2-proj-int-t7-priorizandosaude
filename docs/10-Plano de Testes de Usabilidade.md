@@ -38,7 +38,7 @@ Serão selecionados os usuários de acordo com as personas definidas na metodolo
 - Teste: cenários de tarefas, o que será medido;
 - *Debriefing* do participante: entrevista pós-test, ecomentários gerais sobre o produto / preferências.
 
-### Requisitos do ambinete/equipamento de teste
+### Requisitos do ambiente/equipamento de teste
 
 Os requisitos para realização dos testes são:
 - Conectividade de internet por dados móveis ou por banda larga;
@@ -66,10 +66,9 @@ Os participantes terão como responsabilidade, analisar da forma mais eficiente 
 > Satisfação ao realizar uma tarefa<br>
 > Satisfação geral do teste
 
-Tarefas a serem observadas: Observação direta, medição e Avaliação
-Seguem as tarefas a serem executadas pelos participantes e observadas
+## Tarefas a serem observadas: Observação direta, medição e Avaliação
+### Seguem as tarefas a serem executadas pelos participantes e observadas
 
-###Segue tabela com cada caso de teste:
 Caso de teste 01  	CT 01 - Paciente cria um login pessoal
 Objetivo do teste  	Fazer o passo a passo do login corretamente
 Ações esperadas    	1) Acessar a aplicação. 2) Clicar em cadastre-se como paciente.
@@ -107,7 +106,12 @@ Critérios de êxito 	As consultas foram confirmadas ou desmarcadas com sucesso.
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-
+| **Caso de Teste** 	| **CTU-01 – Cadastro de novo usuário** 	|
+|:---:	|:---:	|
+| **Perfil** 	| Usuário (todos)	|
+| **Objetivo do Teste** 	| Avaliar a tela de cadastro de novo usuário 	|
+| **Ações necessárias** 	| 1. Acessar a primeira tela do site pelo browser;<br>2. Clicar na opção “Criar Conta”;<br>3. Preencher os campos necessários do formulário;<br>4. Navegar pelo fluxo de cadastro seguindo os passos orientados na tela e clicar em “Salvar". 	|
+|  	|  	|
 
 
 
