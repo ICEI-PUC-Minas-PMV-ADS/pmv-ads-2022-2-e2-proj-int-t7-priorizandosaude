@@ -106,11 +106,11 @@ Critérios de êxito 	As consultas foram confirmadas ou desmarcadas com sucesso.
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-| **Caso de Teste** 	| **CTU-01 – Cadastro de novo usuário** 	|
+| **Caso de Teste** 	| **CT-01 – Cadastro de novo usuário** 	|
 |:---:	|:---:	|
 | **Perfil** 	| Usuário (todos)	|
 | **Objetivo do Teste** 	| Avaliar a tela de cadastro de novo usuário 	|
-| **Ações necessárias** 	| 1. Acessar a primeira tela do site pelo browser;<br>2. Clicar na opção “Criar Conta”;<br>3. Preencher os campos necessários do formulário;<br>4. Navegar pelo fluxo de cadastro seguindo os passos orientados na tela e clicar em “Salvar". 	|
+| **Ações necessárias** 	| 1. Acessar a primeira tela do site pelo browser;<br>2. Clicar na opção “Criar Conta”;<br>3. Preencher os campos necessários do formulário;<br>4. Navegar pelo fluxo de cadastro seguindo os passos orientados na tela e clicar em “Cadastrar". 	|
 |  	|  	|
 
 
