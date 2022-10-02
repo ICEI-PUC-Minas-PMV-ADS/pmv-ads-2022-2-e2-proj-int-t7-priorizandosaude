@@ -17,52 +17,54 @@ O custo de retribuição oferecido é menor pois o entrevistado não terá custo
 O entrevistado continua no seu ambiente natural.
 Conseguir testar 100% dos projetos até pequenas melhorias, trazer pessoas até a empresa para testar uma única funcionalidade.
 Objetivos do teste:
-Descoberta de problemas
-Seu objetivo é identificar e corrigir eventuais problemas existentes na plataforma e averiguar quais são os obstáculos para a fluida utilização da aplicação.
-Histórico das alterações
-Teste de aprendizado
-O modelo adotado será o de teste de experimentação, por meio do qual, para realizar uma tarefa específica, uma pessoa que lida com a ferramenta pela primeira vez terá que começar do zero.
+- Descoberta de problemas
+  > Seu objetivo é identificar e corrigir eventuais problemas existentes na plataforma e averiguar quais são os obstáculos para a fluida utilização da aplicação.
+- Teste de aprendizado
+  > O modelo adotado será o de teste de experimentação, por meio do qual, para realizar uma tarefa específica, uma pessoa que lida com a ferramenta pela primeira vez terá que começar do zero.
 
 ### Perguntas que a avaliação visa responder:
-Os usuários conseguem transitar entre os principais módulos do sistema?
-O tempo de resposta causa erros ou frustração?
-As telas refletem o modelo conceitual do usuário?
-Que obstáculos impedem que as tarefas sejam concluídas?
-Perfil do usuário:
+- Os usuários conseguem transitar entre os principais módulos do sistema?
+- O tempo de resposta causa erros ou frustração?
+- As telas refletem o modelo conceitual do usuário?
+- Que obstáculos impedem que as tarefas sejam concluídas?
+
+
+### Perfil do usuário:
 Serão selecionados os usuários de acordo com as personas definidas na metodologia do trabalho, sendo elas, pessoas que poosuem gostos por leitura e possuem algumas das características citadas nas personas e história de usuários como, pessoa aposentada, pessoa com deficiência visual, idosa, escritora e estudante.
 
 ### Procedimento de teste
-Recepção do participante e explicações sobre o termo de consentimento livre e esclarecido (TCLE);
-Orientação sobre o teste: objetivo; garantia de anonimato; forma de observação (registro de áudio/vídeo/anotações);
-Teste: cenários de tarefas, o que será medido;
-Debriefing do participante: entrevista pós-test, ecomentários gerais sobre o produto / preferências.
-Requisitos do ambinete/equipamento de teste
-Os requisitos para realização dos testes são:
+- Recepção do participante e explicações sobre o termo de consentimento livre e esclarecido (TCLE);
+- Orientação sobre o teste: objetivo; garantia de anonimato; forma de observação (registro de áudio/vídeo/anotações);
+- Teste: cenários de tarefas, o que será medido;
+- *Debriefing* do participante: entrevista pós-test, ecomentários gerais sobre o produto / preferências.
 
-### Conectividade de internet por dados móveis ou por banda larga;
-Navegador da internet - Chrome, Firefox, Safari ou Edge;
-Disponibilidade do usuário em acessar ferramentas de videoconferência com compartilhamento de tela - Zoom, Google Meet, Teams, Webcam.
-Método utilizado: Observação direta, medição e Avaliação
+### Requisitos do ambinete/equipamento de teste
+
+Os requisitos para realização dos testes são:
+- Conectividade de internet por dados móveis ou por banda larga;
+- Navegador da internet - Chrome, Firefox, Safari ou Edge;
+- Disponibilidade do usuário em acessar ferramentas de videoconferência com compartilhamento de tela - Zoom, Google Meet, Teams, Webcam.
+
+
+### Método utilizado: Observação direta, medição e Avaliação
 O teste terá cinco participantes que irão avaliar o desempenho e a interação do site, de acordo com as necessidades que correspondem com a finalidade da aplicação e com sugestões de melhorias.
 
 Os participantes terão como responsabilidade, analisar da forma mais eficiente um conjunto de tarefas, a eles desempenhados e fornecer feedback sobre a usabilidade da aplicação.
 
 ### Para cada tarefa do participante é possível medir:
 
-Eficácia
-Conclusão de tarefas sem erro
-Conclusão de tarefa com erro (não crítico)
-Erros críticos
-Quantidade de cliques ou toques errados
-Freqüência de pedido de ajuda
-
-Eficiência
-Tempo de execução da tarefa
-Tempo utilizado na primeira tentativa x segunda tentativa
-
-Satisfação - serão avaliados através de escala 1 a 5
-Satisfação ao realizar uma tarefa
-Satisfação geral do teste
+- Eficácia
+> Conclusão de tarefas sem erro<br>
+> Conclusão de tarefa com erro (não crítico)<br>
+> Erros críticos<br>
+> Quantidade de cliques ou toques errados<br>
+> Freqüência de pedido de ajuda<br>
+- Eficiência
+> Tempo de execução da tarefa<br>
+> Tempo utilizado na primeira tentativa x segunda tentativa<br>
+- Satisfação - serão avaliados através de escala 1 a 5
+> Satisfação ao realizar uma tarefa<br>
+> Satisfação geral do teste
 
 Tarefas a serem observadas: Observação direta, medição e Avaliação
 Seguem as tarefas a serem executadas pelos participantes e observadas
@@ -101,6 +103,10 @@ Objetivo do teste  	Paciente realiza alteração/cancelamento na sua consulta
 Ações esperadas    	1) Acessar a aplicação. 2) Clicar em gerenciar consultas.
  3) Clicar em alterar ou cancelar consulta. 4) Confirmar alteração ou desmarcação de consulta.
 Critérios de êxito 	As consultas foram confirmadas ou desmarcadas com sucesso.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
 
 
 
