@@ -69,49 +69,42 @@ Os participantes terão como responsabilidade, analisar da forma mais eficiente 
 ## Tarefas a serem observadas: Observação direta, medição e Avaliação
 ### Seguem as tarefas a serem executadas pelos participantes e observadas
 
-Caso de teste 01  	CT 01 - Paciente cria um login pessoal
-Objetivo do teste  	Fazer o passo a passo do login corretamente
-Ações esperadas    	1) Acessar a aplicação. 2) Clicar em cadastre-se como paciente.
- 3) Preencher todos os requisitos pedidos na aplicação. ex: nome completo, data de nascimento, CPF, RG. 4) Confirmar cadastro.
-Critérios de êxito 	Um novo login foi criado pelo paciente
-
-Caso de teste 02   	CT 02 – Médico cria seu login pessoal
-Objetivo do teste  	Fazer o passo a passo do login corretamente
-Ações esperadas    	1) Acessar a aplicação. 2) Clicar em cadastre-se como paciente.
- 3) Preencher todos os requisitos pedidos na aplicação. ex: nome completo, data de nascimento, RG, CPF, área de atuação, disponibilidade. 4) Confirmar cadastro.
-Critérios de êxito 	Um novo login foi criado pelo médico.
-
-
-
-Caso de teste 03   	CT 03 - Paciente abrir agenda dos médicos
-Objetivo do teste  	Verificar se o usuário efetua a abertura de comanda corretamente
-Ações esperadas    	1) Acessar a aplicação. 2) Clicar em abrir médicos disponíveis.
- 3) Selecionar especialidade do médico. 4) Marcar um horário para consulta
-Critérios de êxito 	Uma nova consulta será aberta pelo usuário.
-
-
-Caso de teste 04  	CT 04 - Paciente abrir agenda dos médicos
-Objetivo do teste  	Verificar se o médico efetua a abertura de sua agenda corretamente e confirma ou desmarca consultas
-Ações esperadas    	1) Acessar a aplicação. 2) Clicar em abrir agenda.
- 3) Verificar consultas sobre aquele dia específico. 4) Confirmar ou desmarcar consulta
-Critérios de êxito 	As consultas foram confirmadas ou desmarcadas com sucesso.
-
-
-Caso de teste 05  	CT 05 – Paciente conseguir alterar ou desmarcar consulta
-Objetivo do teste  	Paciente realiza alteração/cancelamento na sua consulta
-Ações esperadas    	1) Acessar a aplicação. 2) Clicar em gerenciar consultas.
- 3) Clicar em alterar ou cancelar consulta. 4) Confirmar alteração ou desmarcação de consulta.
-Critérios de êxito 	As consultas foram confirmadas ou desmarcadas com sucesso.
-
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-| **Caso de Teste** 	| **CT-01 – Cadastro de novo usuário** 	|
+| **Caso de Teste** 	| **CT-01 – Cadastro de novo paciente** 	|
 |:---:	|:---:	|
 | **Perfil** 	| Usuário (todos)	|
-| **Objetivo do Teste** 	| Avaliar a tela de cadastro de novo usuário 	|
-| **Ações necessárias** 	| 1. Acessar a primeira tela do site pelo browser;<br>2. Clicar na opção “Criar Conta”;<br>3. Preencher os campos necessários do formulário;<br>4. Navegar pelo fluxo de cadastro seguindo os passos orientados na tela e clicar em “Cadastrar". 	|
+| **Objetivo do Teste** 	| Avaliar a tela de cadastro de novo paciente	|
+| **Ações necessárias** 	| 1. Acessar a primeira tela do site pelo browser;<br>2. Clicar na opção “Criar Conta Como Paciente”;<br>3. Preencher os campos necessários do formulário;<br>4. Navegar pelo fluxo de cadastro seguindo os passos orientados na tela e clicar em “Cadastrar". 	|
 |  	|  	|
 
+| **Caso de Teste** 	| **CT-02 – Cadastro de novo médico** 	|
+|:---:	|:---:	|
+| **Perfil** 	| Usuário (médicos)	|
+| **Objetivo do Teste** 	| Avaliar a tela de cadastro de novo médico	|
+| **Ações necessárias** 	| 1. Acessar a primeira tela do site pelo browser;<br>2. Clicar na opção “Criar Conta Como Médico”;<br>3. Preencher os campos necessários do formulário;<br>4. Navegar pelo fluxo de cadastro seguindo os passos orientados na tela e clicar em “Cadastrar". 	|
+|  	|  	|
+
+| **Caso de Teste** 	| **CT-03 – Paciente abrir agenda dos médicos** 	|
+|:---:	|:---:	|
+| **Perfil** 	| Usuário (pacientes)	|
+| **Objetivo do Teste** 	| Avaliar a tela de agenda dos médicos	|
+| **Ações necessárias** 	| 1. Acessar a primeira tela do site pelo browser;<br>2. Clicar na opção “Entrar como paciente” se já for cadastrado;<br>3. Clicar em agendar consulta;<br>4. Médicos disponíveis. 	|
+|  	|  	|
+
+| **Caso de Teste** 	| **CT-04 – Médico abrir sua agenda de consulta** 	|
+|:---:	|:---:	|
+| **Perfil** 	| Usuário (médicos)	|
+| **Objetivo do Teste** 	| Avaliar a tela de consultas dos médicos	|
+| **Ações necessárias** 	| 1. Acessar a primeira tela do site pelo browser;<br>2. Clicar na opção “Entrar como Médico” se já for cadastrado;<br>3. Clicar em consultas marcadas no dia específico;<br>4. Horários de atendimento. 	|
+|  	|  	|
+
+| **Caso de Teste** 	| **CT-05 – Paciente conseguir alterar ou desmarcar consulta** 	|
+|:---:	|:---:	|
+| **Perfil** 	| Usuário (pacientes)	|
+| **Objetivo do Teste** 	| Avaliar a tela de consultas dos médicos	|
+| **Ações necessárias** 	| 1. Acessar a primeira tela do site pelo browser;<br>2. Clicar na opção “Entrar como Paciente” se já for cadastrado;<br>3. Clicar em visualizar consultas marcadas;<br>4. Clicar em confirmar consulta ou desmarcar consulta.<br>5. "Consulta confirmada com sucesso" ou "consulta cancelada com sucesso". 	|
+|  	|  	|
 
 
