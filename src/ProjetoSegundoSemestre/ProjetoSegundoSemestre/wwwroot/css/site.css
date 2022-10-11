@@ -4,18 +4,26 @@ for details on configuring this project to bundle and minify static web assets. 
 a.navbar-brand {
   white-space: normal;
   text-align: center;
-  word-break: break-all;
+  /*word-break: break-all;*/
 }
 
 /* Provide sufficient contrast against white background */
-a {
+/*a {
   color: #0366d6;
-}
+}*/
 
 .btn-primary {
   color: #fff;
   background-color: #1b6ec2;
   border-color: #1861ac;
+}
+
+.cabecalho {
+    margin: 0 10% 0 10%;
+}
+
+.navbar {
+    background-color: #F7F9F9;
 }
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
@@ -27,12 +35,17 @@ a {
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
-  font-size: 14px;
+    font-size: 14px;
+}
+
+body {
+    background-color: #F7F9F9;
 }
 @media (min-width: 768px) {
   html {
     font-size: 16px;
   }
+
 }
 
 .border-top {
@@ -40,10 +53,6 @@ html {
 }
 .border-bottom {
   border-bottom: 1px solid #e5e5e5;
-}
-
-.box-shadow {
-  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
 }
 
 button.accept-policy {
@@ -62,10 +71,100 @@ body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
 }
+
 .footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  white-space: nowrap;
-  line-height: 60px; /* Vertically center the text there */
+    position: absolute;
+    height: 15%;
+    bottom: 0;
+    background-color: #1971C2;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px;
+}
+
+.footer p {
+    color: #FFFAF1;
+}
+
+.footer-2 {
+    margin: 0 10% 0 10%;
+}
+
+.footer-2 .social-media {
+    margin: auto 0 auto 0;   
+}
+
+.footer-2 .social-media img {
+    margin-right: 20px;
+}
+
+.footer-2 .text {
+    margin: auto 0 auto 0;
+}
+    /*
+    Create Médico
+*/
+    div.cabecalho h4 {
+        color: #1971C2;
+        font-size: 25px;
+        letter-spacing: 0.08em;
+    }
+
+div.cabecalho h2 {
+    font-size: 52px;
+    font-weight: 600;
+    line-height: 52px;
+}
+
+form {
+    height: 800px;
+}
+
+form:first-child {
+    margin-right: 300px;
+}
+
+div.form-group {
+    margin-top: 20px;
+}
+
+.block-2 {
+    margin-left: 50%;
+}
+
+div.form-group label {
+    font-size: 16px;
+    color: #1971C2;
+    font-weight: 700;
+    letter-spacing: 0.08em
+}
+
+    div.form-group input {
+        width: 200%;
+        border: 1px solid rgba(25, 113, 194, .5);
+        margin-top: 10px;
+        border-radius: 10px;
+    }
+
+@media (max-width: 768px) {
+    div.form-group input {
+        width: 100%;
+    }
+}
+
+div.buttons {
+    position: absolute;
+    bottom: -50px;
+    height: 30%;
+    left: 20%;
+}
+
+div.buttons .btn {
+    width: 147px;
+    border-radius: 10px;
+}
+
+#defaultCheck1 {
+    /*margin-top: 40px;*/
+    width: 3%;
 }

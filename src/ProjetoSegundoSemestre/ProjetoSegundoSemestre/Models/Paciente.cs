@@ -13,6 +13,7 @@ namespace ProjetoSegundoSemestre.Models
         public string Senha { get; set; }
 
         [Required(ErrorMessage = "Obrigatório informar o Email!")]
+        [EmailAddress]
         public string Email { get; set; }
 
 
