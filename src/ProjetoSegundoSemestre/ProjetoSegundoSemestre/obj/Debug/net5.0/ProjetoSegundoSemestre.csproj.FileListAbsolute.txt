@@ -433,3 +433,4 @@ C:\ProjetosFaculdade\pmv-ads-2022-2-e2-proj-int-t7-priorizandosaude\src\ProjetoS
 C:\ProjetosFaculdade\pmv-ads-2022-2-e2-proj-int-t7-priorizandosaude\src\ProjetoSegundoSemestre\ProjetoSegundoSemestre\obj\Debug\net5.0\Razor\Views\Medicos\Details.cshtml.g.cs
 C:\ProjetosFaculdade\pmv-ads-2022-2-e2-proj-int-t7-priorizandosaude\src\ProjetoSegundoSemestre\ProjetoSegundoSemestre\obj\Debug\net5.0\Razor\Views\Medicos\Edit.cshtml.g.cs
 C:\ProjetosFaculdade\pmv-ads-2022-2-e2-proj-int-t7-priorizandosaude\src\ProjetoSegundoSemestre\ProjetoSegundoSemestre\obj\Debug\net5.0\Razor\Views\Medicos\Index.cshtml.g.cs
+C:\ProjetosFaculdade\pmv-ads-2022-2-e2-proj-int-t7-priorizandosaude\src\ProjetoSegundoSemestre\ProjetoSegundoSemestre\obj\Debug\net5.0\Razor\Views\Medicos\Login.cshtml.g.cs

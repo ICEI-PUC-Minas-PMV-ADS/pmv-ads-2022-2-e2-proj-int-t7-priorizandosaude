@@ -64,6 +64,27 @@ namespace ProjetoSegundoSemestre.Controllers
             }
             return View(medico);
         }
+        public async Task<IActionResult> Login()
+        {
+            return View();
+        }
+        [HttpPost]
+        public async Task<IActionResult> Login([Bind("Senha,Email")] Medico medicoModel)
+        {
+            var medico = await _context.Medicos.Where(x  => x.Email == medicoModel.Email).FirstOrDefaultAsync();
+
+            if(medico == null)  return NotFound();
+
+            if(medico.Senha.Equals(medicoModel.Senha))
+            {
+                //Logado
+                return View();
+            }
+            else
+                return View();
+        }
+                
+
 
         // GET: Medicos/Edit/5
         public async Task<IActionResult> Edit(Guid? id)
