@@ -6,6 +6,10 @@
 
 `2º semestre`
 
+
+<img src='https://user-images.githubusercontent.com/55036173/195727967-4896ae0e-363f-4b09-8132-25bc1362c113.png'/>
+
+
 Priorizando a Saúde é uma aplicação que pretende facilitar o processo de marcação de consultas. As pessoas perdem bastante tempo ligando para uma clinica para agendar uma consulta/exame, o que o leva muitas vezes a procrastinação, podendo até ocasionar em um agravamento na saúde. Com o site priorizando saúde os pacientes podem agendar sua consulta online, melhorando o sistema de marcação e o tornando mais rápido e eficaz para o paciente além de auxiliar na organização da agenda do médico.
 
 ## Integrantes
