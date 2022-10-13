@@ -12,11 +12,14 @@ namespace ProjetoSegundoSemestre.Models
         [DataType(DataType.Password)]
         public string Senha { get; set; }
 
+
         [Required(ErrorMessage = "Obrigatório informar o Email!")]
+        [DataType(DataType.EmailAddress)]
         public string Email { get; set; }
 
 
         [Required(ErrorMessage = "Obrigatório informar o Telefone!")]
+        [DataType(DataType.PhoneNumber)]
         public int Telefone { get; set; }
 
 

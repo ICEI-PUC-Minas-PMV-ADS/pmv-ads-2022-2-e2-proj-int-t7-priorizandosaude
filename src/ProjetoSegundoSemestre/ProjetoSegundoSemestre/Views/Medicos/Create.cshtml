@@ -4,59 +4,74 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
-
-<h4>Medico</h4>
-<hr />
+<div class="d-flex flex-column align-items-center cabecalho">
+    <h4>BEM-VINDOS AO ONMEDICAL DO MÉDICO</h4>
+    <h2>Cadastre-se</h2>
+</div
 <div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
+    <div class="col-md-12">
+        <form class="d-flex justify-content-start" asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Nome" class="control-label"></label>
-                <input asp-for="Nome" class="form-control" />
-                <span asp-validation-for="Nome" class="text-danger"></span>
+
+            <div>
+                <div class="form-group">
+                    <label asp-for="Nome" class="control-label">Nome Completo</label>
+                    <input asp-for="Nome" class="form-control" />
+                    <span asp-validation-for="Nome" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Especialidade" class="control-label"></label>
+                    <select asp-for="Especialidade"   asp-items="Html.GetEnumSelectList<Especialidade>()" class="form-control"></select>
+                    <span asp-validation-for="Especialidade" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="CRM" class="control-label"></label>
+                    <input asp-for="CRM" class="form-control" />
+                    <span asp-validation-for="CRM" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Endereco" class="control-label"></label>
+                    <input asp-for="Endereco" class="form-control" />
+                    <span asp-validation-for="Endereco" class="text-danger"></span>
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="Senha" class="control-label"></label>
-                <input asp-for="Senha" class="form-control" />
-                <span asp-validation-for="Senha" class="text-danger"></span>
+
+            <div class="block-2">
+                <div class="form-group">
+                    <label asp-for="Email" class="control-label"></label>
+                    <input asp-for="Email" class="form-control" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Telefone" class="control-label"></label>
+                    <input asp-for="Telefone" class="form-control" />
+                    <span asp-validation-for="Telefone" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Senha" class="control-label"></label>
+                    <input asp-for="Senha" class="form-control" />
+                    <span asp-validation-for="Senha" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Senha" class="control-label">Confirme a Senha</label>
+                    <input asp-for="Senha" class="form-control" />
+                    <span asp-validation-for="Senha" class="text-danger"></span>
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="Email" class="control-label"></label>
-                <input asp-for="Email" class="form-control" />
-                <span asp-validation-for="Email" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Telefone" class="control-label"></label>
-                <input asp-for="Telefone" class="form-control" />
-                <span asp-validation-for="Telefone" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Especialidade" class="control-label"></label>
-                <select asp-for="Especialidade"   asp-items="Html.GetEnumSelectList<Especialidade>()" class="form-control"></select>
-                <span asp-validation-for="Especialidade" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="CRM" class="control-label"></label>
-                <input asp-for="CRM" class="form-control" />
-                <span asp-validation-for="CRM" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Endereco" class="control-label"></label>
-                <input asp-for="Endereco" class="form-control" />
-                <span asp-validation-for="Endereco" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+              
+            <div class="form-group d-flex flex-column align-items-center buttons">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                        Concorde em compartilhar as informações acima com o ONMEDICAL
+                    </label>
+                </div>
+                <input type="submit" value="Cadastrar" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
