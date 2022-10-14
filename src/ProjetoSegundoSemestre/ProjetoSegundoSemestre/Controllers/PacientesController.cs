@@ -1,33 +1,33 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Security.Claims;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using ProjetoSegundoSemestre.Data;
 using ProjetoSegundoSemestre.Models;
-using System;
-using System.Linq;
-using System.Threading.Tasks;
-using BCrypt.Net;
-using System.Security.Claims;
-using System.Collections.Generic;
-using Microsoft.AspNetCore.Authentication;
 
 namespace ProjetoSegundoSemestre.Controllers
 {
-    public class MedicosController : Controller
+    public class PacientesController : Controller
     {
         private readonly ContextDBPriorizandoSaude _context;
 
-        public MedicosController(ContextDBPriorizandoSaude context)
+        public PacientesController(ContextDBPriorizandoSaude context)
         {
             _context = context;
         }
 
-        // GET: Medicos
+        // GET: Pacientes
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Medicos.ToListAsync());
+            return View(await _context.Pacientes.ToListAsync());
         }
 
-        // GET: Medicos/Details/5
+        // GET: Pacientes/Details/5
         public async Task<IActionResult> Details(Guid? id)
         {
             if (id == null)
@@ -35,65 +35,66 @@ namespace ProjetoSegundoSemestre.Controllers
                 return NotFound();
             }
 
-            var medico = await _context.Medicos
+            var paciente = await _context.Pacientes
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (medico == null)
+            if (paciente == null)
             {
                 return NotFound();
             }
 
-            return View(medico);
+            return View(paciente);
         }
 
-        // GET: Medicos/Create
+        // GET: Pacientes/Create
         public IActionResult Create()
         {
             return View();
         }
 
+        // POST: Pacientes/Create
+        // To protect from overposting attacks, enable the specific properties you want to bind to.
+        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Nome,Senha,Email,Telefone,Especialidade,CRM,Endereco,Id")] Medico medico)
+        public async Task<IActionResult> Create([Bind("Nome,Senha,Email,Telefone,CPF,Id")] Paciente paciente)
         {
             if (ModelState.IsValid)
             {
-                medico.Senha = EncriptografarSenha(medico.Senha);
-                _context.Add(medico);
+                paciente.Senha = EncriptografarSenha(paciente.Senha);
+                _context.Add(paciente);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(medico);
+            return View(paciente);
         }
         public async Task<IActionResult> Login()
         {
             return View();
         }
-
-
         [HttpPost]
-        public async Task<IActionResult> Login([Bind("Senha,Email")] Medico medicoModel)
+        public async Task<IActionResult> Login([Bind("Senha,Email")] Paciente pacienteModel)
         {
-            var medico = await _context.Medicos.Where(x => x.Email == medicoModel.Email).FirstOrDefaultAsync();
+            var paciente = await _context.Pacientes.Where(x => x.Email == pacienteModel.Email).FirstOrDefaultAsync();
 
-            if(medico == null)
+            if (paciente == null)
             {
                 ViewBag.Message = "Cadastro não encontrado";
                 return View();
             }
 
-            
-            bool senhaOK = BCrypt.Net.BCrypt.Verify(medicoModel.Senha, medico.Senha);
 
-            if(senhaOK)
+            bool senhaOK = BCrypt.Net.BCrypt.Verify(pacienteModel.Senha, paciente.Senha);
+
+            if (senhaOK)
             {
                 var claims = new List<Claim>
                 {
-                    new Claim(ClaimTypes.Name, medico.Nome),
-                    new Claim(ClaimTypes.NameIdentifier, medico.Email),
-                    new Claim(ClaimTypes.Role, "Medico")
+                    new Claim(ClaimTypes.Name, paciente.Nome),
+                    new Claim(ClaimTypes.NameIdentifier, paciente.Email),
+                    new Claim(ClaimTypes.Role, "Paciente")
                 };
 
-                var userIdentity = new ClaimsIdentity(claims,"login");
+                var userIdentity = new ClaimsIdentity(claims, "login");
 
                 ClaimsPrincipal principal = new ClaimsPrincipal(userIdentity);
 
@@ -115,6 +116,7 @@ namespace ProjetoSegundoSemestre.Controllers
             }
         }
 
+
         public async Task<IActionResult> Logout()
         {
             await HttpContext.SignOutAsync();
@@ -126,6 +128,8 @@ namespace ProjetoSegundoSemestre.Controllers
             return Redirect("~/Shared/AcessDanied.cshtml");
         }
 
+
+        // GET: Pacientes/Edit/5
         public async Task<IActionResult> Edit(Guid? id)
         {
             if (id == null)
@@ -133,20 +137,22 @@ namespace ProjetoSegundoSemestre.Controllers
                 return NotFound();
             }
 
-            var medico = await _context.Medicos.FindAsync(id);
-
-            if (medico == null)
+            var paciente = await _context.Pacientes.FindAsync(id);
+            if (paciente == null)
             {
                 return NotFound();
             }
-            return View(medico);
+            return View(paciente);
         }
 
+        // POST: Pacientes/Edit/5
+        // To protect from overposting attacks, enable the specific properties you want to bind to.
+        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(Guid id, [Bind("Nome,Senha,Email,Telefone,Especialidade,CRM,Endereco,Id")] Medico medico)
+        public async Task<IActionResult> Edit(Guid id, [Bind("Nome,Senha,Email,Telefone,CPF,Id")] Paciente paciente)
         {
-            if (id != medico.Id)
+            if (id != paciente.Id)
             {
                 return NotFound();
             }
@@ -155,13 +161,13 @@ namespace ProjetoSegundoSemestre.Controllers
             {
                 try
                 {
-                    medico.Senha = EncriptografarSenha(medico.Senha);
-                    _context.Update(medico);
+                    paciente.Senha = EncriptografarSenha(paciente.Senha);
+                    _context.Update(paciente);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!MedicoExists(medico.Id))
+                    if (!PacienteExists(paciente.Id))
                     {
                         return NotFound();
                     }
@@ -172,10 +178,10 @@ namespace ProjetoSegundoSemestre.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(medico);
+            return View(paciente);
         }
 
-        // GET: Medicos/Delete/5
+        // GET: Pacientes/Delete/5
         public async Task<IActionResult> Delete(Guid? id)
         {
             if (id == null)
@@ -183,36 +189,34 @@ namespace ProjetoSegundoSemestre.Controllers
                 return NotFound();
             }
 
-            var medico = await _context.Medicos
+            var paciente = await _context.Pacientes
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (medico == null)
+            if (paciente == null)
             {
                 return NotFound();
             }
 
-            return View(medico);
+            return View(paciente);
         }
 
-        // POST: Medicos/Delete/5
+        // POST: Pacientes/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(Guid id)
         {
-            var medico = await _context.Medicos.FindAsync(id);
-            _context.Medicos.Remove(medico);
+            var paciente = await _context.Pacientes.FindAsync(id);
+            _context.Pacientes.Remove(paciente);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool MedicoExists(Guid id)
+        private bool PacienteExists(Guid id)
         {
-            return _context.Medicos.Any(e => e.Id == id);
+            return _context.Pacientes.Any(e => e.Id == id);
         }
-
         private string EncriptografarSenha(string senha)
         {
             return BCrypt.Net.BCrypt.HashPassword(senha);
         }
-
     }
 }

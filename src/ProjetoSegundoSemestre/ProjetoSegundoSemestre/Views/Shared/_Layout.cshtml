@@ -28,7 +28,40 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Medicos" asp-action="Index">Medicos</a>
+                        </li> 
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Pacientes" asp-action="Index">Pacientes</a>
                         </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <li class="nav-item">
+                                Olá, @User.Identity.Name
+                            </li>
+                            @if(User.Claims.Any(x => x.Value == "Medico"))
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Medicos" asp-action="Logout">Logout</a>
+                                </li>
+                            }
+                            else
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Pacientes" asp-action="Logout">Logout</a>
+                                </li>
+                                
+                            }
+
+                        }
+                        else
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Medicos" asp-action="Login">Medicos</a>
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Pacientes" asp-action="Login">Pacientes</a>
+                            </li>
+
+                        }
                     </ul>
                 </div>
             </div>
