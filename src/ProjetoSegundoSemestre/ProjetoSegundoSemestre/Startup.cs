@@ -3,9 +3,11 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.Extensions.Hosting;
 using ProjetoSegundoSemestre.Data;
 using System;
@@ -34,12 +36,18 @@ namespace ProjetoSegundoSemestre
             services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
                 .AddCookie(options =>
                 {
-                    options.AccessDeniedPath = "/AcessDenied";
+                    options.AccessDeniedPath = "/Home";
                     options.LoginPath = "/";
                     options.Cookie.SameSite = SameSiteMode.None;
                     options.Cookie.SecurePolicy = CookieSecurePolicy.Always;
                     options.Cookie.IsEssential = true; 
                 });
+
+            services.TryAddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+
+            // Or you can also register as follows
+
+            services.AddHttpContextAccessor();
 
             services.AddSession(options =>
             {
@@ -47,6 +55,7 @@ namespace ProjetoSegundoSemestre
                 options.Cookie.SecurePolicy = CookieSecurePolicy.Always;
                 options.Cookie.IsEssential = true;
             });
+
 
         }
 

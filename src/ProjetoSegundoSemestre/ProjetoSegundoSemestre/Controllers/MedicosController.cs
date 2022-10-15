@@ -9,9 +9,11 @@ using BCrypt.Net;
 using System.Security.Claims;
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ProjetoSegundoSemestre.Controllers
 {
+    [Authorize]
     public class MedicosController : Controller
     {
         private readonly ContextDBPriorizandoSaude _context;
@@ -22,12 +24,14 @@ namespace ProjetoSegundoSemestre.Controllers
         }
 
         // GET: Medicos
+        [Authorize(Roles = "Medico")]
         public async Task<IActionResult> Index()
         {
             return View(await _context.Medicos.ToListAsync());
         }
 
         // GET: Medicos/Details/5
+        [Authorize(Roles = "Medico")]
         public async Task<IActionResult> Details(Guid? id)
         {
             if (id == null)
@@ -46,6 +50,7 @@ namespace ProjetoSegundoSemestre.Controllers
         }
 
         // GET: Medicos/Create
+        [AllowAnonymous]
         public IActionResult Create()
         {
             return View();
@@ -53,6 +58,7 @@ namespace ProjetoSegundoSemestre.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [AllowAnonymous]
         public async Task<IActionResult> Create([Bind("Nome,Senha,Email,Telefone,Especialidade,CRM,Endereco,Id")] Medico medico)
         {
             if (ModelState.IsValid)
@@ -60,72 +66,13 @@ namespace ProjetoSegundoSemestre.Controllers
                 medico.Senha = EncriptografarSenha(medico.Senha);
                 _context.Add(medico);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction("Login");
             }
             return View(medico);
         }
-        public async Task<IActionResult> Login()
-        {
-            return View();
-        }
 
 
-        [HttpPost]
-        public async Task<IActionResult> Login([Bind("Senha,Email")] Medico medicoModel)
-        {
-            var medico = await _context.Medicos.Where(x => x.Email == medicoModel.Email).FirstOrDefaultAsync();
-
-            if(medico == null)
-            {
-                ViewBag.Message = "Cadastro não encontrado";
-                return View();
-            }
-
-            
-            bool senhaOK = BCrypt.Net.BCrypt.Verify(medicoModel.Senha, medico.Senha);
-
-            if(senhaOK)
-            {
-                var claims = new List<Claim>
-                {
-                    new Claim(ClaimTypes.Name, medico.Nome),
-                    new Claim(ClaimTypes.NameIdentifier, medico.Email),
-                    new Claim(ClaimTypes.Role, "Medico")
-                };
-
-                var userIdentity = new ClaimsIdentity(claims,"login");
-
-                ClaimsPrincipal principal = new ClaimsPrincipal(userIdentity);
-
-                var props = new AuthenticationProperties
-                {
-                    AllowRefresh = true,
-                    ExpiresUtc = DateTime.UtcNow.ToLocalTime().AddDays(7),
-                    IsPersistent = true
-                };
-
-                await HttpContext.SignInAsync(principal, props);
-
-                return Redirect("/");
-            }
-            else
-            {
-                ViewBag.Message = "Cadastro não encontrado!";
-                return View();
-            }
-        }
-
-        public async Task<IActionResult> Logout()
-        {
-            await HttpContext.SignOutAsync();
-
-            return Redirect("/");
-        }
-        public IActionResult AccessDenied()
-        {
-            return Redirect("~/Shared/AcessDanied.cshtml");
-        }
-
+        [Authorize(Roles = "Medico")]
         public async Task<IActionResult> Edit(Guid? id)
         {
             if (id == null)
@@ -142,6 +89,7 @@ namespace ProjetoSegundoSemestre.Controllers
             return View(medico);
         }
 
+        [Authorize(Roles = "Medico")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(Guid id, [Bind("Nome,Senha,Email,Telefone,Especialidade,CRM,Endereco,Id")] Medico medico)
@@ -175,6 +123,7 @@ namespace ProjetoSegundoSemestre.Controllers
             return View(medico);
         }
 
+        [Authorize(Roles = "Medico")]
         // GET: Medicos/Delete/5
         public async Task<IActionResult> Delete(Guid? id)
         {
@@ -193,6 +142,7 @@ namespace ProjetoSegundoSemestre.Controllers
             return View(medico);
         }
 
+        [Authorize(Roles = "Medico")]
         // POST: Medicos/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
@@ -209,10 +159,73 @@ namespace ProjetoSegundoSemestre.Controllers
             return _context.Medicos.Any(e => e.Id == id);
         }
 
+        #region Login Médico
+
+        [AllowAnonymous]
+        public IActionResult Login()
+        {
+            return View();
+        }
+
+        [AllowAnonymous]
+        [HttpPost]
+        public async Task<IActionResult> Login([Bind("Senha,Email")] Medico medicoModel)
+        {
+            var medico = await _context.Medicos.Where(x => x.Email == medicoModel.Email).FirstOrDefaultAsync();
+
+            if (medico == null)
+            {
+                ViewBag.Message = "Cadastro não encontrado";
+                return View();
+            }
+
+
+            bool senhaOK = BCrypt.Net.BCrypt.Verify(medicoModel.Senha, medico.Senha);
+
+            if (senhaOK)
+            {
+                var claims = new List<Claim>
+                {
+                    new Claim(ClaimTypes.Name, medico.Nome),
+                    new Claim(ClaimTypes.NameIdentifier, medico.Email),
+                    new Claim(ClaimTypes.Role, "Medico")
+                };
+
+                var userIdentity = new ClaimsIdentity(claims, "login");
+
+                ClaimsPrincipal principal = new ClaimsPrincipal(userIdentity);
+
+                var props = new AuthenticationProperties
+                {
+                    AllowRefresh = true,
+                    ExpiresUtc = DateTime.UtcNow.ToLocalTime().AddDays(7),
+                    IsPersistent = true
+                };
+
+                await HttpContext.SignInAsync(principal, props);
+
+                return Redirect("/");
+            }
+            else
+            {
+                ViewBag.Message = "Cadastro não encontrado!";
+                return View();
+            }
+        }
+
+        [AllowAnonymous]
+        public async Task<IActionResult> Logout()
+        {
+            await HttpContext.SignOutAsync();
+
+            return Redirect("/");
+        }
         private string EncriptografarSenha(string senha)
         {
             return BCrypt.Net.BCrypt.HashPassword(senha);
         }
 
+        #endregion
     }
+
 }
