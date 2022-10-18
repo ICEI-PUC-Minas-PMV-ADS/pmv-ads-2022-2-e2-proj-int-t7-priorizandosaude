@@ -16,11 +16,20 @@ O azul tras a sensação de tranquilidade serenidade e harmonia.
 
 
 ### Font-Family
-A escolha da fonte DM sans tem como objetivo tonar legivel todo o site, passando  a ideia de seriedade e comprometimento ao usuário e tornando clara a compreensão do mesmo.
+A escolha da fonte DM sans tem como objetivo tonar legivel todo o site, passando  a ideia de seriedade e comprometimento ao usuário e tornando clara a compreensão do mesmo. A fonte  escolhida está disponível gratuitamente em  [Google Fontes](https://fonts.google.com/about)
 
 ![image](https://user-images.githubusercontent.com/55036173/196520912-767ef8d3-cd38-44e3-bbdb-5182e618dffb.png)
 
 
+### Icones
+Os icones seguem o padrão de cor do site e também deixando claro a representação dos mesmos.
+
+![image](https://user-images.githubusercontent.com/55036173/196525019-033cf04f-fe9a-4f5b-ae0f-2197629d9c1b.png)
+
+### Botões
+
+Os botões utilizados foram pensandos com a ideia de passar naturalidade ao site, e um efeito hover para dar feedback com a interação do usuário, pois é natural do usuário agir e esperar uma reação
+![image](https://user-images.githubusercontent.com/55036173/196526828-904168ea-5a4e-4354-839f-0b7d09e5f304.png)
 
 ### Landing Page
 O site iniciará com uma landing page descrevendo os serviços prestados, com opçoes de acesso ao medico e ao paciente
