@@ -1,4 +1,4 @@
-﻿@model  ProjetoSegundoSemestre.Models.Medico
+﻿@model ProjetoSegundoSemestre.Models.Paciente
 
 @{
     ViewData["Title"] = "Edit";
@@ -6,7 +6,7 @@
 
 <h1>Edit</h1>
 
-<h4>Medico</h4>
+<h4>Paciente</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -33,19 +33,9 @@
                 <span asp-validation-for="Telefone" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Especialidade" class="control-label"></label>
-                <select asp-for="Especialidade" asp-items="Html.GetEnumSelectList<Especialidade>()" class="form-control"></select>
-                <span asp-validation-for="Especialidade" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="CRM" class="control-label"></label>
-                <input asp-for="CRM" class="form-control" />
-                <span asp-validation-for="CRM" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Endereco" class="control-label"></label>
-                <input asp-for="Endereco" class="form-control" />
-                <span asp-validation-for="Endereco" class="text-danger"></span>
+                <label asp-for="CPF" class="control-label"></label>
+                <input asp-for="CPF" class="form-control" />
+                <span asp-validation-for="CPF" class="text-danger"></span>
             </div>
             <input type="hidden" asp-for="Id" />
             <div class="form-group">
@@ -59,6 +49,3 @@
     <a asp-action="Index">Back to List</a>
 </div>
 
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}
