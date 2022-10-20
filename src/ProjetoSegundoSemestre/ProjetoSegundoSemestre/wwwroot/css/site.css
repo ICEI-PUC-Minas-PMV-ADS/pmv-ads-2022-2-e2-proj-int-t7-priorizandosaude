@@ -48,30 +48,6 @@ body {
 
 }
 
-.border-top {
-  border-top: 1px solid #e5e5e5;
-}
-.border-bottom {
-  border-bottom: 1px solid #e5e5e5;
-}
-
-button.accept-policy {
-  font-size: 1rem;
-  line-height: inherit;
-}
-
-/* Sticky footer styles
--------------------------------------------------- */
-html {
-  position: relative;
-  min-height: 100%;
-}
-
-body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
-}
-
 .footer {
     position: absolute;
     height: 15%;
@@ -116,20 +92,14 @@ div.cabecalho h2 {
     line-height: 52px;
 }
 
-form {
-    height: 800px;
-}
-
-form:first-child {
-    margin-right: 300px;
+form.custom-class {
+    flex-wrap: wrap;
+    height: 45vh;
+    position: relative;
 }
 
 div.form-group {
     margin-top: 20px;
-}
-
-.block-2 {
-    margin-left: 50%;
 }
 
 div.form-group label {
@@ -140,31 +110,74 @@ div.form-group label {
 }
 
     div.form-group input {
-        width: 200%;
+        width: 60%;
+        min-width: 60%;
         border: 1px solid rgba(25, 113, 194, .5);
         margin-top: 10px;
         border-radius: 10px;
     }
 
-@media (max-width: 768px) {
-    div.form-group input {
-        width: 100%;
+    div.form-group select {
+        width: 60%;
+        min-width: 60%;
+        border: 1px solid rgba(25, 113, 194, .5);
+        border-radius: 10px;
     }
-}
 
-div.buttons {
+
+div.btns {
     position: absolute;
-    bottom: -50px;
-    height: 30%;
+    bottom: -20%;
     left: 20%;
+    margin: 0 auto 0 auto;
+    font-size: 16px;
+    color: #1971C2;
+    font-weight: 700;
 }
 
-div.buttons .btn {
-    width: 147px;
-    border-radius: 10px;
-}
+    div.form-check label.check-btn {
+        margin-bottom: 20px;
+    }
+
+
+    div.buttons .btn {
+        width: 147px;
+        border-radius: 10px;
+    }
 
 #defaultCheck1 {
     /*margin-top: 40px;*/
     width: 3%;
+}
+
+/*@media (max-width: 575.98px) {
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+}*/
+
+@media (max-width: 768px) {
+    html, body {
+        height: 100vh;
+    }
+    form.custom-class {
+        display: flex;
+        flex-wrap: nowrap;
+        height: 1100px;
+        margin-top: 30px;
+    }
+
+    div.btns {
+        position: absolute;
+        bottom: 100px;
+        margin-bottom: 20px;
+    }
+
+    .footer {
+        position: fixed;
+        height: 10%;
+        bottom: 0;
+    }
+
 }

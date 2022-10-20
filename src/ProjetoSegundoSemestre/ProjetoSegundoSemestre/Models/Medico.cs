@@ -17,7 +17,6 @@ namespace ProjetoSegundoSemestre.Models
         public string Email { get; set; }
 
         [Required(ErrorMessage = "Obrigatório informar o Telefone!")]
-        [DataType(DataType.PhoneNumber)]
         public int Telefone { get; set; }
 
         [Required(ErrorMessage = "Obrigatório informar a Especialidade!")]
