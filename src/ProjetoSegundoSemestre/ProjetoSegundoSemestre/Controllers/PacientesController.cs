@@ -194,7 +194,8 @@ namespace ProjetoSegundoSemestre.Controllers
                 {
                     new Claim(ClaimTypes.Name, paciente.Nome),
                     new Claim(ClaimTypes.NameIdentifier, paciente.Email),
-                    new Claim(ClaimTypes.Role, "Paciente")
+                    new Claim(ClaimTypes.Role, "Paciente"),
+                    new Claim("Id", paciente.Id.ToString())
                 };
 
                 var userIdentity = new ClaimsIdentity(claims, "login");

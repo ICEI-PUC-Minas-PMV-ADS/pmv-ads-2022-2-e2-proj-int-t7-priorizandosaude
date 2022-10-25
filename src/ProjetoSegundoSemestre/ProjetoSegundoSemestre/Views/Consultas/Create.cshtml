@@ -14,8 +14,13 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="Status" class="control-label"></label>
-                <select asp-for="Status" class="form-control"></select>
+                <select asp-for="Status" asp-items="Html.GetEnumSelectList<StatusConsulta>()" class="form-control"></select>
                 <span asp-validation-for="Status" class="text-danger"></span>
+            </div>
+            <div class="form-group" hidden>
+                <label asp-for="Agenda.Id" class="control-label">Id Agenda</label>
+                <input asp-for="Agenda.Id" class="form-control" value="@(ViewContext.RouteData.Values["id"])"/>
+                <span asp-validation-for="Agenda.Id" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />

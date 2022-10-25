@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -13,10 +14,11 @@ namespace ProjetoSegundoSemestre.Controllers
     public class ConsultasController : Controller
     {
         private readonly ContextDBPriorizandoSaude _context;
-
-        public ConsultasController(ContextDBPriorizandoSaude context)
+        private readonly IHttpContextAccessor _httpContextAccessor;
+        public ConsultasController(ContextDBPriorizandoSaude context, IHttpContextAccessor httpContextAccessor)
         {
             _context = context;
+            _httpContextAccessor = httpContextAccessor;
         }
 
         // GET: Consultas
@@ -54,15 +56,25 @@ namespace ProjetoSegundoSemestre.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Status,Id")] Consulta consulta)
+        public async Task<IActionResult> Create(Consulta consulta)
         {
-            if (ModelState.IsValid)
+            consulta.Id = Guid.NewGuid();
+
+            consulta.Agenda = _context.Agendas.FirstOrDefault(x => x.Id == consulta.Agenda.Id);
+
+            var idPaciente = _httpContextAccessor.HttpContext.User.FindFirst(x => x.Type == "Id").Value;
+
+            if (consulta.Agenda != null)
             {
-                consulta.Id = Guid.NewGuid();
-                _context.Add(consulta);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                consulta.Paciente = _context.Pacientes.FirstOrDefault(x => x.Id == new Guid(idPaciente));
+                if(consulta.Paciente == null)
+                    return NotFound();
             }
+
+            _context.Add(consulta);
+           
+            await _context.SaveChangesAsync();
+           
             return View(consulta);
         }
 

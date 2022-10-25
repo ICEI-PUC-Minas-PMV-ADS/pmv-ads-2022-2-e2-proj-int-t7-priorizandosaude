@@ -26,14 +26,14 @@ namespace ProjetoSegundoSemestre.Controllers
         }
 
         // GET: Agendas
-        [Authorize(Roles = "Medico")]
+        [Authorize(Roles = "Medico,Paciente")]
         public async Task<IActionResult> Index()
         {
             return View(await _context.Agendas.ToListAsync());
         }
 
         // GET: Agendas/Details/5
-        [Authorize(Roles = "Medico")]
+        [Authorize(Roles = "Medico,Paciente")]
         public async Task<IActionResult> Details(Guid? id)
         {
             if (id == null)
