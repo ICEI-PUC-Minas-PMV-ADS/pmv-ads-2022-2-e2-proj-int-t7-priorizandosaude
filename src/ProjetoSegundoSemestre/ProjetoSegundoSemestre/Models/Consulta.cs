@@ -1,9 +1,13 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace ProjetoSegundoSemestre.Models
 {
     public class Consulta : Entidade
     {
+        public Guid AgendaId { get; set; }
+        public Guid PacienteId { get; set; }
+        
         [Required(ErrorMessage = "Obrigatório informar o Status!")]
         public StatusConsulta Status { get; set; }
 
