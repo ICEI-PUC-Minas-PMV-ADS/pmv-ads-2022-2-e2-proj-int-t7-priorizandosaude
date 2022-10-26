@@ -77,14 +77,50 @@ body {
 .footer-2 .text {
     margin: auto 0 auto 0;
 }
-    /*
+
+/*
+    Telas login
+*/
+
+div.cabecalho-login h6 {
+    color: #1971C2;
+    margin-top: 15px;
+    margin-bottom: 70px;
+}
+
+div.form-container form.form-login div.form-group input {
+    width: 100%;
+}
+
+div.form-container form.form-login div.form-group label {
+    margin-bottom: 0px;
+}
+
+div.form-container form.form-login div.div-btn {
+    text-align: center;
+}
+
+div.form-container form.form-login a {
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+}
+
+div.form-container form.form-login div.form-group input.login-btn {
+    width: 40%;
+    margin-top: 40px;
+}
+
+/*
     Create Médico
 */
-    div.cabecalho h4 {
-        color: #1971C2;
-        font-size: 25px;
-        letter-spacing: 0.08em;
-    }
+
+
+div.cabecalho h4 {
+    color: #1971C2;
+    font-size: 25px;
+    letter-spacing: 0.08em;
+}
 
 div.cabecalho h2 {
     font-size: 52px;
@@ -168,6 +204,10 @@ div.btns {
         margin-top: 30px;
     }
 
+    div.form-container form.form-login div.form-group input {
+        width: 80%;
+    }
+
     div.btns {
         position: absolute;
         bottom: 100px;
@@ -180,4 +220,15 @@ div.btns {
         bottom: 0;
     }
 
+}
+@media (max-width: 992px) {
+    div.form-container form.form-login div.form-group input {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1200px) {
+    div.form-container form.form-login div.form-group input {
+        width: 100%;
+    }
 }

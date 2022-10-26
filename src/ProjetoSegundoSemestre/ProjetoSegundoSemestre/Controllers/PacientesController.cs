@@ -211,7 +211,7 @@ namespace ProjetoSegundoSemestre.Controllers
 
                 await HttpContext.SignInAsync(principal, props);
 
-                return Redirect("/");
+                return RedirectToAction("Index", "Pacientes");
             }
             else
             {
