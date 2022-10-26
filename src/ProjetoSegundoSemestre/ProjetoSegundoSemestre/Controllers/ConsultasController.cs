@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -11,6 +12,7 @@ using ProjetoSegundoSemestre.Models;
 
 namespace ProjetoSegundoSemestre.Controllers
 {
+    [Authorize]
     public class ConsultasController : Controller
     {
         private readonly ContextDBPriorizandoSaude _context;
@@ -22,12 +24,19 @@ namespace ProjetoSegundoSemestre.Controllers
         }
 
         // GET: Consultas
+        [Authorize(Roles = "Medico,Paciente")]
         public async Task<IActionResult> Index()
-        {
-            return View(await _context.Consultas.ToListAsync());
+        { 
+            var teste = await _context.Consultas.ToListAsync();
+            for (int i = 0; i < teste.Count; i++)
+            {
+                teste[i].Agenda = await _context.Agendas.FindAsync(teste[i].AgendaId);
+            }
+            return View(teste);
         }
 
         // GET: Consultas/Details/5
+        [Authorize(Roles = "Medico,Paciente")]
         public async Task<IActionResult> Details(Guid? id)
         {
             if (id == null)
@@ -46,6 +55,7 @@ namespace ProjetoSegundoSemestre.Controllers
         }
 
         // GET: Consultas/Create
+        [Authorize(Roles = "Paciente")]
         public IActionResult Create()
         {
             return View();
@@ -56,29 +66,34 @@ namespace ProjetoSegundoSemestre.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(Consulta consulta)
+        [Authorize(Roles = "Paciente")]
+        public async Task<IActionResult> Create(string id)
         {
-            consulta.Id = Guid.NewGuid();
+            if (_httpContextAccessor.HttpContext.User.HasClaim(x => x.Value == "Medico"))
+                return View("Index", await _context.Consultas.ToListAsync());
+            var consulta = new Consulta();
 
-            consulta.Agenda = _context.Agendas.FirstOrDefault(x => x.Id == consulta.Agenda.Id);
+            consulta.Agenda = _context.Agendas.FirstOrDefault(x => x.Id == new Guid(id));
 
-            var idPaciente = _httpContextAccessor.HttpContext.User.FindFirst(x => x.Type == "Id").Value;
+            consulta.Status = StatusConsulta.AguardandoConfirmacao;
+
+            var idPaciente = _httpContextAccessor.HttpContext.User.Claims.FirstOrDefault(x => x.Type == "IdPaciente").Value;
 
             if (consulta.Agenda != null)
             {
                 consulta.Paciente = _context.Pacientes.FirstOrDefault(x => x.Id == new Guid(idPaciente));
-                if(consulta.Paciente == null)
+                if (consulta.Paciente == null)
                     return NotFound();
             }
 
             _context.Add(consulta);
-           
+
             await _context.SaveChangesAsync();
-           
-            return View(consulta);
+            return Ok();
         }
 
         // GET: Consultas/Edit/5
+        [Authorize(Roles = "Medico,Paciente")]
         public async Task<IActionResult> Edit(Guid? id)
         {
             if (id == null)
@@ -99,6 +114,7 @@ namespace ProjetoSegundoSemestre.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Medico,Paciente")]
         public async Task<IActionResult> Edit(Guid id, [Bind("Status,Id")] Consulta consulta)
         {
             if (id != consulta.Id)
@@ -130,6 +146,7 @@ namespace ProjetoSegundoSemestre.Controllers
         }
 
         // GET: Consultas/Delete/5
+        [Authorize(Roles = "Medico,Paciente")]
         public async Task<IActionResult> Delete(Guid? id)
         {
             if (id == null)
@@ -148,6 +165,7 @@ namespace ProjetoSegundoSemestre.Controllers
         }
 
         // POST: Consultas/Delete/5
+        [Authorize(Roles = "Medico,Paciente")]
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(Guid id)

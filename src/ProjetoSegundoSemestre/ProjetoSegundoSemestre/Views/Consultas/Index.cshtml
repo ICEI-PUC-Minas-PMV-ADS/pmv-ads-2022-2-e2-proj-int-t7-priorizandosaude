@@ -15,21 +15,63 @@
             <th>
                 @Html.DisplayNameFor(model => model.Status)
             </th>
+            <th>
+                Inicio da Consulta
+            </th>
+            <th>
+                Fim da Consulta
+            </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Status)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            @if(User.Claims.Any(x => x.Value == "Paciente"))
+            {
+                @if (item.PacienteId.ToString() == User.Claims.Where(x => x.Type == "Id").Select(x => x.Value).FirstOrDefault().ToString())
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Status)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Agenda.DataHoraInicioConsulta)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Agenda.DataHoraFimConsultaConsulta)
+                        </td>
+                        <td>
+                            <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                            <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                            <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                        </td>
+                    </tr>
+
+                }
+            }
+            else
+            {
+                if (item.Agenda.MedicoId == new Guid(User.Claims.Where(x => x.Type == "Id").Select(x => x.Value).FirstOrDefault().ToString()))
+        {
+                        <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Status)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Agenda.DataHoraInicioConsulta)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Agenda.DataHoraFimConsultaConsulta)
+                        </td>
+                        <td>
+                            <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                            <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                            <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                        </td>
+                    </tr>
+                }
+            }
+        }
     </tbody>
 </table>
