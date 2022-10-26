@@ -35,13 +35,29 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Consultas" asp-action="Index">Consultas</a>
                         </li>
+
+
+
                     </ul>
                     <ul class="navbar-nav">
                         @if (User.Identity.IsAuthenticated)
                         {
+                            @if(User.IsInRole("Medico"))
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Medicos" asp-action="Edit" asp-route-id="@User.Claims.Where(x=>x.Type == "Id").Select(x=>x.Value).FirstOrDefault()">Meus dados</a>
+                                </li>
+                            }else {
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Pacientes" asp-action="Edit" asp-route-id="@User.Claims.Where(x=>x.Type == "Id").Select(x=>x.Value).FirstOrDefault()">Meus dados</a>
+                                </li>
+                            }
+
+
                             <li class="nav-item">
                                 Olá, @User.Identity.Name
                             </li>
+
                             @if(User.Claims.Any(x => x.Value == "Medico"))
                             {
                                 <li class="nav-item">

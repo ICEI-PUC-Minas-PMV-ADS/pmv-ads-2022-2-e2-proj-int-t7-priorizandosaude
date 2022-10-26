@@ -4,13 +4,16 @@
     ViewData["Title"] = "Login";
 }
 
-<h1>Login</h1>
+<div class="cabecalho-login row d-flex flex-column align-items-center">
+    <h5>BEM-VINDOS AO ONMEDICAL, MÉDICO!</h5>
+    <h1>Login</h1>
+</div>
 
-<h4>Medico</h4>
-<hr />
-<div class="row">
+
+    
+<div class="row d-flex flex-column align-items-center bg-danger form-container">
     <div class="col-md-4">
-        <form asp-action="Login">
+        <form class="form-login" asp-action="Login">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
             <div class="form-group">
@@ -29,7 +32,7 @@
                 <input type="submit" value="Login" class="btn btn-primary" />
             </div>
             <h3> @ViewBag.Message </h3>
-            <a asp-controller="Medicos" asp-action="Create">Cadastre</a>
+            <a asp-controller="Medicos" asp-action="Create"><u>Não tem cadastro? Clique aqui!</u></a>
         </form>
     </div>
 </div>

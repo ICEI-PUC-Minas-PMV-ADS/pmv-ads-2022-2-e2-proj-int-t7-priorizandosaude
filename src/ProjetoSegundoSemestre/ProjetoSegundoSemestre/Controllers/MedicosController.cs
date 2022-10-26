@@ -187,8 +187,9 @@ namespace ProjetoSegundoSemestre.Controllers
                 var claims = new List<Claim>
                 {
                     new Claim(ClaimTypes.Name, medico.Nome),
+                    new Claim("Id", medico.Id.ToString()),
                     new Claim(ClaimTypes.NameIdentifier, medico.Email),
-                    new Claim(ClaimTypes.Role, "Medico")
+                    new Claim(ClaimTypes.Role, "Medico"),
                 };
 
                 var userIdentity = new ClaimsIdentity(claims, "login");
@@ -204,7 +205,8 @@ namespace ProjetoSegundoSemestre.Controllers
 
                 await HttpContext.SignInAsync(principal, props);
 
-                return Redirect("/");
+                return RedirectToAction("Index", "Medicos");
+                //return View("Index", "MedicosController");
             }
             else
             {
