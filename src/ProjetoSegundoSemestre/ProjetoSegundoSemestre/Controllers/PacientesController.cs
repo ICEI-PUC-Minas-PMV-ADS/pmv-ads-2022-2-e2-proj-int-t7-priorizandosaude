@@ -215,7 +215,7 @@ namespace ProjetoSegundoSemestre.Controllers
             }
             else
             {
-                ViewBag.Message = "Cadastro não encontrado!";
+                ViewBag.Message = "Login e/ou senha incorretos!";
                 return View();
             }
         }

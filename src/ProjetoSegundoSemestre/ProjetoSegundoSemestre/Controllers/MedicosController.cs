@@ -206,11 +206,10 @@ namespace ProjetoSegundoSemestre.Controllers
                 await HttpContext.SignInAsync(principal, props);
 
                 return RedirectToAction("Index", "Medicos");
-                //return View("Index", "MedicosController");
             }
             else
             {
-                ViewBag.Message = "Cadastro não encontrado!";
+                ViewBag.Message = "Login e/ou senha incorretos!";
                 return View();
             }
         }
