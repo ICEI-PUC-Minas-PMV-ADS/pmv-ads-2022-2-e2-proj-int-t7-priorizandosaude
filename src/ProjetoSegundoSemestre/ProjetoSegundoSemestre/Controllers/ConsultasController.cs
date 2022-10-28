@@ -27,12 +27,12 @@ namespace ProjetoSegundoSemestre.Controllers
         [Authorize(Roles = "Medico,Paciente")]
         public async Task<IActionResult> Index()
         { 
-            var teste = await _context.Consultas.ToListAsync();
-            for (int i = 0; i < teste.Count; i++)
+            var listaConsultas = await _context.Consultas.ToListAsync();
+            for (int i = 0; i < listaConsultas.Count; i++)
             {
-                teste[i].Agenda = await _context.Agendas.FindAsync(teste[i].AgendaId);
+                listaConsultas[i].Agenda = await _context.Agendas.FindAsync(listaConsultas[i].AgendaId);
             }
-            return View(teste);
+            return View(listaConsultas);
         }
 
         // GET: Consultas/Details/5
