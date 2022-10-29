@@ -1,10 +1,22 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
+@font-face {
+    font-family: 'DM Sans';
+    src: url('../fonts/dmsans-regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'DM Sans Medium';
+    src: url('../fonts/dmsans-medium.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'DM Sans Bold';
+    src: url('../fonts/dmsans-bold.ttf') format('truetype');
+}
 
 a.navbar-brand {
-  white-space: normal;
-  text-align: center;
-  /*word-break: break-all;*/
+    white-space: normal;
+    text-align: center;
+    /*word-break: break-all;*/
 }
 
 /* Provide sufficient contrast against white background */
@@ -40,6 +52,7 @@ html {
 
 body {
     background-color: #F7F9F9;
+    font-family: 'DM Sans';
 }
 @media (min-width: 768px) {
   html {
@@ -49,9 +62,6 @@ body {
 }
 
 .footer {
-    position: absolute;
-    height: 15%;
-    bottom: 0;
     background-color: #1971C2;
     width: 100%;
     white-space: nowrap;
@@ -162,9 +172,6 @@ div.form-group label {
 
 
 div.btns {
-    position: absolute;
-    bottom: -20%;
-    left: 20%;
     margin: 0 auto 0 auto;
     font-size: 16px;
     color: #1971C2;
@@ -232,3 +239,143 @@ div.btns {
         width: 100%;
     }
 }
+
+
+/* Screen Home styles  */
+@media (max-width: 760px) {
+    .welcome-section {
+        background-color: #D0EBFF;
+        min-height: 50vh;
+        display: flex;
+        flex-direction:column;
+    }
+}
+
+.body-home p {
+    color: #495057;
+    margin-top: 10px;
+}
+.body-home h6 {
+    color: #1971C2;
+    font-family: 'DM Sans Bold';
+    font-size: 14px;
+    letter-spacing: 1.5px;
+}
+.body-home h2 {
+    margin-top: 20px;
+    font-size: 28px;
+    letter-spacing: 2px;
+    font-family: 'DM Sans Bold';
+    font-weight: bold;
+}
+.welcome-section {
+    background-color: #D0EBFF;
+    min-height: 50vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.welcome-container{   
+    padding: 120px 0 20px 50px;
+    max-width: 45vw;
+}
+
+.primary-button{
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: #1971C2;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn-home {
+    margin-top: 60px;
+    padding: 14px;
+    width: 452px;
+}
+
+a.btn-home:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.title-welcome {
+    font-size: 38px;
+    letter-spacing: 2px;
+    font-family: 'DM Sans Bold';
+    font-weight: bold;
+}
+
+
+.welcome-section img {
+    object-position: right;
+}
+
+
+.service-card {
+    background-color: #fff;
+    border: 1px solid #D0EBFF;
+    border-radius: 10px;
+    min-width: 220px;
+    height: 250px;
+    padding: 20px;
+    box-sizing: border-box;
+   
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 100px;
+
+ 
+}
+.services-section h2 {
+    text-align: center;
+}
+
+@media (max-width: 760px) {
+    .services-container {
+        grid-template-columns: 1fr;
+    }
+    .service-card {
+        height: 350px;
+        min-width: 250px;
+    }
+}
+
+.service-card h4 {
+    font-family: 'DM Sans Bold';
+    margin-top: 10px;
+    font-size: 22px;
+}
+
+
+.services-section h6 {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.about-section {
+    background-color: #FFFAF1
+}
+.about-container {
+    display: flex;
+    gap: 40px;
+    padding: 100px;
+    align-items: center;
+}
+
+.doctor-container {
+    display: flex;
+    gap: 40px;
+    padding: 100px;
+    align-items: center;
+}
+

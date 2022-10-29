@@ -2,6 +2,98 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Priorizando a Saude</h1>
+<div class="body-home">
+    <div class ="welcome-section">
+        <div class="welcome-container">
+            <h6>BEM VINDOS AO ONMEDICAL!</h6>
+            <h1 class="title-welcome">Priorizando a sua Saúde e da sua família</h1>
+            <p>Aqui você encontra os médicos que procura  e agenda suas consultas para cuidar de toda a sua família</p>
+            <div class="btn-home">
+                <a class="primary-button btn-home" asp-area="" asp-controller="Pacientes" asp-action="Login">
+                    AGENDE SUA CONSULTA
+                </a>
+            </div>
+        </div>
+        <div>
+            <img src="~/img/doctorImage.png" />
+        </div>
+    </div>
+    <div class="services-section ">
+        <h6>SERVIÇOS</h6>
+
+        <h2> Como podemos ajudá-lo<br /> a se sentir melhor? </h2>
+            <div class="services-container">
+                <div class="service-card">
+                    <img src="/img/check.png"/>
+                    <h4>Problemas digestivos</h4>
+                <p> Os principais sinais de problemas no sistema digestivo envolvem perda de peso sem razão aparente, dor ou cólicas no abdômen, náuseas e vômitos, inchaço, queimação estomacal, azia, constipação, entre outros.</p>
+
+                </div>
+                <div class="service-card">
+                    <img src="/img/check.png"/>
+                    <h4>Saúde Hormonal</h4>
+                <p> O Desequilíbrio hormonal podem provocar sintomas como excesso de fome, irritabilidade, cansaço insônia e podem gerar várias doenças como diabetes, hipotireoidismo e SOP por exemplo.</p>
+
+                </div>
+                <div class="service-card">
+                    <img src="/img/check.png"/>
+                <h4>Bem-estar mental</h4>
+                <p> O bem estar mental é o equilíbrio das emoções e sentimentos. Assim, ele consiste em sentir-se bem consigo e conviver em paz com outras pessoas mesmo que algo ruim aconteça.</p>
+                </div>
+            <div class="service-card">
+                <img src="/img/check.png" />
+                <h4>Cuidados Pediátricos</h4>
+                <p>
+                    Controlar a dor e outros sintomas físicos, através de diagnóstico precoce e preciso.
+                    Promover ações que facilitem ao indivíduo exercer sua espiritualidade, protegendo a sua autonomia e vontade.
+                </p>
+
+            </div>
+            <div class="service-card">
+                <img src="/img/check.png" />
+                <h4>Autoimune e Inflamação</h4>
+                <p> Doença inflamatória causada quando o sistema imunológico ataca seus próprios tecidos. Artrite reumatoide.</p>
+
+            </div>
+            <div class="service-card">
+                <img src="/img/check.png" />
+                <h4>Saúde do Coração</h4>
+                <p> O coração é o músculo mais importante do corpo. A cada batida ele fornece alimento e oxigênio às células. Um coração saudável é a chave para um corpo saudável, e seu coração precisa de exercícios para mantê-lo em forma.</p>
+
+            </div>
+
+            </div>
+    </div>
+    <div class="about-section">
+        <div class="about-container">
+            <img src="~/img/consulta.png" />
+            <div>
+                <h6> SOBRE NÓS</h6>
+                <h2> Entenda quem somos e por que existimos </h2>
+                <p>
+                    Marcar uma consulta por telefone demora de 5 a 7 minutos. Por que desperdiçar tempo?
+                    Nossa missão é trazer para o mundo digital a marcação de consultas, tudo totalmente online.
+                    Facilitando inclusive o cancelamento em caso de imprevistos. encontre seu médico seja tratado e cuidado por nós. Uma experiência em saúde moderna e humanizada.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="doctor-section">
+        <div class="doctor-container">
+            <div>
+                <h2> Seja uma médico cadastrado </h2>
+                <p>
+                    Marcar uma consulta por telefone demora de 5 a 7 minutos. Por que desperdiçar tempo?
+                    Nossa missão é trazer para o mundo digital a marcação de consultas, tudo totalmente online.
+                    Facilitando inclusive o cancelamento em caso de imprevistos. encontre seu médico seja tratado e cuidado por nós. Uma experiência em saúde moderna e humanizada.
+                </p>
+                <div class="btn-home">
+                    <a class="primary-button btn-home" asp-area="" asp-controller="Pacientes" asp-action="Login">
+                        CADASTRO MÉDICO
+                    </a>
+                </div>
+            </div><img src="~/img/joinmedical.png" />
+
+        </div>
+    </div>
 </div>

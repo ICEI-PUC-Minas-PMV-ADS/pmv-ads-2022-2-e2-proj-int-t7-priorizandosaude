@@ -6,6 +6,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\fonts\DMSans-Bold.ttf" />
+    <None Include="wwwroot\fonts\DMSans-BoldItalic.ttf" />
+    <None Include="wwwroot\fonts\DMSans-Italic.ttf" />
+    <None Include="wwwroot\fonts\DMSans-Medium.ttf" />
+    <None Include="wwwroot\fonts\DMSans-MediumItalic.ttf" />
+    <None Include="wwwroot\fonts\DMSans-Regular.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="BCrypt.Net-Next" Version="4.0.2" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="5.0.14" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.17" />
