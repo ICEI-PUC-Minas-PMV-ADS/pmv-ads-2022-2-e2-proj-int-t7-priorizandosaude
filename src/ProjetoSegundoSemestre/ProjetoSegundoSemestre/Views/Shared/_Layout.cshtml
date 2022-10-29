@@ -9,11 +9,9 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light">
+        <nav class="navbar-expand-sm navbar-toggleable-sm ">
             <div class="cabecalho d-flex justify-content-between">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
-                    <img src="~/img/onmedical_logo.png" />
-                </a>
+                
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -70,14 +68,7 @@
                             }
 
                         }
-                        else
-                        {
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Medicos" asp-action="Login">Medicos</a>
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Pacientes" asp-action="Login">Pacientes</a>
-                            </li>
-
-                        }
+               
                     </ul>
                 </div>
             </div>

@@ -3,20 +3,34 @@
 }
 
 <div class="body-home">
+   
+    
     <div class ="welcome-section">
-        <div class="welcome-container">
-            <h6>BEM VINDOS AO ONMEDICAL!</h6>
-            <h1 class="title-welcome">Priorizando a sua Saúde e da sua família</h1>
-            <p>Aqui você encontra os médicos que procura  e agenda suas consultas para cuidar de toda a sua família</p>
-            <div class="btn-home">
-                <a class="primary-button btn-home" asp-area="" asp-controller="Pacientes" asp-action="Login">
-                    AGENDE SUA CONSULTA
-                </a>
+        <div class="header-primary">
+            <a asp-area="" asp-controller="Home" asp-action="Index">
+                <img src="~/img/onmedical_logo.png" />
+            </a>
+            <div class="login-home">
+                <a class="secondary-button" asp-area="" asp-controller="Medicos" asp-action="Login">MÉDICO</a>
+                <a class="secondary-button" asp-area="" asp-controller="Pacientes" asp-action="Login">PACIENTE</a>
             </div>
         </div>
-        <div>
-            <img src="~/img/doctorImage.png" />
+        <div class="welcome-container">
+            <div class="welcome-info">
+                <h6>BEM VINDOS AO ONMEDICAL!</h6>
+                <h1 class="title-welcome">Priorizando a sua Saúde e da sua família</h1>
+                <p>Aqui você encontra os médicos que procura  e agenda suas consultas  para cuidar de toda a sua família</p>
+                <div class="btn-home">
+                    <a class="primary-button btn-home" asp-area="" asp-controller="Pacientes" asp-action="Login">
+                        AGENDE SUA CONSULTA
+                    </a>
+                </div>
+            </div>
+            <div>
+                 <img src="~/img/doctorImage.png" />
+            </div>
         </div>
+        
     </div>
     <div class="services-section ">
         <h6>SERVIÇOS</h6>
@@ -80,7 +94,7 @@
     </div>
     <div class="doctor-section">
         <div class="doctor-container">
-            <div>
+            <div class="doctor-text">
                 <h2> Seja uma médico cadastrado </h2>
                 <p>
                     Marcar uma consulta por telefone demora de 5 a 7 minutos. Por que desperdiçar tempo?
@@ -88,7 +102,7 @@
                     Facilitando inclusive o cancelamento em caso de imprevistos. encontre seu médico seja tratado e cuidado por nós. Uma experiência em saúde moderna e humanizada.
                 </p>
                 <div class="btn-home">
-                    <a class="primary-button btn-home" asp-area="" asp-controller="Pacientes" asp-action="Login">
+                    <a class="primary-button btn-home" asp-controller="Medicos" asp-action="Create">
                         CADASTRO MÉDICO
                     </a>
                 </div>

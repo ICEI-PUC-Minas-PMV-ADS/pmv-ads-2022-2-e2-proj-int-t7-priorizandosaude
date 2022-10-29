@@ -63,7 +63,7 @@ body {
 
 .footer {
     background-color: #1971C2;
-    width: 100%;
+    width: 100vw;
     white-space: nowrap;
     line-height: 60px;
 }
@@ -242,14 +242,7 @@ div.btns {
 
 
 /* Screen Home styles  */
-@media (max-width: 760px) {
-    .welcome-section {
-        background-color: #D0EBFF;
-        min-height: 50vh;
-        display: flex;
-        flex-direction:column;
-    }
-}
+
 
 .body-home p {
     color: #495057;
@@ -272,12 +265,17 @@ div.btns {
     background-color: #D0EBFF;
     min-height: 50vh;
     display: flex;
-    justify-content: space-around;
+    flex-direction:column;
 }
 
-.welcome-container{   
-    padding: 120px 0 20px 50px;
-    max-width: 45vw;
+.welcome-container {
+    display:flex;
+justify-content: space-around
+
+}
+
+.welcome-info {   
+    margin: 80px 0 20px 50px;
 }
 
 .primary-button{
@@ -294,7 +292,7 @@ div.btns {
 .btn-home {
     margin-top: 60px;
     padding: 14px;
-    width: 452px;
+    white-space: nowrap;
 }
 
 a.btn-home:hover {
@@ -340,16 +338,6 @@ a.btn-home:hover {
     text-align: center;
 }
 
-@media (max-width: 760px) {
-    .services-container {
-        grid-template-columns: 1fr;
-    }
-    .service-card {
-        height: 350px;
-        min-width: 250px;
-    }
-}
-
 .service-card h4 {
     font-family: 'DM Sans Bold';
     margin-top: 10px;
@@ -363,7 +351,8 @@ a.btn-home:hover {
 }
 
 .about-section {
-    background-color: #FFFAF1
+    background-color: #FFFAF1;
+    
 }
 .about-container {
     display: flex;
@@ -379,3 +368,86 @@ a.btn-home:hover {
     align-items: center;
 }
 
+
+.header-primary {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+
+}
+.login-home {
+    margin: 40px 40px 0 0;
+}
+.secondary-button {
+    padding: 15px;
+    border-radius: 40px;
+    border: 1px solid #1971C2;
+    background-color: rgb(0,0,0, 0.0);
+    color: #1971C2;
+    font-family: 'DM Sans Bold';
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    margin:4px
+}
+
+@media (max-width: 1040px) {
+    .welcome-section {
+        background-color: #D0EBFF;
+        min-height: 50vh;
+        flex-direction: column
+    }
+
+    .header-primary {
+        flex-direction: column;
+    }
+
+    .secondary-button {
+           display: flex;
+           justify-content:center;
+        }
+    .welcome-container img {
+            display: none;
+        }
+
+    .services-container {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card {
+        height: 350px;
+        min-width: 250px;
+    }
+
+
+    .title-welcome {
+        font-size: 28px;
+    }
+
+    .doctor-container {
+        flex-direction: column
+    }
+
+    .about-container {
+        flex-direction: column
+    }
+
+    .doctor-text {
+        max-width: 200px;
+    }
+
+    .about-section img {
+        height: 200PX;
+        object-fit: scale-down;
+    }
+
+    .doctor-section img {
+        height: 200px;
+        object-fit: scale-down;
+    }
+
+    .home-btn {
+        padding: 8px;
+        font-size: 10px;
+    }
+}
