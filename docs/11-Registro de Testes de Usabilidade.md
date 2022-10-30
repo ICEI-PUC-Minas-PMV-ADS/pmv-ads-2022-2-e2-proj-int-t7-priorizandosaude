@@ -1,8 +1,17 @@
 # Registro de Testes de Usabilidade
 
-Após realizar os testes de usabilidade, obtém-se um relatório a partir das análises realizadas. O Registro de Testes de Usabilidade é um relatório que contém as evidências dos testes e relatos dos usuários participantes, baseado no Plano de Testes de Usabilidade desenvolvido para os casos de uso desta etapa.
+| **Usuário** 	| **Artefato** 	| **Tempo** | **Clicks/Ações** | **Qtd. Erros** | **Se recuperou do erro** | **Comentários e observações** |
+| --- 	| --- 	| --- | ---  | --- | --- | --- |
+| Usuário 1	| CT-01 	| 00:50 | 3  | 0 | --- | Usuário achou a tela intuitiva |
+| Usuário 2 | CT-01 	| 01:02 | 3  | 0 | --- | Usuário não teve dificuldade |
+| Usuário 3	| CT-01	 | 01:01 | 3  | 0 | --- | Usuário não teve dúvidas |
+| Usuário 4 | CT-01 	| 00:35 | 3  | 0 | --- | Usuário facilmente guiado pelo fluxo do site |
+| Usuário 5	| CT-01	 | 00:55 | 3  | 0 | --- | Usuário achou a tela intuitiva |
 
-As referências abaixo irão auxiliá-lo na geração do artefato “Registro de Testes de Usabilidade”.
-
-> **Links Úteis**:
-> - [Ferramentas de Testes de Usabilidade](https://www.usability.gov/how-to-and-tools/resources/templates.html).
+| **Usuário** 	| **Artefato** 	| **Tempo** | **Clicks/Ações** | **Qtd. Erros** | **Se recuperou do erro** | **Comentários e observações** |
+| --- 	| --- 	| --- | ---  | --- | --- | --- |
+| Usuário 1	| CT-02 	| 00:50 | 3  | 0 | --- | Usuário não fez observação |
+| Usuário 2 | CT-02 	| 01:00 | 3  | 0 | --- | Usuário não teve dificuldade |
+| Usuário 3	| CT-02	 | 01:01 | 3  | 0 | --- | Usuário gostou da interface |
+| Usuário 4 | CT-02 	| 00:40 | 3  | 0 | --- | Usuário efetuou login sem problemas |
+| Usuário 5	| CT-02	 | 00:50 | 3  | 0 | --- | Gostou do design das interfaces |
