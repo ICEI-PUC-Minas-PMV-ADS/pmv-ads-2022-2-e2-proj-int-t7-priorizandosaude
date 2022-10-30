@@ -8,9 +8,9 @@ Não deixe de enumerar os casos de teste de forma sequencial e de garantir que o
 
 Por exemplo:
  
-| **Caso de Teste** 	| **CT-01 – Cadastrar perfil** 	|
+| **Caso de Teste** 	| **CT-01 – Cadastrar paciente** 	|
 |:---:	|:---:	|
-|	Requisito Associado 	| RF-003 - A aplicação deve apresentar, na página principal, a funcionalidade de cadastro de usuários para que esses consigam criar e gerenciar seu perfil. |
+|	Requisito Associado 	| RF-003 - A aplicação deve apresentar, na página principal, a funcionalidade de cadastro de pacientes para que esses consigam criar e gerenciar seu perfil. |
 | Objetivo do Teste 	| Verificar se o usuário Paciente consegue se cadastrar na aplicação. |
 | Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://priorizandosaude.github.com <br> - Clicar em "Paciente" no canto direito superior da tela <br> - Clicar em "Não tem cadastro clique aqui" - <br> preencher os campos obrigatórios (e-mail, nome, data de nascimento, genero, celular, CPF, senha, confirmação de senha) <br> - Aceitar os termos de uso <br> - Clicar em "Cadastrar" |
 |Critério de Êxito | - O cadastro foi realizado com sucesso - Redirecionar para tela home do paciente |
