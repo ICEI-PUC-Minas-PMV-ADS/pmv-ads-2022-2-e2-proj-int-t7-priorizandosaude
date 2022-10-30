@@ -15,3 +15,20 @@
 | Usuário 3	| CT-02	 | 01:01 | 3  | 0 | --- | Usuário gostou da interface |
 | Usuário 4 | CT-02 	| 00:40 | 3  | 0 | --- | Usuário efetuou login sem problemas |
 | Usuário 5	| CT-02	 | 00:50 | 3  | 0 | --- | Gostou do design das interfaces |
+
+<h2>Relatório</h2>
+
+O método utilizado foi a observação do uso da ferramenta com parâmetros de tempo, clicks, erros e observações. A partir dos dados coletados, realizamos o mapeamento dos padrões de comportamento, possíveis problemas e soluções.
+
+Nos testes realizados, 5 usuários testaram os casos de testes de usabilidade 01, 02.
+
+Seguem resultados:
+
+**1-	Cadastro de novo paciente**
+
+Todos os usuários realizaram 3 clicks e não tiveram dificuldades
+
+**2-	Cadastro de novo médico**
+
+Todos os usuários realizaram 3 clicks e não tiveram dificuldades
+
