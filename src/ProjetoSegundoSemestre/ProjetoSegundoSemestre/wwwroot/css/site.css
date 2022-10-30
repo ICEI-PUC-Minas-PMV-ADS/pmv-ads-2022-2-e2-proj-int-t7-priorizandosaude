@@ -4,10 +4,12 @@ for details on configuring this project to bundle and minify static web assets. 
     font-family: 'DM Sans';
     src: url('../fonts/dmsans-regular.ttf') format('truetype');
 }
+
 @font-face {
     font-family: 'DM Sans Medium';
     src: url('../fonts/dmsans-medium.ttf') format('truetype');
 }
+
 @font-face {
     font-family: 'DM Sans Bold';
     src: url('../fonts/dmsans-bold.ttf') format('truetype');
@@ -25,9 +27,9 @@ a.navbar-brand {
 }*/
 
 .btn-primary {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
 }
 
 .cabecalho {
@@ -39,9 +41,9 @@ a.navbar-brand {
 }
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
 }
 
 /* Sticky footer styles
@@ -54,11 +56,11 @@ body {
     background-color: #F7F9F9;
     font-family: 'DM Sans';
 }
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
 
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
 }
 
 .footer {
@@ -68,25 +70,25 @@ body {
     line-height: 60px;
 }
 
-.footer p {
-    color: #FFFAF1;
-}
+    .footer p {
+        color: #FFFAF1;
+    }
 
 .footer-2 {
     margin: 0 10% 0 10%;
 }
 
-.footer-2 .social-media {
-    margin: auto 0 auto 0;   
-}
+    .footer-2 .social-media {
+        margin: auto 0 auto 0;
+    }
 
-.footer-2 .social-media img {
-    margin-right: 20px;
-}
+        .footer-2 .social-media img {
+            margin-right: 20px;
+        }
 
-.footer-2 .text {
-    margin: auto 0 auto 0;
-}
+    .footer-2 .text {
+        margin: auto 0 auto 0;
+    }
 
 /*
     Telas login
@@ -148,12 +150,12 @@ div.form-group {
     margin-top: 20px;
 }
 
-div.form-group label {
-    font-size: 16px;
-    color: #1971C2;
-    font-weight: 700;
-    letter-spacing: 0.08em
-}
+    div.form-group label {
+        font-size: 16px;
+        color: #1971C2;
+        font-weight: 700;
+        letter-spacing: 0.08em
+    }
 
     div.form-group input {
         width: 60%;
@@ -178,15 +180,15 @@ div.btns {
     font-weight: 700;
 }
 
-    div.form-check label.check-btn {
-        margin-bottom: 20px;
-    }
+div.form-check label.check-btn {
+    margin-bottom: 20px;
+}
 
 
-    div.buttons .btn {
-        width: 147px;
-        border-radius: 10px;
-    }
+div.buttons .btn {
+    width: 147px;
+    border-radius: 10px;
+}
 
 #defaultCheck1 {
     /*margin-top: 40px;*/
@@ -204,6 +206,7 @@ div.btns {
     html, body {
         height: 100vh;
     }
+
     form.custom-class {
         display: flex;
         flex-wrap: nowrap;
@@ -226,8 +229,8 @@ div.btns {
         height: 10%;
         bottom: 0;
     }
-
 }
+
 @media (max-width: 992px) {
     div.form-container form.form-login div.form-group input {
         width: 100%;
@@ -248,12 +251,14 @@ div.btns {
     color: #495057;
     margin-top: 10px;
 }
+
 .body-home h6 {
     color: #1971C2;
     font-family: 'DM Sans Bold';
     font-size: 14px;
     letter-spacing: 1.5px;
 }
+
 .body-home h2 {
     margin-top: 20px;
     font-size: 28px;
@@ -261,24 +266,24 @@ div.btns {
     font-family: 'DM Sans Bold';
     font-weight: bold;
 }
+
 .welcome-section {
     background-color: #D0EBFF;
     min-height: 50vh;
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
 }
 
 .welcome-container {
-    display:flex;
-justify-content: space-around
-
+    display: flex;
+    justify-content: space-around
 }
 
-.welcome-info {   
+.welcome-info {
     margin: 80px 0 20px 50px;
 }
 
-.primary-button{
+.primary-button {
     padding: 20px;
     border-radius: 20px;
     border: none;
@@ -321,7 +326,6 @@ a.btn-home:hover {
     height: 250px;
     padding: 20px;
     box-sizing: border-box;
-   
 }
 
 .services-container {
@@ -331,9 +335,8 @@ a.btn-home:hover {
     align-items: center;
     gap: 30px;
     margin: 100px;
-
- 
 }
+
 .services-section h2 {
     text-align: center;
 }
@@ -352,8 +355,8 @@ a.btn-home:hover {
 
 .about-section {
     background-color: #FFFAF1;
-    
 }
+
 .about-container {
     display: flex;
     gap: 40px;
@@ -373,11 +376,12 @@ a.btn-home:hover {
     display: flex;
     justify-content: space-between;
     padding: 10px;
-
 }
+
 .login-home {
     margin: 40px 40px 0 0;
 }
+
 .secondary-button {
     padding: 15px;
     border-radius: 40px;
@@ -388,7 +392,7 @@ a.btn-home:hover {
     font-size: 14px;
     font-weight: 500;
     cursor: pointer;
-    margin:4px
+    margin: 4px
 }
 
 @media (max-width: 1040px) {
@@ -403,12 +407,13 @@ a.btn-home:hover {
     }
 
     .secondary-button {
-           display: flex;
-           justify-content:center;
-        }
+        display: flex;
+        justify-content: center;
+    }
+
     .welcome-container img {
-            display: none;
-        }
+        display: none;
+    }
 
     .services-container {
         grid-template-columns: 1fr;
@@ -449,5 +454,31 @@ a.btn-home:hover {
     .home-btn {
         padding: 8px;
         font-size: 10px;
+    }
+
+    /* Tela login paciente*/
+
+
+
+    /* Tela login médico*/
+    .loginmedico {
+        background-color: #88feb2;
+        min-height: 50vh;
+        flex-direction: column
+    }
+
+        .loginmedico h1 {
+            font-family: 'DM Sans Bold';
+            margin-top: 10px;
+            font-size: 22px;
+        }
+
+    .imgmedico {
+        text-align: center;
+    }
+
+    .form-group div-btn {
+        align-items: center;
+        background-color: red;
     }
 }
