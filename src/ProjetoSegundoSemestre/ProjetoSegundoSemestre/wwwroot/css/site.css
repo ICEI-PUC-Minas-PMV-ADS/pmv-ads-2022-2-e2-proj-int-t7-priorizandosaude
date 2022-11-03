@@ -457,7 +457,26 @@ a.btn-home:hover {
     }
 
     /* Tela login paciente*/
+    .login-paciente {
+        background-color: #88feb2;
+        min-height: 50vh;
+        flex-direction: column
+    }
 
+        .loginmedico h1 {
+            font-family: 'DM Sans Bold';
+            margin-top: 10px;
+            font-size: 22px;
+        }
+
+    .imgmedico {
+        text-align: center;
+    }
+
+    .form-group div-btn {
+        align-items: center;
+        background-color: red;
+    }
 
 
     /* Tela login médico*/
