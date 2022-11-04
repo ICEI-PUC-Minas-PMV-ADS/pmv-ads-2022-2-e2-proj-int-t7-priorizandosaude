@@ -13,7 +13,9 @@ namespace ProjetoSegundoSemestre.Models
 
         [Required(ErrorMessage = "Obrigatório informar o Medico!")]
         public Medico Medico { get; set; }
-        
+
         public Guid MedicoId { get; set; }
+
+        public StatusAgenda StatusAgenda { get; set; }
     }
 }

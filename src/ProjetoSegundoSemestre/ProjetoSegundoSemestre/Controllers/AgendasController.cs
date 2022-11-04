@@ -70,6 +70,7 @@ namespace ProjetoSegundoSemestre.Controllers
 
             agenda.Medico = await _context.Medicos.Where(x => x.Email == emailMedico).FirstOrDefaultAsync();
 
+            agenda.StatusAgenda = StatusAgenda.Vago;
             if (agenda.Medico != null)
             {
                 agenda.MedicoId = agenda.Medico.Id;

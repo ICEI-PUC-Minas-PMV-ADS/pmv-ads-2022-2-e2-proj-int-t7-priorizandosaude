@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ProjetoSegundoSemestre.Data;
 
 namespace ProjetoSegundoSemestre.Migrations
 {
     [DbContext(typeof(ContextDBPriorizandoSaude))]
-    partial class ContextDBPriorizandoSaudeModelSnapshot : ModelSnapshot
+    [Migration("20221104131755_AdicionandoEstruturaAgenda")]
+    partial class AdicionandoEstruturaAgenda
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

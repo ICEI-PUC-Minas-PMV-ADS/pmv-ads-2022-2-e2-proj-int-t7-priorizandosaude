@@ -75,9 +75,11 @@ namespace ProjetoSegundoSemestre.Controllers
 
             consulta.Agenda = _context.Agendas.FirstOrDefault(x => x.Id == new Guid(id));
 
+            consulta.Agenda.StatusAgenda = StatusAgenda.Usado;
+
             consulta.Status = StatusConsulta.AguardandoConfirmacao;
 
-            var idPaciente = _httpContextAccessor.HttpContext.User.Claims.FirstOrDefault(x => x.Type == "IdPaciente").Value;
+            var idPaciente = _httpContextAccessor.HttpContext.User.Claims.FirstOrDefault(x => x.Type == "Id").Value;
 
             if (consulta.Agenda != null)
             {
@@ -88,8 +90,13 @@ namespace ProjetoSegundoSemestre.Controllers
 
             _context.Add(consulta);
 
-            await _context.SaveChangesAsync();
-            return Ok();
+            var retorno = await _context.SaveChangesAsync();
+            if(retorno > 0)
+            {
+                _context.Update(consulta.Agenda);
+                await _context.SaveChangesAsync();
+            }
+            return View();
         }
 
         // GET: Consultas/Edit/5

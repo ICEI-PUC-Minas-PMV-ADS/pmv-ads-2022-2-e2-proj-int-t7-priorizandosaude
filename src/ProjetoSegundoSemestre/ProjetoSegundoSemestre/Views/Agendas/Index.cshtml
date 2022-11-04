@@ -24,26 +24,29 @@
     <tbody>
         @foreach (var item in Model)
         {
-            <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.DataHoraInicioConsulta)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.DataHoraFimConsultaConsulta)
-                </td>
-                <td>
-                    <form id="MarcarConsulta" asp-controller="Consultas" asp-action="Create" asp-route-id="@item.Id" value="@item.Id" method="post" role="form">
-                        <div>
-                            <button type="submit" name="culture" value="@item.Id">
-                                Agendar
-                            </button>
-                        </div>
-                    </form>
-                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-                </td>
-            </tr>
+            @if (item.StatusAgenda == StatusAgenda.Vago)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DataHoraInicioConsulta)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DataHoraFimConsultaConsulta)
+                    </td>
+                    <td>
+                        <form id="MarcarConsulta" asp-controller="Consultas" asp-action="Create" asp-route-id="@item.Id" value="@item.Id" method="post" role="form">
+                            <div>
+                                <button type="submit" name="culture" value="@item.Id">
+                                    Agendar
+                                </button>
+                            </div>
+                        </form>
+                        <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                        <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                        <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                    </td>
+                </tr>
+            }
         }
     </tbody>
 </table>
