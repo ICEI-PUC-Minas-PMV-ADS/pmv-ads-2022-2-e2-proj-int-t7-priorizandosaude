@@ -15,12 +15,6 @@ for details on configuring this project to bundle and minify static web assets. 
     src: url('../fonts/dmsans-bold.ttf') format('truetype');
 }
 
-a.navbar-brand {
-    white-space: normal;
-    text-align: center;
-    /*word-break: break-all;*/
-}
-
 /* Provide sufficient contrast against white background */
 /*a {
   color: #0366d6;
@@ -395,6 +389,21 @@ a.btn-home:hover {
     margin: 4px
 }
 
+.secondary-button2 {
+    padding: 15px;
+    border-radius: 40px;
+    border: 1px solid #1971C2;
+    background-color: rgb(0,0,0, 0.0);
+    color: #1971C2;
+    font-family: 'DM Sans Bold';
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    margin: 4px;
+    display: flex;
+    justify-content: center;
+}
+
 @media (max-width: 1040px) {
     .welcome-section {
         background-color: #D0EBFF;
@@ -455,10 +464,13 @@ a.btn-home:hover {
         padding: 8px;
         font-size: 10px;
     }
+}
 
-    /* Tela login paciente*/
+/* Tela cadastro agenda*/
 
-
+div#div-cadastro-agenda.row.mt-5 {
+    height: 80vh;
+}
 
     /* Tela login médico*/
     .loginmedico {

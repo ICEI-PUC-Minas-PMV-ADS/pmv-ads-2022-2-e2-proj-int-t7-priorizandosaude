@@ -4,32 +4,31 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
+@await Component.InvokeAsync("Menu")
 
-<h4>Agenda</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
+<div class="cabecalho-login mt-5 row d-flex flex-column align-items-center">
+    <h6>BEM-VINDOS AO ONMEDICAL - MÉDICO!</h6>
+    <h1>CADASTRAR AGENDA</h1>
+</div>
+
+<div id="div-cadastro-agenda" class="row mt-5">
+    <div class="col-md-4 offset-md-4 d-flex justify-content-center text-center">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="DataHoraInicioConsulta" class="control-label"></label>
-                <input asp-for="DataHoraInicioConsulta" class="form-control" />
+                <input asp-for="DataHoraInicioConsulta" class="form-control w-100" />
                 <span asp-validation-for="DataHoraInicioConsulta" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="DataHoraFimConsultaConsulta" class="control-label"></label>
-                <input asp-for="DataHoraFimConsultaConsulta" class="form-control" />
+                <input asp-for="DataHoraFimConsultaConsulta" class="form-control w-100" />
                 <span asp-validation-for="DataHoraFimConsultaConsulta" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+            <div class="form-group d-flex justify-content-end">
+                <input type="submit" value="Create" class="btn btn-primary " />
             </div>
         </form>
     </div>
-</div>
-
-<div>
-    <a asp-action="Index">Back to List</a>
 </div>
 

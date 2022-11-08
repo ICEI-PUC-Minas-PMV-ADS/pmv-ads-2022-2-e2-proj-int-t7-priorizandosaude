@@ -12,68 +12,6 @@
         <nav class="navbar-expand-sm navbar-toggleable-sm ">
             <div class="cabecalho d-flex justify-content-between">
                 
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between" >
-                    
-                    <ul class="navbar-nav flex-grow-1">
-                        @if (User.Identity.IsAuthenticated)
-                        {
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Medicos" asp-action="Index">Medicos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Pacientes" asp-action="Index">Pacientes</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Agendas" asp-action="Index">Agenda</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Consultas" asp-action="Index">Consultas</a>
-                            </li>
-
-                            <div class="dropdown">
-                                <a class="btn btn-info dropdown-toggle" role="button" id="dropdownMenuButtonName" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Olá, @User.Identity.Name
-                                </a>
-                                <div class="dropdown-menu text-dark" aria-labelledby="dropdownMenuButtonName">
-                                    @if(User.IsInRole("Medico")){
-                                        <a class="dropdown-item text-dark" asp-area="" asp-controller="Medicos" asp-action="Edit" asp-route-id="@User.Claims.Where(x=>x.Type == "Id").Select(x=>x.Value).FirstOrDefault()">Meus dados</a>
-                                    }else {
-                                        <a class="dropdown-item text-dark" asp-area="" asp-controller="Pacientes" asp-action="Edit" asp-route-id="@User.Claims.Where(x=>x.Type == "Id").Select(x=>x.Value).FirstOrDefault()">Meus dados</a>
-                                    }
-                                    @if(User.Claims.Any(x => x.Value == "Medico")){
-                                        <a class="dropdown-item text-dark" asp-area="" asp-controller="Medicos" asp-action="Logout">Logout</a>
-                                    }else {
-                                        <a class="dropdown-item text-dark" asp-area="" asp-controller="Pacientes" asp-action="Logout">Logout</a>
-
-                                    }
-                                </div>
-                            </div>
-
-@*                            @if(User.Claims.Any(x => x.Value == "Medico"))
-                            {
-                                <li class="nav-item">
-                                    <a class="nav-link text-dark" asp-area="" asp-controller="Medicos" asp-action="Logout">Logout</a>
-                                </li>
-                            }
-                            else
-                            {
-                                <li class="nav-item">
-                                    <a class="nav-link text-dark" asp-area="" asp-controller="Pacientes" asp-action="Logout">Logout</a>
-                                </li>
-                                
-                            }*@
-
-                        }
-               
-                    </ul>
-                </div>
             </div>
         </nav>
     </header>
