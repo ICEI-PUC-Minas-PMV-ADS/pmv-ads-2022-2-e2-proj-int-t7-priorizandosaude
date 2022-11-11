@@ -4,7 +4,7 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+@await Component.InvokeAsync("Menu")
 
 <p>
     <a asp-action="Create">Create New</a>
