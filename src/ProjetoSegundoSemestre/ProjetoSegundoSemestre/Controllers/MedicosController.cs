@@ -10,6 +10,8 @@ using System.Security.Claims;
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
+using System.Net.Http;
+using System.Text.Json;
 
 namespace ProjetoSegundoSemestre.Controllers
 {
@@ -17,6 +19,7 @@ namespace ProjetoSegundoSemestre.Controllers
     public class MedicosController : Controller
     {
         private readonly ContextDBPriorizandoSaude _context;
+        private static readonly HttpClient client = new HttpClient();
 
         public MedicosController(ContextDBPriorizandoSaude context)
         {
@@ -51,8 +54,21 @@ namespace ProjetoSegundoSemestre.Controllers
 
         // GET: Medicos/Create
         [AllowAnonymous]
-        public IActionResult Create()
+        public async Task<IActionResult> Create(string cep = null)
         {
+            if (cep != null)
+            {
+                var responseString = await client.GetStringAsync($"https://viacep.com.br/ws/{cep}/json/");
+                var responseJson = JsonSerializer.Deserialize<ViaCepResponse>(responseString, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+
+                var medico = new Medico
+                {
+                    Endereco = responseJson.logradouro + " " + responseJson.bairro + " - " + responseJson.localidade + ", " + responseJson.uf,
+                    Telefone = responseJson.ddd != null ? Int32.Parse(responseJson.ddd) : 21
+                };
+                return View(medico);
+            }
+
             return View();
         }
 
@@ -228,5 +244,12 @@ namespace ProjetoSegundoSemestre.Controllers
 
         #endregion
     }
-
+    public class ViaCepResponse
+    {   
+        public string logradouro { get; set; }
+        public string bairro { get; set; }
+        public string localidade { get; set; }
+        public string uf { get; set; }
+        public string ddd { get; set; }
+    }
 }
