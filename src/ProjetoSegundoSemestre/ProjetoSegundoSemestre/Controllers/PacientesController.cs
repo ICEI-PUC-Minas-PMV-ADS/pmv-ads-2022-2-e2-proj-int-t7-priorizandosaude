@@ -25,9 +25,16 @@ namespace ProjetoSegundoSemestre.Controllers
 
         // GET: Pacientes
         [Authorize(Roles = "Paciente")]
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string data = null, string nome = null, string especialidade = null)
         {
-            return View(await _context.Pacientes.ToListAsync());
+            var pesquisaAgendas = await _context.Agendas
+                .Where(x => data == null || x.DataHoraInicioConsulta.CompareTo(DateTime.Parse(data)) >= 0 && x.DataHoraInicioConsulta.CompareTo(DateTime.Parse(data).AddDays(1.0)) <= 0)
+                .Where(x => nome == null || x.Medico.Nome.Contains(nome))
+                .Where(x => especialidade == null || x.Medico.Especialidade.Equals(Enum.Parse(typeof(Especialidade), especialidade)))
+                .Include(x => x.Medico)
+                .ToListAsync();
+
+            return View(pesquisaAgendas);
         }
 
         // GET: Pacientes/Details/5

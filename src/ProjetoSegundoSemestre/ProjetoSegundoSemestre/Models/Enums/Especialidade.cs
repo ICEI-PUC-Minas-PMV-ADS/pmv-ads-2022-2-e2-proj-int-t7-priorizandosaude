@@ -4,5 +4,6 @@
     {
         Ginecologista,
         Clinico,
+        Cardiologista,
     }
 }

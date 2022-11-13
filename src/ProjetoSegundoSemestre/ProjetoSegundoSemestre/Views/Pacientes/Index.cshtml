@@ -1,59 +1,81 @@
-﻿@model IEnumerable<ProjetoSegundoSemestre.Models.Paciente>
+﻿@model IEnumerable<ProjetoSegundoSemestre.Models.Agenda>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Agendar consulta";
 }
 
 @await Component.InvokeAsync("Menu")
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
+<form asp-action="Index" method="GET" class="row">
+    <div class="form-group col-md-6">
+        <label for="Nome" class="control-label">Nome do Médico</label>
+        <input id="Nome" name="nome" class="form-control" />
+    </div>
+    <div class="form-group col-md-6">
+        <label for="Especialidade" class="control-label">Especialidade</label>
+        <select id="Especialidade" name="especialidade" asp-items="Html.GetEnumSelectList<Especialidade>()" class="form-control">
+            <option value="">Selecione...</option>
+        </select>
+    </div>
+    <div class="form-group col-md-6">
+        <label for="DataHoraFimConsultaConsulta" class="control-label">Data</label>
+        <input id="DataHoraFimConsultaConsulta" name="data" type="date" class="form-control" />
+    </div>
+    <div class="form-group col-md-6 div-btn">
+        <input type="submit" value="PESQUISAR" class="login-btn btn btn-primary" />
+    </div>
+</form>
+
 <table class="table">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Nome)
+                @Html.DisplayNameFor(model => model.Medico.Nome)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Senha)
+                @Html.DisplayNameFor(model => model.Medico.Especialidade)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Email)
+                @Html.DisplayNameFor(model => model.DataHoraInicioConsulta)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Telefone)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.CPF)
+                @Html.DisplayNameFor(model => model.DataHoraFimConsultaConsulta)
             </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Nome)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Senha)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Email)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Telefone)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CPF)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            @if (item.StatusAgenda == StatusAgenda.Vago)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Medico.Nome)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Medico.Especialidade)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DataHoraInicioConsulta)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DataHoraFimConsultaConsulta)
+                    </td>
+                    <td>
+                        <form id="MarcarConsulta" asp-controller="Consultas" asp-action="Create" asp-route-id="@item.Id" value="@item.Id" method="post" role="form">
+                            <div>
+                                <button type="submit" name="culture" value="@item.Id">
+                                    Agendar
+                                </button>
+                            </div>
+                        </form>
+                        <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                        <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                        <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                    </td>
+                </tr>
+            }
+        }
     </tbody>
 </table>
