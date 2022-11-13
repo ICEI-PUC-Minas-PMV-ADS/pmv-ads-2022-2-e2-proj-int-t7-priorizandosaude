@@ -3,10 +3,111 @@
 @{
     ViewData["Title"] = "Index";
 }
+@*@await Component.InvokeAsync("Menu")*@
+<div class="header-primary">
+    <a asp-area="" asp-controller="Agendas" asp-action="Index">
+        <img src="~/img/onmedical_logo.png" />
+    </a>
 
-<h1>Index</h1>
+    <div class="login-home">
 
-<p>
+        @if(User.Identity.IsAuthenticated)
+        {
+            @if (User.Claims.Any(x => x.Value == "Medico"))
+            {
+                <a class="dropdown-item text-dark" asp-area="" asp-controller="Medicos" asp-action="Logout">Logout</a>
+            }
+            else
+            {
+                <a class="secondary-button" asp-area="" asp-controller="Consultas" asp-action="Index">MINHAS CONSULTAS</a>
+                <a class="secondary-button " asp-area="" asp-controller="Pacientes" asp-action="Logout">LOGOUT</a>
+            }
+        }
+
+    </div>
+</div>
+
+
+
+@if (User.Identity.IsAuthenticated){
+    @if (User.Claims.Any(x => x.Value == "Paciente")){
+
+        <div id="cabecalho-agenda" class="row d-flex flex-column align-items-center">
+            <h6 style="color: #1971C2">BEM-VINDOS AO ONMEDICAL - PACIENTE!</h6>
+            <h1 style="font-weight: bolder; margin-top: 20px" >Agendar consulta</h1>
+        </div>
+
+        <div id="div-agenda-main" class="container">
+            <div id="div-filtros" class="row">
+                <div class="col-md-12">
+                    
+                    <div id="pesquisar-medico" class="d-md-inline-block d-md-flex flex-md-wrap d-sm-block">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        @*<div class="form-group">
+                            <label asp-for="" class="control-label">Especialidade</label>
+                            <input asp-for="" type="text" class="form-control" />
+                            <span asp-validation-for="" class="text-danger"></span>
+                        </div>*@
+                        <div class="form-group">
+                            <label class="control-label">Especialidade</label>
+                            <input type="text" class="form-control input-pesquisa" />
+                            <span class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="control-label">Nome do Médico</label>
+                            <input type="text" class="form-control input-pesquisa" />
+                            <span class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group ">
+                            <label class="control-label">Data</label>
+                            <input type="date" class="form-control input-pesquisa" />
+                            <span class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group"id="btn-filtro">
+                            <button type="button" class="btn btn-primary" >Pesquisar</button>
+                            @*<input type="submit" value="Cadastrar" class="btn btn-primary btn-filtro" />*@
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="div-cards" class="row">
+                <div class="col-md-12 d-flex flex-wrap justify-content-between">
+
+                    @foreach (var item in Model) {
+
+                        <div class="card cards-agenda" style="max-width: 540px;">
+                            <div class="row g-0">
+                            
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <p class="card-text paragrafo"> @Html.DisplayFor(modelItem => item.DataHoraInicioConsulta) - @Html.DisplayFor(modelItem => item.Medico.Especialidade)</p>
+                                        <h5 class="card-title"><strong>Dr @Html.DisplayFor(modelItem => item.Medico.Nome    )</strong></h5>
+                                        <p class="card-text"><small class="text-muted">Endereço: @Html.DisplayFor(modelItem => item.Medico.Endereco)</small></p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <button type="button" class="btn btn-primary">Agendar</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    }
+
+
+                </div>
+            </div>
+        </div>
+
+    }
+}
+
+@*<p>
     <a asp-action="Create">Create New</a>
 </p>
 <table class="table">
@@ -50,3 +151,4 @@
         }
     </tbody>
 </table>
+*@

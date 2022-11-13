@@ -4,7 +4,17 @@
     ViewData["Title"] = "Create";
 }
 
-@await Component.InvokeAsync("Menu")
+@*@await Component.InvokeAsync("Menu")*@
+
+<div class="header-primary">
+    <a asp-area="" asp-controller="Agendas" asp-action="Index">
+        <img src="~/img/onmedical_logo.png" />
+    </a>
+    <div class="login-home">
+        <a class="secondary-button" asp-area="" asp-controller="Consultas" asp-action="Index">MINHAS CONSULTAS</a>
+        <a class="secondary-button" asp-area="" asp-controller="Medicos" asp-action="Logout">SAIR</a>
+    </div>
+</div>
 
 <div class="cabecalho-login mt-5 row d-flex flex-column align-items-center">
     <h6>BEM-VINDOS AO ONMEDICAL - MÉDICO!</h6>
