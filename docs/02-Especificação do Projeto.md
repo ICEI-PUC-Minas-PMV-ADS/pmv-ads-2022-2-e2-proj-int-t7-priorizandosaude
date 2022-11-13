@@ -61,13 +61,15 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-001| A aplicação devera possuir uma lading page explicando detralhes sobre o serviço fornecido. | ALTA |
 |RF-002| A aplicação deve gerenciar médicos. Para um médico se cadastrar é necessário: CNPJ, NOME , E-MAIL, TELEFONE, SENHA, ESPECIALIDADE e ENDEREÇO | ALTA | 
 |RF-003| A aplicação deve gerenciar pacientes. Para um paciente se cadastrar é necessário: CPF, NOME , E-MAIL, TELEFONE e SENHA. | ALTA |
-|RF-004| A aplicação deve mostrar para o usuário todos os médicos cadastrados. | Baixa | 
+|RF-004| A aplicação deve mostrar para o usuário todos as agendas cadastradas. | Baixa | 
 |RF-005| A aplicação deverá mostrar uma agenda por médico.| ALTA | 
 |RF-006| A aplicação deverá permitir que o médico gerencie sua agenda.  | MÉDIA |
 |RF-007| A aplicação deverá permitir que o médico tenha informações dos seus pacientes. | Baixa | 
 |RF-008| A aplicação deverá permitir que o paciente gerencie suas consultas de acordo com a disponibilidade do médico. | Alta |
 |RF-009| A aplicação deverá permitir que o usuario tenha as infomações de contato do médico. | ALTA | 
-|RF-010| A aplicação deverá permitir que o usuario faça login. | ALTA | 
+|RF-010| A aplicação deverá permitir que o usuario faça login. | ALTA |
+|RF-011| A aplicação deverá permitir que o usuario pesquise  a agenda cadastrada, pela data, especialidade e/ou nome. | MÉDIA | 
+
 
 
 ### Requisitos não Funcionais
