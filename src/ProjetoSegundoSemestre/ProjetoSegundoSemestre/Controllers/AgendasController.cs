@@ -29,7 +29,10 @@ namespace ProjetoSegundoSemestre.Controllers
         [Authorize(Roles = "Medico,Paciente")]
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Agendas.ToListAsync());
+            var agenda = await _context.Agendas
+                .Include(t => t.Medico).ToListAsync();
+            return View(agenda);
+            //return View(await _context.Agendas.ToListAsync());
         }
 
         // GET: Agendas/Details/5

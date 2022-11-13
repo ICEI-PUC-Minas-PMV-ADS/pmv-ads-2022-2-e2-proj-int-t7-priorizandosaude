@@ -494,3 +494,101 @@ div#div-cadastro-agenda.row.mt-5 {
         background-color: red;
     }
 }
+
+/* 
+    TELA AGENDA INDEX
+*/
+
+div#pesquisar-medico div#btn-filtro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div#pesquisar-medico div#btn-filtro button {
+    width: 250px;
+    height: 40px;
+}
+
+div#pesquisar-medico input.input-pesquisa,
+div#pesquisar-medico button {
+    width: 90%;
+}
+
+div#div-cards div.cards-agenda {
+    border-radius: 15px;
+    border: 1px solid rgba(25, 113, 194, .5);
+}
+
+div#div-cards div.cards-agenda button {
+    width: 100%;
+    height: 100%;
+    border-radius: 0 15px 15px 0;
+}
+
+div#div-cards {
+    margin-top: 100px;
+  
+}
+
+div#div-cards div.cards-agenda {
+    margin-bottom: 70px;
+}
+
+div#div-cards div.cards-agenda p.paragrafo {
+    color: #1971C2;
+}
+
+
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+
+    div#pesquisar-medico div.form-group {
+        width: 300px;
+    }
+
+    div#pesquisar-medico div#btn-filtro {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+ 
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+
+    div#pesquisar-medico div.form-group {
+        width: 300px;
+    }
+    
+}
+
+/* X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+
+    div#pesquisar-medico div.form-group {
+        width: 500px;
+    }
+
+
+    
+}
+
+/* XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {
+
+    div#div-agenda-main {
+        min-height: 80vh;
+    }
+
+    div#cabecalho-agenda h1 {
+        
+    }
+}
