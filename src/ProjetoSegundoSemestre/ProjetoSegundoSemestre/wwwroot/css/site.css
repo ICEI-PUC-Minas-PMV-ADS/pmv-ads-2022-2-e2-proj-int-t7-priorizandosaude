@@ -553,19 +553,19 @@ div#div-cards div.cards-agenda p.paragrafo {
 
 
 .patient-index h4 {
-    margin: 40px 0 0 200px;
+    margin: 40px;
     font-family: 'DM Sans Medium';
     letter-spacing: 1.5px;
 }
-   
 
-.patient-content {
-   display:flex;
-   flex-wrap:wrap;
-   align-self:center;
-   align-items: center;
-   justify-content: center;
-   padding:60px 180px;
+
+.search-medical {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    margin: 60px 100px;
 }
 
 .appointmentCard {
@@ -590,7 +590,7 @@ div#div-cards div.cards-agenda p.paragrafo {
     border: none;
     background-color: #1971C2;
     color: white;
-    min-height:180px;
+    height:200px;
     min-width:100px;
     font-size: 14px;
     font-weight: 500;
@@ -624,8 +624,27 @@ div#div-cards div.cards-agenda p.paragrafo {
     font-family: 'DM Sans Bold';
     letter-spacing: 1.5px;
 }
+
 /* Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) {
+@media (max-width: 768px) {
+    .search-medical {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 30px 10px;
+    }
+
+    .toschedule {
+        height: 265px;
+        min-width: 130px;
+        font-size: 12px;
+    }
+
+    .schedule-container {
+        padding: 150px 100px;
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+    }
 }
 
 /* Medium devices (tablets, 768px and up)*/
