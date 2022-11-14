@@ -540,10 +540,44 @@ div#div-cards div.cards-agenda p.paragrafo {
 }
 
 
+/* Consultas Cards */
+
+
+.appointmentCard {
+    background-color: #fff;
+    border: 1px solid #D0EBFF;
+    border-radius: 10px;
+    display:flex;
+    box-sizing: border-box;
+}
+
+.schedule-container {
+    padding: 150px 100px;
+    display:flex;
+    grid-template-columns: 2fr;
+    gap: 30px;
+    justify-content: center;
+}
+
+.toschedule {
+    color: #fff;
+    padding: 20px;
+    border: none;
+    background-color: #1971C2;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 0px 10px 10 10px;
+}
+
+.content-schedule {
+ padding:20px;
+}
+
 
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
-
 }
 
 /* Medium devices (tablets, 768px and up)*/

@@ -26,56 +26,43 @@
     </div>
 </form>
 
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Medico.Nome)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Medico.Especialidade)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.DataHoraInicioConsulta)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.DataHoraFimConsultaConsulta)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
+   
+    <div class="schedule-container">
         @foreach (var item in Model)
         {
             @if (item.StatusAgenda == StatusAgenda.Vago)
             {
-                <tr>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Medico.Nome)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Medico.Especialidade)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.DataHoraInicioConsulta)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.DataHoraFimConsultaConsulta)
-                    </td>
-                    <td>
-                        <form id="MarcarConsulta" asp-controller="Consultas" asp-action="Create" asp-route-id="@item.Id" value="@item.Id" method="post" role="form">
-                            <div>
-                                <button type="submit" name="culture" value="@item.Id">
-                                    Agendar
-                                </button>
-                            </div>
-                        </form>
-                        <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                        <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                        <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-                    </td>
-                </tr>
+            <div class="appointmentCard">
+                    <div class="content-schedule" >
+                        <div>
+                        <img src="~/img/check.png" />
+                        </div>
+                        <div>
+                            @Html.DisplayFor(modelItem => item.DataHoraInicioConsulta)
+                        </div>
+                        <div>
+                           @Html.DisplayFor(modelItem => item.Medico.Especialidade)
+                        </div>
+                         <div>
+                            Dr. @Html.DisplayFor(modelItem => item.Medico.Nome)
+
+                        </div>
+                        <div>
+                           @Html.DisplayFor(modelItem => item.Medico.Endereco)
+
+                        </div>
+                    </div>
+                    <div>
+                            <form id="MarcarConsulta" asp-controller="Consultas" asp-action="Create" asp-route-id="@item.Id" value="@item.Id" method="post" role="form">
+                                <div>
+                            <button class="toschedule" type="submit" name="culture" value="@item.Id">
+                                        Agendar
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                   
+                </div>
             }
         }
-    </tbody>
-</table>
+    </div>

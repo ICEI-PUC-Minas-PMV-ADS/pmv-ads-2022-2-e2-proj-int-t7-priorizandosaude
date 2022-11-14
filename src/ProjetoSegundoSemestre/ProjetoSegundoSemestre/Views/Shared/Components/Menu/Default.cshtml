@@ -14,16 +14,7 @@
             @if (User.Identity.IsAuthenticated)
             {
                 <li class="nav-item">
-                    <a class="secondary-button nav-link " asp-area="" asp-controller="Medicos" asp-action="Index">Medicos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="secondary-button nav-link " asp-area="" asp-controller="Pacientes" asp-action="Index">Pacientes</a>
-                </li>
-                <li class="nav-item">
-                    <a class=" secondary-button nav-link " asp-area="" asp-controller="Agendas" asp-action="Index">Agenda</a>
-                </li>
-                <li class="nav-item">
-                    <a class="secondary-button nav-link " asp-area="" asp-controller="Consultas" asp-action="Index">Consultas</a>
+                    <a class="secondary-button nav-link " asp-area="" asp-controller="consultas" asp-action="Index">Minhas Consultas</a>
                 </li>
 
                 <li class="nav-item dropdown">
