@@ -603,7 +603,7 @@ div#div-cards div.cards-agenda p.paragrafo {
  padding:20px;
 }
 
-.title-patient-time {
+.schedule-info {
     margin:10px 0;
     display: flex;
     color: #1971C2;
@@ -611,7 +611,7 @@ div#div-cards div.cards-agenda p.paragrafo {
     font-size: 14px;
     letter-spacing: 1.5px;
 }
-.address-patient{
+.address-medical{
     display: flex;
     color: #495057;
     font-family: 'DM Sans Bold';
@@ -619,7 +619,7 @@ div#div-cards div.cards-agenda p.paragrafo {
     letter-spacing: 1.5px;
 }
 
-.title-patient-medical {
+.id-medical {
     display: flex;
     font-family: 'DM Sans Bold';
     letter-spacing: 1.5px;

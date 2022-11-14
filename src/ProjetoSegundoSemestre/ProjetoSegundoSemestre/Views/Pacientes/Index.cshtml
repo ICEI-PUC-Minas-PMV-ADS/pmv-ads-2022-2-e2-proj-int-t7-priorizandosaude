@@ -42,17 +42,17 @@
                         <div>
                         <img src="~/img/check.png" />
                         </div>
-                        <div class="title-patient-time">
+                    <div class="schedule-info">
                             @Html.DisplayFor(modelItem => item.DataHoraInicioConsulta)
                         </div>
-                    <div class="title-patient-time">
+                    <div class="schedule-info">
                            @Html.DisplayFor(modelItem => item.Medico.Especialidade)
                         </div>
-                         <h4 class="title-patient-medical">
+                    <h4 class="id-medical">
                              @Html.DisplayFor(modelItem => item.Medico.Nome)
 
                         </h4>
-                    <div class="address-patient">
+                    <div class="address-medical">
                            @Html.DisplayFor(modelItem => item.Medico.Endereco)
 
                         </div>
