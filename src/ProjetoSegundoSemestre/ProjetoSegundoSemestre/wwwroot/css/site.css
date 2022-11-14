@@ -542,19 +542,44 @@ div#div-cards div.cards-agenda p.paragrafo {
 
 /* Consultas Cards */
 
+.patient-index h6 {
+  display:flex;
+  justify-content:center;
+    color: #1971C2;
+    font-family: 'DM Sans Bold';
+    font-size: 14px;
+    letter-spacing: 1.5px;
+}
+
+
+.patient-index h4 {
+    margin: 40px 0 0 200px;
+    font-family: 'DM Sans Medium';
+    letter-spacing: 1.5px;
+}
+   
+
+.patient-content {
+   display:flex;
+   flex-wrap:wrap;
+   align-self:center;
+   align-items: center;
+   justify-content: center;
+   padding:60px 180px;
+}
 
 .appointmentCard {
     background-color: #fff;
     border: 1px solid #D0EBFF;
     border-radius: 10px;
-    display:flex;
+    display: flex;
     box-sizing: border-box;
 }
 
 .schedule-container {
     padding: 150px 100px;
     display:flex;
-    grid-template-columns: 2fr;
+    grid-template-columns: 1fr 1fr;
     gap: 30px;
     justify-content: center;
 }
@@ -565,17 +590,40 @@ div#div-cards div.cards-agenda p.paragrafo {
     border: none;
     background-color: #1971C2;
     color: white;
+    min-height:180px;
+    min-width:100px;
     font-size: 14px;
     font-weight: 500;
     cursor: pointer;
-    border-radius: 0px 10px 10 10px;
+    border-radius: 0px 10px 10px 0px;
+    
 }
 
 .content-schedule {
  padding:20px;
 }
 
+.title-patient-time {
+    margin:10px 0;
+    display: flex;
+    color: #1971C2;
+    font-family: 'DM Sans Bold';
+    font-size: 14px;
+    letter-spacing: 1.5px;
+}
+.address-patient{
+    display: flex;
+    color: #495057;
+    font-family: 'DM Sans Bold';
+    font-size: 16px;
+    letter-spacing: 1.5px;
+}
 
+.title-patient-medical {
+    display: flex;
+    font-family: 'DM Sans Bold';
+    letter-spacing: 1.5px;
+}
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
 }

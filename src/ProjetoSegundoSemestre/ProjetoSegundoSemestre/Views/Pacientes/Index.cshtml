@@ -6,7 +6,12 @@
 
 @await Component.InvokeAsync("Menu")
 
-<form asp-action="Index" method="GET" class="row">
+<div class="patient-index">
+<h6>Bem vindo ao onMedical Paciente</h6>
+<h4>Agendar Consulta</h4>
+</div>
+
+<form asp-action="Index" class="patient-content"  method="GET" >
     <div class="form-group col-md-6">
         <label for="Nome" class="control-label">Nome do Médico</label>
         <input id="Nome" name="nome" class="form-control" />
@@ -37,17 +42,17 @@
                         <div>
                         <img src="~/img/check.png" />
                         </div>
-                        <div>
+                        <div class="title-patient-time">
                             @Html.DisplayFor(modelItem => item.DataHoraInicioConsulta)
                         </div>
-                        <div>
+                    <div class="title-patient-time">
                            @Html.DisplayFor(modelItem => item.Medico.Especialidade)
                         </div>
-                         <div>
-                            Dr. @Html.DisplayFor(modelItem => item.Medico.Nome)
+                         <h4 class="title-patient-medical">
+                             @Html.DisplayFor(modelItem => item.Medico.Nome)
 
-                        </div>
-                        <div>
+                        </h4>
+                    <div class="address-patient">
                            @Html.DisplayFor(modelItem => item.Medico.Endereco)
 
                         </div>
