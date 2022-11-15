@@ -15,12 +15,12 @@
         {
             @if (User.Claims.Any(x => x.Value == "Medico"))
             {
-                <a class="dropdown-item text-dark" asp-area="" asp-controller="Medicos" asp-action="Logout">Logout</a>
+                <a class="dropdown-item text-dark" asp-area="" asp-controller="Medicos" asp-action="Logout">SAIR</a>
             }
             else
             {
                 <a class="secondary-button" asp-area="" asp-controller="Consultas" asp-action="Index">MINHAS CONSULTAS</a>
-                <a class="secondary-button " asp-area="" asp-controller="Pacientes" asp-action="Logout">LOGOUT</a>
+                <a class="secondary-button " asp-area="" asp-controller="Pacientes" asp-action="Logout">SAIR</a>
             }
         }
 
@@ -68,7 +68,7 @@
 
                         <div class="form-group"id="btn-filtro">
                             <button type="button" class="btn btn-primary" >Pesquisar</button>
-                            @*<input type="submit" value="Cadastrar" class="btn btn-primary btn-filtro" />*@
+                            @* <input type="submit" value="Cadastrar" class="btn btn-primary btn-filtro" /> *@
                         </div>
                     </div>
 
@@ -150,5 +150,4 @@
             }
         }
     </tbody>
-</table>
-*@
+</table>*@

@@ -6,17 +6,23 @@
 
 @await Component.InvokeAsync("Menu")
 
+<div class="login-home">
+    <a class="secondary-button" asp-area="" asp-controller="Home" asp-action="Index">VOLTAR</a>
+</div>
+
 <div class="row d-flex flex-column align-items-center cabecalho">
     <h4>BEM-VINDOS AO ONMEDICAL DO MÉDICO</h4>
-    <h2>Minha Agenda</h2>
-</div
+    <h2>MINHA AGENDA</h2>
+</div>
 
-<div class="col-md-12">
+
+
+@*<div class="col-md-12">
     
 
 </div>
 
-@*<h1>Index</h1>
+<h1>Index</h1>
 
 <p>
     <a asp-action="Create">Create New</a>
