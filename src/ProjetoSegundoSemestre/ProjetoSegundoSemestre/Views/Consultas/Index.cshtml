@@ -10,10 +10,12 @@
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
                     <img src="~/img/onMedical_logo.png" />
                 </a>
+
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
 
                     <ul class="navbar-nav">
@@ -22,7 +24,7 @@
                             @if (User.IsInRole("Medico"))
                             {
                                 <li class="nav-item">
-                                    <a class="nav-link text-dark" asp-area="" asp-controller="Medicos" asp-action="Edit" asp-route-id="@User.Claims.Where(x=>x.Type == "Id").Select(x=>x.Value).FirstOrDefault()">\Meus dados</a>
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Medicos" asp-action="Edit" asp-route-id="@User.Claims.Where(x=>x.Type == "Id").Select(x=>x.Value).FirstOrDefault()">Meus dados</a>
                                 </li>
                             }
                             else
@@ -32,6 +34,7 @@
                                 </li>
                             }
 
+                             
 
                             <li class="nav-item">
                                 Olá, @User.Identity.Name
@@ -40,13 +43,13 @@
                             @if (User.Claims.Any(x => x.Value == "Medico"))
                             {
                                 <li class="nav-item">
-                                    <a class="nav-link text-dark" asp-area="" asp-controller="Medicos" asp-action="Logout">Logout</a>
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Medicos" asp-action="Logout">Sair</a>
                                 </li>
                             }
                             else
                             {
                                 <li class="nav-item">
-                                    <a class="nav-link text-dark" asp-area="" asp-controller="Pacientes" asp-action="Logout">Logout</a>
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Pacientes" asp-action="Logout">Sair</a>
                                 </li>
 
                             }
