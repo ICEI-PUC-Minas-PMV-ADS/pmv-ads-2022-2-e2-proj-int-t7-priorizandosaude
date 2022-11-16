@@ -87,7 +87,7 @@ body {
 /*
     Telas login
 */
-
+ 
 div.cabecalho-login h6 {
     color: #1971C2;
     margin-top: 15px;
@@ -537,6 +537,27 @@ div#div-cards div.cards-agenda {
 
 div#div-cards div.cards-agenda p.paragrafo {
     color: #1971C2;
+}
+
+.schedule-btn {
+    color: #fff;
+    padding: 20px;
+    width: 100%;
+}
+
+div.btn-medico .toschedule-medico {
+    color: #fff;
+    padding: 20px;
+    border: none;
+    background-color: #1971C2;
+    color: white;
+    height: 200px;
+    min-width: 100px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-left: 20px;
+    width: 100%;
 }
 
 

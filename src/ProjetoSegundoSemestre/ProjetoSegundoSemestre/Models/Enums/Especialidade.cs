@@ -5,5 +5,10 @@
         Ginecologista,
         Clinico,
         Cardiologista,
+        Cirurgião,
+        Dermatologista,
+        Endocrinologista,
+        Gastroenterologista,
+        Geriatra
     }
 }

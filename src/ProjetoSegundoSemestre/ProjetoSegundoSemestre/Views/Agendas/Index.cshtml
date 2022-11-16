@@ -15,7 +15,7 @@
         {
             @if (User.Claims.Any(x => x.Value == "Medico"))
             {
-                <a class="dropdown-item text-dark" asp-area="" asp-controller="Medicos" asp-action="Logout">SAIR</a>
+                <a class="secondary-button" asp-area="" asp-controller="Medicos" asp-action="Logout">SAIR</a>
             }
             else
             {
@@ -85,6 +85,9 @@
                             
                                 <div class="col-md-8">
                                     <div class="card-body">
+                                        <div>
+                                            <img src="~/img/check.png" />
+                                        </div>
                                         <p class="card-text paragrafo"> @Html.DisplayFor(modelItem => item.DataHoraInicioConsulta) - @Html.DisplayFor(modelItem => item.Medico.Especialidade)</p>
                                         <h5 class="card-title"><strong>Dr @Html.DisplayFor(modelItem => item.Medico.Nome    )</strong></h5>
                                         <p class="card-text"><small class="text-muted">Endereço: @Html.DisplayFor(modelItem => item.Medico.Endereco)</small></p>
@@ -104,6 +107,45 @@
             </div>
         </div>
 
+    } else {
+        <div id="cabecalho-agenda" class="row d-flex flex-column align-items-center">
+            <h6 style="color: #1971C2">BEM-VINDOS AO ONMEDICAL - MEDICO!</h6>
+            <h1 style="font-weight: bolder; margin-top: 20px">Horários</h1>
+        </div>
+
+        <div style="min-height: 70vh">
+            @foreach (var item in Model){
+
+            <div class="container mt-4">
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <div class="appointmentCard">
+                            <div class="content-schedule">
+                                <div class="schedule-info">
+                                    <h6>Data - Hora - início: </h6>
+                                    <p> @Html.DisplayFor(modelItem => item.DataHoraInicioConsulta) </p>
+                                </div>
+                                <div class="schedule-info">
+                                    <h6>Data - Hora - Fim: </h6>
+                                    <p> @Html.DisplayFor(modelItem => item.DataHoraFimConsultaConsulta)</p>
+                                </div>
+                            </div>
+                            <div style="width: 100px">
+                                <a role="button" style="width: 100%; height: 100%; " class="btn btn-info schedule-btn-medico-agenda" asp-action="Edit" asp-route-id="@item.Id">Edit</a>
+                            </div>
+                            <div style="width: 100px">
+                                <a style="height: 100%" role="button" class="btn btn-info schedule-btn-medico-agenda" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        }
+        </div>
+        
     }
 }
 
