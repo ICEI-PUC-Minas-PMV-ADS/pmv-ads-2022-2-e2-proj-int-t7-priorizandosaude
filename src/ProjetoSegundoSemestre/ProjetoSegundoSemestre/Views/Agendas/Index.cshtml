@@ -3,9 +3,8 @@
 @{
     ViewData["Title"] = "Index";
 }
-@*@await Component.InvokeAsync("Menu")*@
 <div class="header-primary">
-    <a asp-area="" asp-controller="Agendas" asp-action="Index">
+    <a asp-area="" asp-controller="home" asp-action="Index">
         <img src="~/img/onmedical_logo.png" />
     </a>
 
@@ -15,7 +14,8 @@
         {
             @if (User.Claims.Any(x => x.Value == "Medico"))
             {
-                <a class="secondary-button" asp-area="" asp-controller="Medicos" asp-action="Logout">SAIR</a>
+                <a class="secondary-button" asp-area="" asp-controller="Agendas" asp-action="Index">MINHAS CONSULTAS</a>
+                <a class="secondary-button " asp-area="" asp-controller="Pacientes" asp-action="Logout">SAIR</a>
             }
             else
             {
