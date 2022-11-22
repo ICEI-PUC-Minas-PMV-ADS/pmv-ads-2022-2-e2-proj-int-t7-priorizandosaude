@@ -478,7 +478,13 @@ div#div-cadastro-agenda.row.mt-5 {
 
 #div-edit-agenda {
     min-height: 50vh;
+}
 
+/* Tela delete agenda*/
+
+
+#div-delete-agenda {
+    min-height: 55vh;
 }
 
 
