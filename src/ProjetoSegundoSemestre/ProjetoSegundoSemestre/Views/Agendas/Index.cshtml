@@ -120,22 +120,24 @@
                 <div class="row">
                     <div class="col-md-12">
 
-                        <div class="appointmentCard">
+                        <div id="appointmentCard-medico" class="">
                             <div class="content-schedule">
-                                <div class="schedule-info">
+                                    <div class="schedule-info-medico">
                                     <h6>Data - Hora - início: </h6>
                                     <p> @Html.DisplayFor(modelItem => item.DataHoraInicioConsulta) </p>
                                 </div>
-                                <div class="schedule-info">
+                                    <div class="schedule-info-medico">
                                     <h6>Data - Hora - Fim: </h6>
                                     <p> @Html.DisplayFor(modelItem => item.DataHoraFimConsultaConsulta)</p>
                                 </div>
                             </div>
-                            <div style="width: 100px">
-                                <a role="button" style="width: 100%; height: 100%; " class="btn btn-info schedule-btn-medico-agenda" asp-action="Edit" asp-route-id="@item.Id">Edit</a>
-                            </div>
-                            <div style="width: 100px">
-                                <a style="height: 100%" role="button" class="btn btn-info schedule-btn-medico-agenda" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                            <div id="content-schedule-btn">
+                                <div>
+                                    <a style="margin: 0 4px 0 0" role="button" class="btn btn-info d-inline-block schedule-btn-medico" asp-action="Edit" asp-route-id="@item.Id">Edit</a>
+                                </div>
+                                <div>
+                                     <a role="button" class="btn btn-info d-inline-block schedule-btn-medico" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                                </div>
                             </div>
                         </div>
 

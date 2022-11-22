@@ -560,6 +560,37 @@ div.btn-medico .toschedule-medico {
     width: 100%;
 }
 
+#appointmentCard-medico {
+    width: 550px;
+    background-color: #fff;
+    border: 1px solid #D0EBFF;
+    border-radius: 10px;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+}
+
+#content-schedule-btn {
+    display: flex;
+    flex-direction: row;
+}
+
+.schedule-info-medico {
+    margin: 10px 0;
+    
+    color: #1971C2;
+    font-family: 'DM Sans Bold';
+    font-size: 14px;
+    letter-spacing: 1.5px;
+}
+
+.schedule-btn-medico {
+   width: 90px;
+   height: 100%;
+   padding: 70% 0;
+}
 
 /* Consultas Cards */
 
