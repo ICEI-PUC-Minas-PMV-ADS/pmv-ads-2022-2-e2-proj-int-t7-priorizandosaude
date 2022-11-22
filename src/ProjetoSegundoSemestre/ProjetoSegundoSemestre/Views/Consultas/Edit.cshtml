@@ -1,13 +1,14 @@
 ﻿@model ProjetoSegundoSemestre.Models.Consulta
 
 @{
-    ViewData["Title"] = "Edit";
+    ViewData["Title"] = "Editar Agenda";
 }
 *@await Component.InvokeAsync("Menu")
-<h1>Edit</h1>
+<div class="cabecalho-login mt-5 row d-flex flex-column align-items-center">
+    <h6>BEM-VINDOS AO ONMEDICAL - MÉDICO!</h6>
+    <h1>CADASTRAR AGENDA</h1>
+</div>
 
-<h4>Consulta</h4>
-<hr />
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Edit">

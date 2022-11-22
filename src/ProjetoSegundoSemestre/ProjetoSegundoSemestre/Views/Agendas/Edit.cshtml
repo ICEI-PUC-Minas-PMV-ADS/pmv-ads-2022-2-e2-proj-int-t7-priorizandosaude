@@ -1,25 +1,27 @@
 ﻿@model ProjetoSegundoSemestre.Models.Agenda
 
 @{
-    ViewData["Title"] = "Edit";
+    ViewData["Title"] = "Editar Agenda";
 }
 *@await Component.InvokeAsync("Menu")
-<h1>Edit</h1>
 
-<h4>Agenda</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
+<div class="cabecalho-login mt-5 row d-flex flex-column align-items-center">
+    <h6>BEM-VINDOS AO ONMEDICAL - MÉDICO!</h6>
+    <h1>EDITAR AGENDA</h1>
+</div>
+
+<div id="div-edit-agenda" class="row">
+    <div class="col-md-4  offset-md-4 d-flex justify-content-center text-center">
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="DataHoraInicioConsulta" class="control-label"></label>
-                <input asp-for="DataHoraInicioConsulta" class="form-control" />
+                <input asp-for="DataHoraInicioConsulta" class="form-control w-100" />
                 <span asp-validation-for="DataHoraInicioConsulta" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="DataHoraFimConsultaConsulta" class="control-label"></label>
-                <input asp-for="DataHoraFimConsultaConsulta" class="form-control" />
+                <input asp-for="DataHoraFimConsultaConsulta" class="form-control w-100" />
                 <span asp-validation-for="DataHoraFimConsultaConsulta" class="text-danger"></span>
             </div>
             <input type="hidden" asp-for="Id" />
@@ -28,9 +30,5 @@
             </div>
         </form>
     </div>
-</div>
-
-<div>
-    <a asp-action="Index">Back to List</a>
 </div>
 
