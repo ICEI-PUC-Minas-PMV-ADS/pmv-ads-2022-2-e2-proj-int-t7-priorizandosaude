@@ -10,6 +10,15 @@ Relatório com as evidências dos testes de software.
 |  	|  	|
 | Testes 	| CT-02 – Cadastrar médico e CT-04 – Efetuar login Médico	|
 |	Vídeo 	| <video src="https://user-images.githubusercontent.com/58198111/198903239-785d28e0-bdd9-40cc-80cf-a8f18cec34e9.mp4"> |
+|  	|  	|
+| Testes 	| CT-05 – Mostrar médicos cadastrados	|
+|	Vídeo 	| <video src="https://user-images.githubusercontent.com/58198111/204144175-ad5eef5a-d690-4209-99aa-d868adc887cf.mp4"> |
+|  	|  	|
+| Testes 	| CT-06 – Renderizar agenda do médico	|
+|	Vídeo 	| <video src="https://user-images.githubusercontent.com/58198111/204144200-d7a6358f-4187-4c36-aee5-ae134523d069.mp4"> |
+|  	|  	|
+| Testes 	| CT-07 – Confirmar consultas do paciente	|
+|	Vídeo 	| <video src="https://user-images.githubusercontent.com/58198111/204144260-757c914a-d078-43fc-9fc9-6ac33fa0e971.mp4"> |
   
   <h2>Relatório de Testes de Software</h2>
   
