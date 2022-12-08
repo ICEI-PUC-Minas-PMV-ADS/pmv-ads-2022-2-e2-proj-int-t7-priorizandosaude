@@ -3,12 +3,19 @@
 @{
     ViewData["Title"] = "Edit";
 }
+<div class="header-primary">
+    <a asp-area="" asp-controller="Home" asp-action="Index">
+        <img src="~/img/onmedical_logo.png" />
+    </a>
+    <div class="login-home">
+        <a class="secondary-button" asp-action="Index">VOLTAR</a>
+    </div>
+</div>
+<div class="row d-flex flex-column align-items-center">
+    <h3>Editar dados Paciente</h3>
+</div>
 
-<h1>Editar dados Paciente</h1>
-
-@*<h4>Paciente</h4>*@
-<hr />
-<div class="row">
+<div class="row d-flex align-items-center flex-column">
     <div class="align-items-center flex-column col-md-6">
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
@@ -43,9 +50,5 @@
             </div>
         </form>
     </div>
-</div>
-
-<div>
-    <a asp-action="Index">Voltar ao menu</a>
 </div>
 

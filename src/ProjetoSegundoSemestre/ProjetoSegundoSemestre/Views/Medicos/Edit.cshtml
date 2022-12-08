@@ -11,23 +11,11 @@
         <a class="secondary-button" asp-action="Index">VOLTAR</a>
             </div>
         </div>
-<div class= "row d-flex flex-column align-items-center"">
+<div class= "row d-flex flex-column align-items-center">
     <h3>Editar dados Médico</h3>
         </div>
 
-@*<h4>Medico</h4>*@
-<hr />
-<div class="row">
-    <div class="col-md-6 align-items-center">          
-            <div class="form-group">
-                <select asp-for="Especialidade" asp-items="Html.GetEnumSelectList<Especialidade>()" class="form-control"></select>
- 
-            </div>          
-    </div>
-</div>
-
-
-<div class="row">
+<div class="row d-flex align-items-center flex-column">
     <div class="align-items-center flex-column col-md-6">
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
@@ -36,7 +24,7 @@
                 <input asp-for="Nome" class="form-control" />
                 <span asp-validation-for="Nome" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            <div class="form-group align-items-baseline">
                 <label asp-for="Senha" class="control-label"></label>
                 <input asp-for="Senha" class="form-control" />
                 <span asp-validation-for="Senha" class="text-danger"></span>

@@ -8,6 +8,7 @@
         <img src="~/img/onmedical_logo.png" />
     </a>
     <div class="login-home">
+        <a class="secondary-button" asp-area="" asp-controller="Medicos" asp-action="Edit" asp-route-id="@User.Claims.Where(x=>x.Type == "Id").Select(x=>x.Value).FirstOrDefault()">MEUS DADOS</a>
         <a class="secondary-button" asp-area="" asp-controller="Home" asp-action="Index">VOLTAR</a>
     </div>
 </div>
