@@ -162,11 +162,14 @@
                         <td class="address-medical">
                             @Html.DisplayFor(modelItem => item.Agenda.DataHoraFimConsultaConsulta)
                         </td>
+                        <td class="address-medical">
+                            @Html.DisplayFor(modelItem => item.Status)
+                        </td>
                         <td>
                             @*<a asp-action="Edit" asp-route-id="@item.Id">Edit</a>
                             <a class="btn btn-primary" asp-action="Details" asp-route-id="@item.Id">Details</a>*@
 
-                            <a class="btn btn-primary" asp-action="Submit" asp-route-id="@item.Id">MARCAR</a>
+                            <a class="btn btn-primary" asp-action="Details" asp-route-id="@item.Id">MARCAR</a>
                             <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.Id">DESMARCAR</a>
                         </td>
                     </tr>
