@@ -4,6 +4,24 @@
     ViewData["Title"] = "Index";
 }
 
+@*<div class="header-primary ">
+            <a asp-area="" asp-controller="Home" asp-action="Index">
+                <img src="~/img/onmedical_logo.png" />
+            </a>
+
+    <div class="login-home">
+        <a class="secondary-button" asp-area="" asp-controller="Home" asp-action="Index">SAIR</a>
+    </div>
+
+        </div>*@
+
+
+ 
+
+
+
+
+
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light mb-3">
             <div class="cabecalho d-flex justify-content-between">
@@ -24,32 +42,33 @@
                             @if (User.IsInRole("Medico"))
                             {
                                 <li class="nav-item">
-                                    <a class="nav-link text-dark" asp-area="" asp-controller="Medicos" asp-action="Edit" asp-route-id="@User.Claims.Where(x=>x.Type == "Id").Select(x=>x.Value).FirstOrDefault()">Meus dados</a>
+                                <a class="secondary-button" asp-area="" asp-controller="Medicos" asp-action="Edit" asp-route-id="@User.Claims.Where(x=>x.Type == "Id").Select(x=>x.Value).FirstOrDefault()">MEUS DADOS</a>
                                 </li>
                             }
                             else
                             {
                                 <li class="nav-item">
-                                    <a class="nav-link text-dark" asp-area="" asp-controller="Pacientes" asp-action="Edit" asp-route-id="@User.Claims.Where(x=>x.Type == "Id").Select(x=>x.Value).FirstOrDefault()">Meus dados</a>
+                                <a class="secondary-button" asp-area="" asp-controller="Pacientes" asp-action="Edit" asp-route-id="@User.Claims.Where(x=>x.Type == "Id").Select(x=>x.Value).FirstOrDefault()">MEUS DADOS</a>
                                 </li>
                             }
 
-                             
 
-                            <li class="nav-item">
+
+                        @*<li class="nav-item">
                                 Olá, @User.Identity.Name
-                            </li>
+                            </li>*@
 
                             @if (User.Claims.Any(x => x.Value == "Medico"))
                             {
+                            
                                 <li class="nav-item">
-                                    <a class="nav-link text-dark" asp-area="" asp-controller="Medicos" asp-action="Logout">Sair</a>
+                                <a class="secondary-button" asp-area="" asp-controller="Medicos" asp-action="Logout">SAIR</a>
                                 </li>
                             }
                             else
                             {
                                 <li class="nav-item">
-                                    <a class="nav-link text-dark" asp-area="" asp-controller="Pacientes" asp-action="Logout">Sair</a>
+                                <a class="secondary-button" asp-area="" asp-controller="Pacientes" asp-action="Logout">SAIR</a>
                                 </li>
 
                             }
@@ -58,8 +77,8 @@
                         else
                         {
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Medicos" asp-action="Login">Medicos</a>
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Pacientes" asp-action="Login">Pacientes</a>
+                            <a class="secondary-button" asp-area="" asp-controller="Medicos" asp-action="Login">Medicos</a>
+                            <a class="secondary-button" asp-area="" asp-controller="Pacientes" asp-action="Login">Pacientes</a>
                             </li>
 
                         }
@@ -67,16 +86,26 @@
                 </div>
             </div>
         </nav>
+    <div class="cabecalho-login row d-flex flex-column align-items-center">
+        <h6>BEM-VINDOS AO ONMEDICAL</h6>
+    </div>
+
+    <div class="row d-flex flex-column align-items-center">
+        <h1> Minhas consultas do dia</h1>
+    </div>
+
     </header>
 
-<h1>Index</h1>
+
+
+@*<h1>Index</h1>*@
 
 @*<p>
     <a asp-action="Create">Criar novo</a>
 </p>*@
 
 <table class="table">
-    <thead>
+    @*<thead>
         <tr>
             <th>
                 @Html.DisplayNameFor(model => model.Status)
@@ -89,8 +118,10 @@
             </th>
             <th></th>
         </tr>
-    </thead>
-    @*<tbody>
+    </thead>*@
+
+
+    <tbody>
         @foreach (var item in Model)
         {
             @if(User.Claims.Any(x => x.Value == "Paciente"))
@@ -139,5 +170,5 @@
                 }
             }
         }
-    </tbody>*@
+    </tbody>
 </table>
