@@ -112,7 +112,7 @@ Os participantes terão como responsabilidade, analisar da forma mais eficiente 
 | **Objetivo do Teste** 	| Avaliar a tela de Login dos Médicos	|
 | **Ações necessárias** 	| 1. Acessar a primeira tela do site pelo browser;<br>2. Clicar na opção “Médico”; 	|
 |  	|  	|
-| **Caso de Teste** 	| **CT-06 – Realizar login(Paciente)** 	|
+| **Caso de Teste** 	| **CT-07 – Realizar login(Paciente)** 	|
 |:---:	|:---:	|
 | **Perfil** 	| Usuário (pacientes)	|
 | **Objetivo do Teste** 	| Avaliar a tela de Login dos Pacientes	|
