@@ -30,42 +30,17 @@ Relatório com as evidências dos testes de software.
   
 O objetivo deste relatório é analisar se a aplicação Priorizando a saúde atende aos requisitos previamente propostos e sugerir possíveis pontos de correção.
 
-| 1 	| Cadastrar paciente 	|
-|:---:	|:---:	|
-|	Requisito	| RF-01 - A aplicação deve apresentar, na página principal, a funcionalidade de cadastro de pacientes para que esses consigam criar e gerenciar seu perfil. |
-| Observação | Na página inicial possui a funcionalidade cadastrar paciente, este que pode ser realizado ao clicar em "Paciente". Após o preenchimento das informações cadastrais (nome, senha, e-mail, telefone e cpf ) o cadastro é realizado com sucesso. Além disso, é possível fazer alterações posteriores a respeito dessas informações (por exemplo, a troca de e-mail e a alteração de número de telefone). Assim, a aplicação Priorizando a saúde atende ao requisito <b> Cadastrar paciente. |
-|  	|  	|
-| 2 	| Efetuar login do paciente |
-|	Requisito	| RF-010 - A aplicação deve possuir opção de fazer login, sendo o login o endereço de e-mail. |
-| Observação | Na página inicial, a aplicação apresenta a funcionalidade de login. este que pode ser realizado ao clicar em "Paciente". Após o preenchimento dos campos  e-mail e senha, o usuário é redirecionado para a tela principal. Assim, a aplicação Priorizando a saúde atende ao requisito <b> Efetuar login Paciente. |
-|  	|  	|
-| 3 	| Cadastrar Médico 	|
-|	Requisito	| RF-002 - A aplicação deve possuir opção de fazer login, sendo o login o endereço de e-mail. |
-| Observação | Na página inicial possui a funcionalidade cadastrar médico, este que pode ser realizado ao clicar em "Médico". Após o preenchimento das informações cadastrais (nome, especialidade, crm, endereço, e-mail, telefone e senha) o cadastro é realizado com sucesso. Além disso, é possível fazer alterações posteriores a respeito dessas informações (por exemplo, a troca de e-mail e a alteração de número de telefone). Assim, a aplicação Priorizando a saúde atende ao requisito <b> Cadastrar Médico. |
-|  	|  	|
-| 4 	| Efetuar login do Médico |
-|	Requisito	| RF-010 - A aplicação deve possuir opção de fazer login, sendo o login o endereço de e-mail. |
-| Observação | Na página inicial, a aplicação apresenta a funcionalidade de login. este que pode ser realizado ao clicar em "Médico". Após o preenchimento dos campos  e-mail e senha, o usuário é redirecionado para a tela principal. Assim, a aplicação Priorizando a saúde atende ao requisito <b> Efetuar login Médico. |
-|  	|  	|
-| 5 	| Mostrar médicos cadastrados |
-|	Requisito	| RF-004 - A aplicação deve mostrar na tela home do paciente os medicos cadastrados quando preenchidos os campos de data e e especialidade. |
-| Observação | Após realizar login como paciente, a aplicação apresenta os médicos cadastrados. Assim, a aplicação Priorizando a saúde atende ao requisito <b> Mostrar médicos cadastrados. |
-|  	|  	|
-| 6 	| Renderizar agenda do médico |
-|	Requisito	| RF-005 - A aplicação deve ser capaz de mostrar as proximas consultas do médico. |
-| Observação | Após realizar login como médico e clicar em minhas consultas no canto superior direito, é exibido a agenda. Assim, a aplicação Priorizando a saúde atende ao requisito <b> Renderizar agenda do médico. |
-|  	|  	|
-| 7 	| Confirmar consultas do paciente |
-|	Requisito	| RF-008 -A aplicação deverá permitir que o paciente gerencie suas consultas |
-| Observação | Após realizar login como paciente e clicar em minhas consultas, tera uma opção escrito delete. Assim, a aplicação Priorizando a saúde atende ao requisito <b> Confirmar consultas do paciente. |
-|  	|  	|
-| 8 	| Cancelar consultas do paciente |
-|	Requisito	| RF-008 -A aplicação deverá permitir que o paciente gerencie suas consultas |
-| Observação | Após realizar login como paciente e clicar em minhas consultas, tera uma opção escrito delete para cancelar. Assim, a aplicação Priorizando a saúde atende ao requisito <b> Cancelar consultas do paciente. |
-|  	|  	|
-| 10 	| Cancelar consultas do médico |
-|	Requisito	| RF-006 -A aplicação deverá permitir que o médico gerencie suas consultas |
-| Observação | Após realizar login como médico e clicar em minhas consultas, tera uma opção escrito delete para cancelar. Assim, a aplicação Priorizando a saúde atende ao requisito <b> Cancelar consultas do médico. |
+CT-01 e CT-03 - Durante a execução dos testes não ocorreu nenhum problema com as funcionalidades.
+  
+CT-05 - Durante a execução do teste não ocorreu nenhum problema com a funcionalidade.
+  
+CT-06 - Durante a execução do teste não ocorreu nenhum problema com a funcionalidade.
+  
+CT-07 - Durante toda a execução dos testes a opção de Confirmar não funcionou.
+  
+CT-08 - Durante toda a execução dos testes a opção de Cancelar não funcionou.
+  
+CT-10 - Durante a execução do teste não ocorreu nenhum problema com a funcionalidade.
 
 
 
