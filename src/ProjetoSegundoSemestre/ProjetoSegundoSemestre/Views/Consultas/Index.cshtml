@@ -153,23 +153,23 @@
                 if (item.Agenda.MedicoId == new Guid(User.Claims.Where(x => x.Type == "Id").Select(x => x.Value).FirstOrDefault().ToString()))
         {
                         <tr>
-                        <td class="address-medical">
+                        <td class="schedule-info">
                             @Html.DisplayFor(modelItem => item.Status)
                         </td>
-                        <td class="address-medical">
+                        <td class="schedule-info">
                             @Html.DisplayFor(modelItem => item.Agenda.DataHoraInicioConsulta)
                         </td>
-                        <td class="address-medical">
+                        <td class="schedule-info">
                             @Html.DisplayFor(modelItem => item.Agenda.DataHoraFimConsultaConsulta)
                         </td>
-                        <td class="address-medical">
-                            @Html.DisplayFor(modelItem => item.Status)
+                        <td class="schedule-info">
+                            @Html.DisplayFor(modelItem => item.Paciente.Nome)
                         </td>
                         <td>
                             @*<a asp-action="Edit" asp-route-id="@item.Id">Edit</a>
                             <a class="btn btn-primary" asp-action="Details" asp-route-id="@item.Id">Details</a>*@
 
-                            <a class="btn btn-primary" asp-action="Details" asp-route-id="@item.Id">MARCAR</a>
+                            <a class="btn btn-primary" asp-action="Create" asp-route-id="@item.Id">MARCAR</a>
                             <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.Id">DESMARCAR</a>
                         </td>
                     </tr>
