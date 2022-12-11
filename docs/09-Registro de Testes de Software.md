@@ -31,6 +31,8 @@ Relatório com as evidências dos testes de software.
 O objetivo deste relatório é analisar se a aplicação Priorizando a saúde atende aos requisitos previamente propostos e sugerir possíveis pontos de correção.
 
 CT-01 e CT-03 - Durante a execução dos testes não ocorreu nenhum problema com as funcionalidades.
+
+CT-02 e CT-04 - Durante a execução dos testes não ocorreu nenhum problema com as funcionalidades.
   
 CT-05 - Durante a execução do teste não ocorreu nenhum problema com a funcionalidade.
   
