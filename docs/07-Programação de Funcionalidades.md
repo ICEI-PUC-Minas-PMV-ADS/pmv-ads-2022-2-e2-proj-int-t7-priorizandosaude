@@ -19,5 +19,5 @@
 
 # Instruções de acesso
 
-1 - Link da aplicação na Azure: https://onmedical.azurewebsites.net/
+1 - Link da aplicação na Azure: https://onmedical.azurewebsites.net/ <br>
 2 - Se cadastrar
