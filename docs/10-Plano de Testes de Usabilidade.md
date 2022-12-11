@@ -106,5 +106,17 @@ Os participantes terão como responsabilidade, analisar da forma mais eficiente 
 | **Objetivo do Teste** 	| Avaliar a tela de consultas dos médicos	|
 | **Ações necessárias** 	| 1. Acessar a primeira tela do site pelo browser;<br>2. Clicar na opção “Entrar como Paciente” se já for cadastrado;<br>3. Clicar em visualizar consultas marcadas;<br>4. Clicar em confirmar consulta ou desmarcar consulta.<br>5. "Consulta confirmada com sucesso" ou "consulta cancelada com sucesso". 	|
 |  	|  	|
+| **Caso de Teste** 	| **CT-06 – Realizar login(Médico)** 	|
+|:---:	|:---:	|
+| **Perfil** 	| Usuário (médicos)	|
+| **Objetivo do Teste** 	| Avaliar a tela de Login dos Médicos	|
+| **Ações necessárias** 	| 1. Acessar a primeira tela do site pelo browser;<br>2. Clicar na opção “Médico”; 	|
+|  	|  	|
+| **Caso de Teste** 	| **CT-06 – Realizar login(Paciente)** 	|
+|:---:	|:---:	|
+| **Perfil** 	| Usuário (pacientes)	|
+| **Objetivo do Teste** 	| Avaliar a tela de Login dos Pacientes	|
+| **Ações necessárias** 	| 1. Acessar a primeira tela do site pelo browser;<br>2. Clicar na opção “Paciente”; 	|
+|  	|  	|
 
 
