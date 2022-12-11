@@ -38,9 +38,9 @@ CT-05 - Durante a execução do teste não ocorreu nenhum problema com a funcion
   
 CT-06 - Durante a execução do teste não ocorreu nenhum problema com a funcionalidade.
   
-CT-07 - Durante toda a execução dos testes a opção de Confirmar não funcionou.
+CT-07 - Durante toda a execução dos testes a opção de Confirmar não funcionou(Será corrigido na próxima versão).
   
-CT-08 - Durante toda a execução dos testes a opção de Cancelar não funcionou.
+CT-08 - Durante toda a execução dos testes a opção de Cancelar não funcionou(Será corrigido na próxima versão).
   
 CT-10 - Durante a execução do teste não ocorreu nenhum problema com a funcionalidade.
 
