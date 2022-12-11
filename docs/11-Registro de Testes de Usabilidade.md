@@ -2,43 +2,59 @@
 
 | **Usuário** 	| **Artefato** 	| **Tempo** | **Clicks/Ações** | **Qtd. Erros** | **Se recuperou do erro** | **Comentários e observações** |
 | --- 	| --- 	| --- | ---  | --- | --- | --- |
-| Usuário 1	| CT-01 	| 00:50 | 3  | 0 | --- | Usuário achou a tela intuitiva |
-| Usuário 2 | CT-01 	| 00:52 | 3  | 0 | --- | Usuário não teve dificuldade |
-| Usuário 3	| CT-01	 | 00:52 | 3  | 0 | --- | Usuário não teve dúvidas |
-| Usuário 4 | CT-01 	| 00:35 | 3  | 0 | --- | Usuário facilmente guiado pelo fluxo do site |
-| Usuário 5	| CT-01	 | 00:55 | 3  | 0 | --- | Usuário achou a tela intuitiva |
+| Antonio	| CT-01 	| 00:50 | 3  | 0 | --- | Achou a tela intuitiva |
+| Lidia | CT-01 	| 00:52 | 3  | 0 | --- | Não teve dificuldade |
+| Erica	| CT-01	 | 00:52 | 3  | 0 | --- | Não teve dúvidas |
+| Wesley | CT-01 	| 00:35 | 3  | 0 | --- | Foi facilmente guiado pelo fluxo do site |
+| Catia	| CT-01	 | 00:55 | 3  | 0 | --- | Achou a tela intuitiva |
 
 | **Usuário** 	| **Artefato** 	| **Tempo** | **Clicks/Ações** | **Qtd. Erros** | **Se recuperou do erro** | **Comentários e observações** |
 | --- 	| --- 	| --- | ---  | --- | --- | --- |
-| Usuário 1	| CT-02 	| 00:50 | 3  | 0 | --- | Usuário não fez observação |
-| Usuário 2 | CT-02 	| 01:00 | 3  | 0 | --- | Usuário não teve dificuldade |
-| Usuário 3	| CT-02	 | 01:01 | 3  | 0 | --- | Usuário gostou da interface |
-| Usuário 4 | CT-02 	| 00:40 | 3  | 0 | --- | Usuário efetuou login sem problemas |
-| Usuário 5	| CT-02	 | 00:50 | 3  | 0 | --- | Gostou do design das interfaces |
+| Antonio	| CT-02 	| 00:50 | 3  | 0 | --- | Não fez observação |
+| Lidia | CT-02 	| 01:00 | 3  | 0 | --- | Não teve dificuldade |
+| Erica	| CT-02	 | 01:01 | 3  | 0 | --- | Gostou da interface |
+| Wesley | CT-02 	| 00:40 | 3  | 0 | --- | Efetuou login sem problemas |
+| Catia	| CT-02	 | 00:50 | 3  | 0 | --- | Gostou do design das interfaces |
 
 | **Usuário** 	| **Artefato** 	| **Tempo** | **Clicks/Ações** | **Qtd. Erros** | **Se recuperou do erro** | **Comentários e observações** |
 | --- 	| --- 	| --- | ---  | --- | --- | --- |
-| Usuário 1	| CT-03 	| 00:35 | 4  | 0 | --- | Usuário sugeriu mostrar mensagem de erro ao não encontrar médicos |
-| Usuário 2 | CT-03 	| 00:41 | 4  | 0 | --- | Usuário sugeriu uma mudança na interface |
-| Usuário 3	| CT-03	 | 00:30 | 4  | 0 | --- | Usuário gostou da interface |
-| Usuário 4 | CT-03 	| 00:30 | 4  | 0 | --- | Usuário não teve problemas |
-| Usuário 5	| CT-03	 | 00:33 | 4  | 0 | --- | Usuário não teve problemas |
+| Antonio	| CT-03 	| 00:35 | 4  | 0 | --- | Sugeriu mostrar mensagem de erro ao não encontrar médicos |
+| Lidia | CT-03 	| 00:41 | 4  | 0 | --- | Sugeriu uma mudança na interface |
+| Erica	| CT-03	 | 00:30 | 4  | 0 | --- | Gostou da interface |
+| Wesley | CT-03 	| 00:30 | 4  | 0 | --- | Não teve problemas |
+| Catia	| CT-03	 | 00:33 | 4  | 0 | --- | Não teve problemas |
 
 | **Usuário** 	| **Artefato** 	| **Tempo** | **Clicks/Ações** | **Qtd. Erros** | **Se recuperou do erro** | **Comentários e observações** |
 | --- 	| --- 	| --- | ---  | --- | --- | --- |
-| Usuário 1	| CT-04 	| 00:35 | 5  | 0 | --- | Usuário não teve problemas |
-| Usuário 2 | CT-04 	| 00:41 | 5  | 0 | --- | Usuário não teve problemas |
-| Usuário 3	| CT-04	 | 00:30 | 5  | 0 | --- | Usuário não teve problemas |
-| Usuário 4 | CT-04 	| 00:30 | 5  | 0 | --- | Usuário não teve problemas |
-| Usuário 5	| CT-04	 | 00:33 | 5  | 0 | --- | Usuário não teve problemas |
+| Antonio	| CT-04 	| 00:35 | 5  | 0 | --- | Não teve problemas |
+| Lidia | CT-04 	| 00:41 | 5  | 0 | --- | Não teve problemas |
+| Erica	| CT-04	 | 00:30 | 5  | 0 | --- | Não teve problemas |
+| Wesley | CT-04 	| 00:30 | 5  | 0 | --- | Não teve problemas |
+| Catia	| CT-04	 | 00:33 | 5  | 0 | --- | Não teve problemas |
 
 | **Usuário** 	| **Artefato** 	| **Tempo** | **Clicks/Ações** | **Qtd. Erros** | **Se recuperou do erro** | **Comentários e observações** |
 | --- 	| --- 	| --- | ---  | --- | --- | --- |
-| Usuário 1	| CT-05 	| 00:55 | 8  | 0 | Não | Não apareceu opções de mudança de status |
-| Usuário 2 | CT-05 	| 00:50 | 8  | 0 | --- | Não apareceu opções de mudança de status |
-| Usuário 3	| CT-05	 | 01:01 | 8  | 0 | Não | Não apareceu opções de mudança de status |
-| Usuário 4 | CT-05 	| 00:54 | 8  | 0 | --- | Não apareceu opções de mudança de status |
-| Usuário 5	| CT-05	 | 00:55 | 8  | 0 | --- | Não apareceu opções de mudança de status |
+| Antonio	| CT-05 	| 00:55 | 8  | 0 | Não | Não apareceu opções de mudança de status |
+| Lidia | CT-05 	| 00:50 | 8  | 0 | --- | Não apareceu opções de mudança de status |
+| Erica	| CT-05	 | 01:01 | 8  | 0 | Não | Não apareceu opções de mudança de status |
+| Wesley | CT-05 	| 00:54 | 8  | 0 | --- | Não apareceu opções de mudança de status |
+| Catia	| CT-05	 | 00:55 | 8  | 0 | --- | Não apareceu opções de mudança de status |
+
+| **Usuário** 	| **Artefato** 	| **Tempo** | **Clicks/Ações** | **Qtd. Erros** | **Se recuperou do erro** | **Comentários e observações** |
+| --- 	| --- 	| --- | ---  | --- | --- | --- |
+| Antonio	| CT-06 	| 00:16 | 4  | 0 | --- | Não teve problemas e achou a tela intuitiva |
+| Lidia | CT-06 	| 00:14 | 4  | 0 | --- | Não teve problemas e achou a tela intuitiva |
+| Erica	| CT-06	 | 00:09 | 4  | 0 | --- | Não teve problemas e achou a tela intuitiva |
+| Wesley | CT-06 	| 00:09 | 4  | 0 | --- | Não teve problemas e achou a tela intuitiva |
+| Catia	| CT-06	 | 00:10 | 4  | 0 | --- | Não teve problemas e achou a tela intuitiva |
+
+| **Usuário** 	| **Artefato** 	| **Tempo** | **Clicks/Ações** | **Qtd. Erros** | **Se recuperou do erro** | **Comentários e observações** |
+| --- 	| --- 	| --- | ---  | --- | --- | --- |
+| Antonio	| CT-07 	| 00:15 | 4  | 0 | --- | Não teve problemas e achou a tela intuitiva |
+| Lidia | CT-07 	| 00:12 | 4  | 0 | --- | Não teve problemas e achou a tela intuitiva |
+| Erica	| CT-07	 | 00:10 | 4  | 0 | --- | Não teve problemas e achou a tela intuitiva |
+| Wesley | CT-07 	| 00:09 | 4  | 0 | --- | Não teve problemas e achou a tela intuitiva |
+| Catia	| CT-07	 | 00:09 | 4  | 0 | --- | Não teve problemas e achou a tela intuitiva |
 
 <h2>Relatório</h2>
 
@@ -67,3 +83,11 @@ Todos os usuários realizaram 5 clicks e não tiveram dificuldades
 **CT-05 - Paciente conseguir alterar ou desmarcar consulta**
 
 Durante o teste da funcionalidade, ocorreu um erro onde o select para mudança de status não havia opções, ja para desmarcar consulta todos conseguiram sem problemas
+
+**CT-06 - Realizar login(Médico)**
+
+Todos os usuários realizaram 4 clicks e não tiveram dificuldades
+
+**CT-07 - Realizar login(Paciente)**
+
+Todos os usuários realizaram 4 clicks e não tiveram dificuldades
